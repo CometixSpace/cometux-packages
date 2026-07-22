@@ -1,0 +1,50 @@
+# Cometux-specific workflow (not from upstream): builds bootstrap
+# archives from local package sources via build-bootstraps.sh, which is
+# designed for forked apps and needs no published apt repo. Kept as a
+# separate file so upstream rebases never conflict.
+name: Cometux bootstrap
+
+on:
+  workflow_dispatch:
+    inputs:
+      architectures:
+        description: "Space-separated architectures to build"
+        required: false
+        default: "aarch64"
+
+permissions: {}
+
+concurrency:
+  group: ${{ github.workflow }}
+  cancel-in-progress: true
+
+jobs:
+  build:
+    permissions:
+      contents: read
+    runs-on: ubuntu-latest
+    timeout-minutes: 350
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Free disk space
+        run: ./scripts/free-space.sh
+
+      - name: Build bootstrap archives from source
+        run: |
+          ./scripts/run-docker.sh ./scripts/build-bootstraps.sh \
+            --architectures "${{ inputs.architectures }}"
+
+      - name: Collect artifacts
+        run: |
+          mkdir -p bootstrap-output
+          find . -maxdepth 2 -name 'bootstrap-*.zip' -exec mv {} bootstrap-output/ \;
+          ls -la bootstrap-output/
+
+      - name: Upload bootstrap archives
+        uses: actions/upload-artifact@v4
+        with:
+          name: bootstrap-archives
+          path: bootstrap-output/*.zip
+          if-no-files-found: error
