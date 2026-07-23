@@ -31,6 +31,15 @@ jobs:
       - name: Free disk space
         run: ./scripts/free-space.sh
 
+      # Our scripts/ diverges from the upstream ghcr image (extra SDK
+      # components for building termux-am from source, which the
+      # restricted AppArmor profile forbids installing at build time),
+      # so build the image locally instead of pulling.
+      - name: Build docker image
+        run: |
+          docker build -t ghcr.io/termux/package-builder:latest scripts/
+          docker buildx prune -af
+
       - name: Build bootstrap archives from source
         run: |
           ./scripts/run-docker.sh ./scripts/build-bootstraps.sh \

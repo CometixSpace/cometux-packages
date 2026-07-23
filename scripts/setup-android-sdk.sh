@@ -68,10 +68,17 @@ echo "INFO: Using NDK ... $NDK"
 
 yes | $SDK_MANAGER --sdk_root="$ANDROID_HOME" --licenses
 
-# The android platforms are used in the ecj and apksigner packages:
+# The android platforms are used in the ecj and apksigner packages.
+# platforms;android-33 and build-tools;30.0.3 are required by the gradle
+# build of termux-am: a renamed-app fork builds it from source (upstream
+# CI fetches it prebuilt from the official apt repo), and the restricted
+# AppArmor profile denies writes to ~/lib at build time, so every SDK
+# component must be baked into the image here.
 yes | $SDK_MANAGER --sdk_root="$ANDROID_HOME" \
 		"platform-tools" \
 		"build-tools;${TERMUX_ANDROID_BUILD_TOOLS_VERSION}" \
+		"build-tools;30.0.3" \
 		"platforms;android-35" \
+		"platforms;android-33" \
 		"platforms;android-28" \
 		"platforms;android-24"

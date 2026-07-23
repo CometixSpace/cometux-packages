@@ -212,6 +212,11 @@ jobs:
           if grep -qP '^scripts/(Dockerfile|properties\.sh|setup-android-sdk\.sh|setup-ubuntu\.sh)$' <<< "$CHANGED_FILES"; then
             needs_docker_build=true
           fi
+        else
+          # Cometux fork: our scripts/ diverges from the upstream ghcr
+          # image (extra SDK components for building termux-am from
+          # source), so dispatched runs always rebuild the image locally.
+          needs_docker_build=true
         fi
         echo "needs-docker-build=$needs_docker_build" >> $GITHUB_OUTPUT
 
