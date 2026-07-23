@@ -18,19 +18,6 @@ termux_step_post_get_source() {
 }
 
 termux_step_make() {
-	# Preinstall the SDK components app/build.gradle needs: the builder
-	# image only ships platforms android-35/28/24, and the Android Gradle
-	# plugin's auto-install into $ANDROID_HOME fails on CI ("Failed to
-	# read or create install properties file"). Upstream CI never hits
-	# this because termux-am is fetched prebuilt from the official apt
-	# repo; a renamed-app fork builds it from source.
-	local sdkmanager="$ANDROID_HOME/cmdline-tools/latest/bin/sdkmanager"
-	[ -x "$sdkmanager" ] || sdkmanager="$ANDROID_HOME/cmdline-tools/bin/sdkmanager"
-	yes | "$sdkmanager" --sdk_root="$ANDROID_HOME" --licenses > /dev/null || true
-	yes | "$sdkmanager" --sdk_root="$ANDROID_HOME" \
-		"platforms;android-33" \
-		"build-tools;30.0.3"
-
 	# Download and use a new enough gradle version to avoid the process hanging after running:
 	termux_download \
 		https://services.gradle.org/distributions/gradle-$_GRADLE_VERSION-bin.zip \
