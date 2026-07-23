@@ -429,7 +429,10 @@ main() {
 
 		# Core utilities.
 		PACKAGES+=("bash") # Used by `termux-bootstrap-second-stage.sh`
-		PACKAGES+=("bzip2")
+		# bzip2 is a subpackage of libbz2 (no build.sh of its own), so
+		# build the parent recipe; extract_debs picks up every built deb,
+		# including the bzip2 subpackage.
+		PACKAGES+=("libbz2")
 		if ! ${BOOTSTRAP_ANDROID10_COMPATIBLE}; then
 			PACKAGES+=("command-not-found")
 		else
