@@ -246,7 +246,10 @@ create_bootstrap_archive() {
 		zip -r9 "${BOOTSTRAP_TMPDIR}/bootstrap-${1}.zip" ./*
 	)
 
-	mv -f "${BOOTSTRAP_TMPDIR}/bootstrap-${1}.zip" "$TERMUX_PACKAGES_DIRECTORY/"
+	# The restricted AppArmor profile denies writes everywhere under
+	# termux-packages except output/, so the archive must land there.
+	mkdir -p "$TERMUX_PACKAGES_DIRECTORY/output"
+	mv -f "${BOOTSTRAP_TMPDIR}/bootstrap-${1}.zip" "$TERMUX_PACKAGES_DIRECTORY/output/"
 
 	echo "[*] Finished successfully (${1})."
 
