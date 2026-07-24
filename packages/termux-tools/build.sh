@@ -47,7 +47,10 @@ termux_step_post_make_install() {
 }
 
 termux_step_create_debscripts() {
+	# The preinst template in the termux-tools source hard-codes the stock
+	# prefix — the same literal-path issue the massage step fixes for
+	# packaged files, but maintainer scripts never pass through massage.
 	cat <<- EOF > ./preinst
-	$(cat "$TERMUX_PKG_BUILDDIR/preinst")
+	$(sed "s|/data/data/com\.termux|/data/data/${TERMUX_APP_PACKAGE}|g" "$TERMUX_PKG_BUILDDIR/preinst")
 	EOF
 }
