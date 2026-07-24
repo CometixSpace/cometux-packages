@@ -60,10 +60,17 @@ jobs:
 
       # The same run builds every deb in the dependency closure; publish
       # them as an artifact so the apt repository can be refreshed from
-      # the exact bits that went into the bootstrap.
+      # the exact bits that went into the bootstrap. Tarred first: deb
+      # names with epoch versions contain ':' which upload-artifact
+      # rejects (same reason packages.yml tars its debs).
+      - name: Pack built debs
+        run: |
+          if ls output/*.deb >/dev/null 2>&1; then
+            tar cf debs.tar -C output .
+          fi
       - name: Upload built debs
         uses: actions/upload-artifact@v4
         with:
           name: debs
-          path: output/*.deb
+          path: debs.tar
           if-no-files-found: warn
