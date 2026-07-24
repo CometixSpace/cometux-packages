@@ -12,10 +12,9 @@ TERMUX_PKG_PLATFORM_INDEPENDENT=true
 termux_step_make_install() {
 	mkdir -p $TERMUX_PREFIX/etc/apt/sources.list.d
 	{
-		echo "# The root termux repository, with cloudflare cache"
-		echo "deb https://packages-cf.termux.dev/apt/termux-root/ root stable"
-		echo "# The root termux repository, without cloudflare cache"
-		echo "# deb https://packages.termux.dev/apt/termux-root/ root stable"
+		echo "# The Cometux root repository (rebuilt for the"
+		echo "# ${TERMUX_APP_PACKAGE} prefix)."
+		echo "deb https://cometixspace.github.io/cometux-packages/termux-root root stable"
 	} > $TERMUX_PREFIX/etc/apt/sources.list.d/root.list
 }
 
