@@ -27,6 +27,23 @@ termux_step_pre_configure() {
 
 termux_step_post_make_install() {
 	TERMUX_PKG_CONFFILES="$(cat "$TERMUX_PKG_BUILDDIR/conffiles")"
+
+	# Cometux branding (ZeroTermux-style fork policy: user-visible
+	# strings only, the termux-* command namespace stays untouched).
+	local motd
+	for motd in "$TERMUX_PREFIX/etc/motd" "$TERMUX_PREFIX/etc/motd.sh"; do
+		[ -f "$motd" ] || continue
+		# In-place word swaps only: the wide variant interleaves these
+		# lines with the block-art logo, so no line may be dropped.
+		sed -i \
+			-e 's|Welcome to Termux!|Welcome to Cometux!|g' \
+			-e 's|Donate:|Builds:|g' \
+			-e 's|https://termux.dev/docs|https://github.com/CometixSpace/cometux-packages|g' \
+			-e 's|https://termux.dev/donate|https://github.com/CometixSpace/cometux-packages/releases|g' \
+			-e 's|https://termux.dev/community|https://github.com/CometixSpace|g' \
+			-e 's|Termux version:|Cometux base:|g' \
+			"$motd"
+	done
 }
 
 termux_step_create_debscripts() {
