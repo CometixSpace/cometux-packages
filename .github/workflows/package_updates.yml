@@ -96,14 +96,16 @@ jobs:
     permissions:
       issues: write
       contents: write
-    if: github.event_name != 'pull_request' && github.event_name != 'push' && github.repository == 'termux/termux-packages'
+      actions: write
+    # Cometux fork: guard swapped to our repository; bumps land on the
+    # cometux branch with the default token.
+    if: github.event_name != 'pull_request' && github.event_name != 'push' && github.repository == 'CometixSpace/cometux-packages'
     runs-on: ubuntu-26.04
     steps:
       - name: Clone repository
         uses: actions/checkout@v7
         with:
           fetch-depth: 0
-          token: ${{ secrets.TERMUXBOT2_TOKEN }}
       - name: Enable zram
         uses: ./.github/actions/zram
         with:
@@ -125,15 +127,19 @@ jobs:
             jq
       - name: Process package updates
         env:
-          GITHUB_TOKEN: ${{ secrets.TERMUXBOT2_TOKEN }}
-          BUILD_PACKAGES: "true"
-          CREATE_ISSUE: "true"
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          # Bump-only: builds are dispatched below, and issues stay off
+          # for the fork.
+          BUILD_PACKAGES: "false"
+          CREATE_ISSUE: "false"
           GIT_COMMIT_PACKAGES: "true"
           GIT_PUSH_PACKAGES: "true"
           MANUAL_INPUT_PACKAGES: ${{ github.event.inputs.packages }}
         run: |
-          git config --global user.name "Termux Github Actions"
-          git config --global user.email "contact@termux.dev"
+          git config --global user.name "Cometux CI"
+          git config --global user.email "ci@cometix.dev"
+
+          git rev-parse HEAD > /tmp/before-updates
 
           if [ "${{ github.event_name }}" == "workflow_dispatch" ]; then
             # Ensure MANUAL_INPUT_PACKAGES is newline free, and put it
@@ -143,12 +149,18 @@ jobs:
           else
             ./scripts/bin/update-packages "@all"
           fi
-      - name: Trigger repology metadata generation
-        if: always()
+      # Pushes made with the default token do not trigger workflows, so
+      # dispatch the build for whatever the updater bumped.
+      - name: Dispatch builds for updated packages
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          curl \
-            -H "Accept: application/vnd.github.v3+json" \
-            -H "Authorization: Bearer ${{ secrets.TERMUXBOT2_TOKEN }}" \
-            -X POST \
-            --data '{"ref":"master"}' \
-            "https://api.github.com/repos/termux/repology-metadata/actions/workflows/repology_metadata.yml/dispatches"
+          UPDATED="$(git log --name-only --pretty=format: "$(cat /tmp/before-updates)..HEAD" \
+            | grep -E '^(packages|root-packages|x11-packages)/' \
+            | cut -d/ -f2 | sort -u | tr '\n' ' ' | sed 's/ $//')"
+          if [ -n "$UPDATED" ]; then
+            echo "Dispatching build for: $UPDATED"
+            gh workflow run packages.yml --ref cometux -f packages="$UPDATED"
+          else
+            echo "No packages were updated."
+          fi
