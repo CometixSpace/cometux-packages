@@ -10,6 +10,18 @@ termux_step_massage() {
 		ADDING_PREFIX="glibc/"
 	fi
 
+	# Cometux fork: several upstream scripts (termux-tools, termux-exec,
+	# pkg, ...) hard-code the stock /data/data/com.termux prefix as a
+	# literal instead of a build-time template, which upstream never
+	# notices because their prefix equals the literal. Rewrite those
+	# references in text files for renamed-app builds; ELF binaries get
+	# the prefix via compile-time macros and must not be patched here.
+	if [ "$TERMUX_APP_PACKAGE" != "com.termux" ]; then
+		while IFS= read -r -d '' file; do
+			sed -i "s|/data/data/com\.termux|/data/data/${TERMUX_APP_PACKAGE}|g" "$file"
+		done < <(grep -rIlZ '/data/data/com\.termux' . 2>/dev/null || true)
+	fi
+
 	# Remove lib/charset.alias which is installed by gettext-using packages:
 	rm -f lib/charset.alias
 
