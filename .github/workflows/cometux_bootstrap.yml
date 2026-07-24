@@ -57,3 +57,13 @@ jobs:
           name: bootstrap-archives
           path: bootstrap-output/*.zip
           if-no-files-found: error
+
+      # The same run builds every deb in the dependency closure; publish
+      # them as an artifact so the apt repository can be refreshed from
+      # the exact bits that went into the bootstrap.
+      - name: Upload built debs
+        uses: actions/upload-artifact@v4
+        with:
+          name: debs
+          path: output/*.deb
+          if-no-files-found: warn

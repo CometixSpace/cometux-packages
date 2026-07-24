@@ -27,6 +27,9 @@ termux_step_make_install() {
 	# Key for automatic builds (via CI).
 	install -Dm600 "$TERMUX_PKG_BUILDER_DIR/termux-autobuilds.gpg" "$GPG_SHARE_DIR"
 
+	# Cometux fork: signing key for the self-hosted apt repository.
+	install -Dm600 "$TERMUX_PKG_BUILDER_DIR/cometixspace.gpg" "$GPG_SHARE_DIR"
+
 	# Key for pacman package manager.
 	install -Dm600 "$TERMUX_PKG_BUILDER_DIR/termux-pacman.gpg" "$GPG_SHARE_DIR"
 
