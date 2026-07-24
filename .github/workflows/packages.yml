@@ -6,6 +6,7 @@ on:
     - master
     - dev
     - 'dev/**'
+    - cometux
     paths:
     - 'packages/**'
     - 'root-packages/**'
@@ -505,3 +506,73 @@ jobs:
             fi
           fi
         done
+
+  # Cometux fork: publish built debs to the self-hosted apt repository on
+  # GitHub Pages. Debs are routed to termux-main or termux-root by their
+  # recipe directory. Serialized via concurrency group so parallel runs
+  # cannot race the gh-pages push.
+  publish-cometux-repo:
+    needs: build
+    if: github.event_name != 'pull_request' && github.ref == 'refs/heads/cometux'
+    permissions:
+      contents: write
+    concurrency:
+      group: cometux-apt-repo-publish
+      cancel-in-progress: false
+    runs-on: ubuntu-latest
+    steps:
+      - name: Clone recipes (for repo routing)
+        uses: actions/checkout@v4
+        with:
+          path: recipes
+      - name: Clone gh-pages
+        uses: actions/checkout@v4
+        with:
+          ref: gh-pages
+          path: pages
+      - name: Download built debs
+        uses: actions/download-artifact@v6
+        with:
+          pattern: debs-aarch64-*
+          path: artifacts
+      - name: Import signing key
+        run: echo "${{ secrets.APT_SIGNING_KEY }}" | base64 -d | gpg --import
+      - name: Rebuild repository trees
+        run: |
+          set -e
+          pip install --quiet termux-apt-repo
+          mkdir -p main-pool root-pool incoming
+          find artifacts -name '*.tar' -exec tar xf {} -C incoming \;
+          find incoming -name '*.deb' -exec mv {} incoming/ \; 2>/dev/null || true
+          # Existing pool from the live repo.
+          cp pages/termux-main/dists/stable/main/binary-aarch64/*.deb main-pool/ 2>/dev/null || true
+          cp pages/termux-main/dists/stable/main/binary-all/*.deb main-pool/ 2>/dev/null || true
+          cp pages/termux-root/dists/root/stable/binary-aarch64/*.deb root-pool/ 2>/dev/null || true
+          cp pages/termux-root/dists/root/stable/binary-all/*.deb root-pool/ 2>/dev/null || true
+          # Route new debs by recipe directory; new versions overwrite old.
+          for deb in incoming/*.deb; do
+            [ -f "$deb" ] || continue
+            pkg="$(basename "$deb")"; pkg="${pkg%%_*}"
+            if [ -d "recipes/root-packages/$pkg" ]; then
+              dest=root-pool
+            else
+              dest=main-pool
+            fi
+            # Drop older versions of the same package before adding.
+            find "$dest" -name "${pkg}_*.deb" -delete
+            mv "$deb" "$dest/"
+          done
+          rm -rf pages/termux-main pages/termux-root
+          termux-apt-repo -s main-pool pages/termux-main stable main
+          if ls root-pool/*.deb >/dev/null 2>&1; then
+            termux-apt-repo -s root-pool pages/termux-root root stable
+          fi
+      - name: Push gh-pages
+        run: |
+          cd pages
+          touch .nojekyll
+          git config user.name "Cometux CI"
+          git config user.email "ci@cometix.dev"
+          git add -A
+          git commit -m "apt repo refresh (run ${{ github.run_id }})" || exit 0
+          git push
