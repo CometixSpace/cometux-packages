@@ -17,7 +17,9 @@ on:
       architectures:
         description: "Comma-separated architectures to assemble"
         required: false
-        default: "aarch64,arm,i686,x86_64"
+        # Only aarch64 is published to the repository, so it is the only
+        # architecture that can be assembled from it.
+        default: "aarch64"
       repository:
         description: "APT repository base url to pull packages from"
         required: false

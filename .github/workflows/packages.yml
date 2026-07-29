@@ -41,7 +41,14 @@ jobs:
     runs-on: ubuntu-26.04
     strategy:
       matrix:
-        target_arch: [aarch64, arm, i686, x86_64]
+        # Cometux ships aarch64 only, matching the bootstrap and the
+        # embedded APK payload. Building the other three was pure waste:
+        # the publish job never collected them, so the repository held no
+        # debs for those architectures, so their builds could not resolve
+        # a single dependency from the repo and compiled everything from
+        # source — which is how unrelated upstream source hosts kept
+        # breaking rounds that aarch64 sailed through.
+        target_arch: [aarch64]
       fail-fast: false
     steps:
     - name: Clone repository
