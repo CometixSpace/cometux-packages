@@ -1,0 +1,100 @@
+# Cometux-specific workflow (not from upstream). Publishes the debs of
+# an already-finished run into the apt repository.
+#
+# The publish job in packages.yml is gated on the whole build matrix
+# succeeding. When a run produces good aarch64 debs but is marked failed
+# for an unrelated reason, those debs are stranded in the artifact store
+# with no way to reach the repository short of rebuilding everything.
+# This takes the run id and publishes them.
+name: Cometux publish from run
+
+on:
+  workflow_dispatch:
+    inputs:
+      run_id:
+        description: "Run id whose debs should be published"
+        required: true
+
+permissions: {}
+
+concurrency:
+  group: cometux-apt-repo-publish
+  cancel-in-progress: false
+
+jobs:
+  publish:
+    permissions:
+      contents: write
+      actions: read
+    runs-on: ubuntu-latest
+    steps:
+      - name: Clone recipes (for repo routing)
+        uses: actions/checkout@v4
+        with:
+          path: recipes
+
+      - name: Clone gh-pages
+        uses: actions/checkout@v4
+        with:
+          ref: gh-pages
+          path: pages
+
+      - name: Download debs from the source run
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          set -e
+          mkdir -p artifacts
+          gh run download "${{ inputs.run_id }}" \
+            --repo "${{ github.repository }}" \
+            --pattern 'debs-aarch64-*' \
+            --dir artifacts
+          find artifacts -name '*.tar' | head -20
+
+      - name: Import signing key
+        run: echo "${{ secrets.APT_SIGNING_KEY }}" | base64 -d | gpg --import
+
+      - name: Rebuild repository trees
+        run: |
+          set -e
+          pip install --quiet termux-apt-repo
+          mkdir -p main-pool root-pool incoming
+          find artifacts -name '*.tar' -exec tar xf {} -C incoming \;
+          find incoming -name '*.deb' -exec mv {} incoming/ \; 2>/dev/null || true
+          cp pages/termux-main/dists/stable/main/binary-aarch64/*.deb main-pool/ 2>/dev/null || true
+          cp pages/termux-main/dists/stable/main/binary-all/*.deb main-pool/ 2>/dev/null || true
+          cp pages/termux-root/dists/root/stable/binary-aarch64/*.deb root-pool/ 2>/dev/null || true
+          cp pages/termux-root/dists/root/stable/binary-all/*.deb root-pool/ 2>/dev/null || true
+          for deb in incoming/*.deb; do
+            [ -f "$deb" ] || continue
+            pkg="$(basename "$deb")"; pkg="${pkg%%_*}"
+            if [ -d "recipes/root-packages/$pkg" ]; then
+              dest=root-pool
+            else
+              dest=main-pool
+            fi
+            find "$dest" -name "${pkg}_*.deb" -delete
+            mv "$deb" "$dest/"
+          done
+          rm -rf pages/termux-main pages/termux-root
+          termux-apt-repo -s main-pool pages/termux-main stable main
+          if ls root-pool/*.deb >/dev/null 2>&1; then
+            termux-apt-repo -s root-pool pages/termux-root root stable
+          fi
+          # Builds fetch Release + a detached Release.gpg; termux-apt-repo
+          # only writes the inline-signed InRelease.
+          for dist_dir in pages/termux-main/dists/stable pages/termux-root/dists/root; do
+            [ -f "$dist_dir/Release" ] || continue
+            gpg --batch --yes --armor --detach-sign \
+              --output "$dist_dir/Release.gpg" "$dist_dir/Release"
+          done
+
+      - name: Push gh-pages
+        run: |
+          cd pages
+          touch .nojekyll
+          git config user.name "Cometux CI"
+          git config user.email "ci@cometix.dev"
+          git add -A
+          git commit -m "apt repo refresh from run ${{ inputs.run_id }}" || exit 0
+          git push
