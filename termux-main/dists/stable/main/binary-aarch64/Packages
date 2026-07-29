@@ -1859,6 +1859,37 @@ SHA1: f77227e39a3341f119cdcd043ee694da52ab9e84
 SHA256: d1f062e804414e5c1ec1f71598c5451bfaa145a7ee340c128ffc413fa9419227
 SHA512: b5c6a62f9f49972c11edc38176c7a806ee4b8e5c5a333148cc69ecac220306dbe89f7859555a9287d34b247a82d24ef05f75ae89e65c8d586ce323e822b319f8
 
+Package: libpcap-static
+Architecture: aarch64
+Installed-Size: 416
+Maintainer: @termux
+Version: 1.10.5-1
+Homepage: https://www.tcpdump.org
+Depends: libpcap (= 1.10.5-1)
+Description: Static libraries for libpcap
+Filename: dists/stable/main/binary-aarch64/libpcap-static_1.10.5-1_aarch64.deb
+Size: 101496
+MD5Sum: c534ceb4b84d8b55a6d3611b86ee776b
+SHA1: 572403a834315a3d8434618fd8114269ef55e964
+SHA256: 7759ed9d77c245a63edf1fe8283182eed3f8d164de394b32ef6e215802005776
+SHA512: 5ecff5da8bd73ef590ccea35d9bb623003128de7e7185a6b655d22100adbff21f0f055eee69f2b1c902164ccf510b6d34f356c85df0579526d5429326c307852
+
+Package: libpcap
+Architecture: aarch64
+Installed-Size: 780
+Maintainer: @termux
+Version: 1.10.5-1
+Homepage: https://www.tcpdump.org
+Breaks: libpcap-dev
+Replaces: libpcap-dev
+Description: Library for network traffic capture
+Filename: dists/stable/main/binary-aarch64/libpcap_1.10.5-1_aarch64.deb
+Size: 228608
+MD5Sum: d8a939337a5faae9820bba9d2ff9b634
+SHA1: 31bc7a5c3a32f8052701c50ce8d9ef20d15a8462
+SHA256: d8b4d12fc80647155e53f079c300313ae0848bc4af5c28cb098035a1ae61dd8d
+SHA512: c2d9b48e229313a727cb5512de3cb25aac188a04eb1eaecafe4aaf9286c93f32c8d66bef9ae2cb6c5d6bf1c01ee8408687a845dc2eea416cada2438ab2c3111f
+
 Package: libpng-static
 Architecture: aarch64
 Installed-Size: 336
