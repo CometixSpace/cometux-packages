@@ -38,10 +38,10 @@ Depends: ca-certificates (= 1:2026.07.16)
 Description: Common CA certificates (java keystore format)
 Filename: dists/stable/main/binary-all/ca-certificates-java_1:2026.07.16_all.deb
 Size: 95152
-MD5Sum: b0431ac55772a81e6ea7e77f488ae52c
-SHA1: c0cfd8d3925d07967c348df73acac46798ca28d0
-SHA256: a6b027bc82463f09afdd96b028e204919c3f47c0879214cec73bd3e9ca7b48c0
-SHA512: 5cc835c8020ddca02155669a14351df8dc6028c9f476749519b399df795fff0c974e98fde28a9be55a2ccc8bb3a7a8c3ddb11149231dea0169539b0907b800dd
+MD5Sum: e64673d742d2d5307b9a4ee7512e47c8
+SHA1: d3b8ddf5926f6317737b8c6c77ee1a6d776c6080
+SHA256: c4094a1c1bbeb8d2fc27eec7fc4a52d782093b8c0d15bd421396abb06eb95737
+SHA512: 7dc4558765c5e564b536e2a7e334e6d8e4105917eddfca8bf1979f0b6286f6184baabdf4f9a30fe23f71a374447782457b4d721123d900bb8926d5cac8d10a6c
 
 Package: ca-certificates
 Architecture: all
@@ -51,11 +51,11 @@ Version: 1:2026.07.16
 Homepage: https://curl.se/docs/caextract.html
 Description: Common CA certificates
 Filename: dists/stable/main/binary-all/ca-certificates_1:2026.07.16_all.deb
-Size: 104216
-MD5Sum: 13f0e2b124b07993da2d75402acccaa0
-SHA1: 020dbcebf5aa333c48b3856fc69e8c78ac149f0a
-SHA256: d06ee09e8a9099909bdc65951ece63f1f6f343f1e58948ea192ee405d425ea6f
-SHA512: f55664fa2a9e129015cfe9ed377b56280e12cd0448a6876e5d8cab952aa49652b5112be0f93a4d7bc35b140007f94a274f07b2cf685e80892ecb15df5a03129c
+Size: 104204
+MD5Sum: fea319e4b5a04ca45db53cbe6776e588
+SHA1: 96fce0189fcabec4a9a57f2593b2ebf189c4387f
+SHA256: 15ac009148fcb9fda7946be09ded0d156c2acaa491cd1e7d91704758d3471348
+SHA512: 0dcea8a0cbc7a59c20d026b2d0500578bc91ae025432bf2a6ad191e30fd0dea13c4cb80fd85d7301baa051eb6674dd8431bda921c7b4cf91fe00079360b1fb01
 
 Package: docbook-xml
 Architecture: all
