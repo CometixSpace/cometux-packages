@@ -13,7 +13,7 @@
     "url": "https://cometixspace.github.io/cometux-packages/termux-root"
   },
   "x11-packages": {
-    "name": "termux-main",
+    "name": "termux-x11",
     "distribution": "stable",
     "component": "main",
     "url": "https://cometixspace.github.io/cometux-packages/termux-main"
