@@ -1,0 +1,15 @@
+Package: iptables
+Architecture: aarch64
+Installed-Size: 1496
+Maintainer: @termux
+Version: 1.8.13
+Homepage: https://www.netfilter.org/projects/iptables
+Depends: libmnl, libnftnl, libandroid-spawn
+Description: Program used to configure the Linux 2.4 and later kernel packet filtering ruleset
+Filename: dists/root/stable/binary-aarch64/iptables_1.8.13_aarch64.deb
+Size: 325840
+MD5Sum: 7345fe6c104092a386a58b4d9df691ce
+SHA1: 20754d2cfa48d8a41b14adcc3890647b71847724
+SHA256: 934bb09ce212e18a1afc759518c8a253e69906dfac93f8531828444516167f75
+SHA512: 997133e03f69d57d454cefaf703647403f8ad680d8728af2e1184a80d16e02bb9a97286a8d28e441e7d9a109eb5d3d572db82978bd294ba5909ecd6f63a8075b
+

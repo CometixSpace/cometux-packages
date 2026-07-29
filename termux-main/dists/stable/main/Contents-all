@@ -19185,6 +19185,11 @@ data/data/dev.cometix.cometux/files/usr/share/ri/3.4.0/system/syntax/page-patter
 data/data/dev.cometix.cometux/files/usr/share/ri/3.4.0/system/syntax/page-precedence_rdoc.ri ruby-ri
 data/data/dev.cometix.cometux/files/usr/share/ri/3.4.0/system/syntax/page-refinements_rdoc.ri ruby-ri
 data/data/dev.cometix.cometux/files/usr/share/ri/3.4.0/system/yjit/page-yjit_md.ri ruby-ri
+data/data/dev.cometix.cometux/files/usr/bin/sudo                                 sudo
+data/data/dev.cometix.cometux/files/usr/libexec/installed-tests/sudo/sudo_tests  sudo
+data/data/dev.cometix.cometux/files/usr/share/doc/sudo/copyright                 sudo
+data/data/dev.cometix.cometux/files/usr/share/doc/sudo/examples/sudo.config      sudo
+data/data/dev.cometix.cometux/files/usr/share/doc/sudo/licenses/agnostic-apollo__sudo__MIT.md sudo
 data/data/dev.cometix.cometux/files/usr/bin/am                                   termux-am
 data/data/dev.cometix.cometux/files/usr/libexec/termux-am/am.apk                 termux-am
 data/data/dev.cometix.cometux/files/usr/share/doc/termux-am/copyright            termux-am
@@ -19224,6 +19229,9 @@ data/data/dev.cometix.cometux/files/usr/share/LICENSES/VIM License.txt          
 data/data/dev.cometix.cometux/files/usr/share/LICENSES/WTFPL.txt                 termux-licenses
 data/data/dev.cometix.cometux/files/usr/share/LICENSES/wxWindows.txt             termux-licenses
 data/data/dev.cometix.cometux/files/usr/share/doc/termux-licenses/copyright      termux-licenses
+data/data/dev.cometix.cometux/files/usr/bin/sudo                                 tsu
+data/data/dev.cometix.cometux/files/usr/bin/tsu                                  tsu
+data/data/dev.cometix.cometux/files/usr/share/doc/tsu/copyright                  tsu
 data/data/dev.cometix.cometux/files/usr/etc/fonts/conf.d/20-unhint-small-dejavu-sans-mono.conf ttf-dejavu
 data/data/dev.cometix.cometux/files/usr/etc/fonts/conf.d/20-unhint-small-dejavu-sans.conf ttf-dejavu
 data/data/dev.cometix.cometux/files/usr/etc/fonts/conf.d/20-unhint-small-dejavu-serif.conf ttf-dejavu

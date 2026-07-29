@@ -37,11 +37,11 @@ Homepage: https://curl.se/docs/caextract.html
 Depends: ca-certificates (= 1:2026.07.16)
 Description: Common CA certificates (java keystore format)
 Filename: dists/stable/main/binary-all/ca-certificates-java_1:2026.07.16_all.deb
-Size: 95128
-MD5Sum: a0076f801a32f7d3e0142bdd7d3bd75e
-SHA1: 510d445e141d80a57f136ee1cb04de293642b07c
-SHA256: a28bd1c0ff2cfda96497467a2938c08ee5cceaba5b6bccf6a0280e40af539427
-SHA512: d0c6053607a496464628a76e4dbfa8985e82a25c9f032c8065f52878074c4a7ec83fc0bdca64841ea4336fc6b6caa580cbd5cdc4fe70db6017500208b7048fad
+Size: 95136
+MD5Sum: 5a690f3afb4e9dc5662636c923ff8f7a
+SHA1: 8a2a276864b83619d3fee390b8ec41c52480e673
+SHA256: 0e4e85727b452ef04a40c30a3650819fc5ec50ee3ce9582a707b43d9de544136
+SHA512: ff0881511a05e2a899e51058b9942cad62ddf9de3979b7081883e1a1ae0cb624d9b757d94ca4bad6d04e64f2515433eb232e2f978bb6d13c01965931ac56c119
 
 Package: ca-certificates
 Architecture: all
@@ -51,11 +51,11 @@ Version: 1:2026.07.16
 Homepage: https://curl.se/docs/caextract.html
 Description: Common CA certificates
 Filename: dists/stable/main/binary-all/ca-certificates_1:2026.07.16_all.deb
-Size: 104200
-MD5Sum: 08f8914f1a01bd93be246e54887998e4
-SHA1: 9444c75ba2b078806193e20b4dc3d296363f412f
-SHA256: 7103fb0494d3e1abda7c70423c9301a00b8950353cc560fd8297774e0b54ce01
-SHA512: ed7f014679ff8384c9862badde740f90093b1b91f2b53ab57960bda25d4c6ea8c20e15998f40060d4744dfa265ec6e89ebbd16a1a8f62aaff499e5036dc0a0c9
+Size: 104216
+MD5Sum: 13f0e2b124b07993da2d75402acccaa0
+SHA1: 020dbcebf5aa333c48b3856fc69e8c78ac149f0a
+SHA256: d06ee09e8a9099909bdc65951ece63f1f6f343f1e58948ea192ee405d425ea6f
+SHA512: f55664fa2a9e129015cfe9ed377b56280e12cd0448a6876e5d8cab952aa49652b5112be0f93a4d7bc35b140007f94a274f07b2cf685e80892ecb15df5a03129c
 
 Package: docbook-xml
 Architecture: all
@@ -183,6 +183,23 @@ SHA1: 27e5ff79836584d0e5e1e64163415ad61f366da6
 SHA256: 2d239a210b7a4dce449f2b9c45370e7026b549f41b851537dc30594699a8d24a
 SHA512: b9947e6d355b2d8e494634b1c6dfb0832eba0d02d452bf8747a7956f5fdda671d2934a6ab01ce47b821eb8bd3c46738490435fc79d919884d5abf0d199cf683e
 
+Package: sudo
+Architecture: all
+Installed-Size: 464
+Maintainer: @agnostic-apollo
+Version: 1.2.0
+Homepage: https://github.com/agnostic-apollo/sudo
+Depends: bash
+Conflicts: tsu
+Replaces: tsu
+Description: A wrapper script to drop to the supported shells or execute shell script files or their text passed as an argument as the root (superuser) user in the Termux app
+Filename: dists/stable/main/binary-all/sudo_1.2.0_all.deb
+Size: 53388
+MD5Sum: b70b995fd9525beb65007520428757cb
+SHA1: dcdd9175e3ce110c7f71161903737cbe80657a19
+SHA256: fccb3ab40d3ecc70ceddacd4755419fd566b83716fdb0e924bdfca7c39f44e20
+SHA512: 20e74cc64234586a31bf0b0c940bb362bd8a222a3066a3ebc33e0169bc8e257dcbaf940491834b9d500738d8d0a03196ce13a276a816ad6e7a26c3da0b36150e
+
 Package: termux-am
 Architecture: all
 Installed-Size: 620
@@ -192,11 +209,11 @@ Homepage: https://github.com/termux/TermuxAm
 Conflicts: termux-tools (<< 0.51)
 Description: Android Oreo-compatible am command reimplementation
 Filename: dists/stable/main/binary-all/termux-am_0.8.0-2_all.deb
-Size: 577128
-MD5Sum: 7606badcfc53fe526e096147b8132b4d
-SHA1: 0cb56c26a3eff37c9ac82bbc0a28c908c27e85c0
-SHA256: 5fbc4d5a61ced56dba8e10a3382d234e8cf87b6ba40e54e7c62c6d541906bdb2
-SHA512: 31f5cf6ee005951f9624651bd65898aef3c06f67055ea2d4d878677eae8745b5d6f8d940828c26763db8bb1f658a8c632674ce211dfebfbd6bce1cdcf79070b0
+Size: 577132
+MD5Sum: 9da103a34626b5e847597e2a063a57c8
+SHA1: e148bda1186d8e27effe85fd63ee4a90ee186969
+SHA256: e2fb06459543059f294e6e01b7213a56e40737ed358b589a27e45b91afc25a5b
+SHA512: 9e30154ed58961f4511f7dde975607e4e387e1313c7d3ccfcfc42cb037d95e867cffc7233098fd90b1f61226f9b5dfe946dc706571a1fdda5c5e9da45a7ad85f
 
 Package: termux-licenses
 Architecture: all
@@ -228,6 +245,20 @@ MD5Sum: cade333f7fe0438e38c12f279859aeac
 SHA1: 1b8a4be91764713a5704b8e8c5d5c537e9b44a44
 SHA256: 4390d85210655fe33e832e250d08b76d5c5714914f49c77e9215301ca63b1a69
 SHA512: 292eb19768b90b75bd76d0e2c14c1379229e603dc829bdd0416f7b84e801bf22ac36b99a29131081b38787741fcb2826aa23fa357fcee696a78134c374865039
+
+Package: tsu
+Architecture: all
+Installed-Size: 52
+Maintainer: @termux
+Version: 8.6.0-1
+Homepage: https://github.com/cswl/tsu
+Description: A su wrapper for Termux
+Filename: dists/stable/main/binary-all/tsu_8.6.0-1_all.deb
+Size: 4400
+MD5Sum: b6ccb9bd0979385aad93077918a01769
+SHA1: 74c2277c4b847c852bd37c2ca7bdf175db95b901
+SHA256: 83b446d8b7be556bac33deabe63dbc0bc40160fa52123d66bb772c6dd42aaa4e
+SHA512: 8294e49c4c84e5d7b81cfcc15019cd9cade40c70e4f370b077ad22f036ea50eb049d9d7a6a7effeeebbdefc17c321066546a07d4c4872e9179ffec0739e1c981
 
 Package: ttf-dejavu
 Architecture: all

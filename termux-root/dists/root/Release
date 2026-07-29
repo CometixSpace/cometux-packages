@@ -1,0 +1,27 @@
+Codename: termux
+Version: 1
+Architectures: aarch64
+Description: root repository
+Suite: root
+Date: Wed, 29 Jul 2026 07:07:58 UTC
+Components: stable
+MD5Sum:
+ 587fdc504360ac864c0dc2fa9c82f3a1 673 stable/binary-aarch64/Packages
+ df1e2201bf7ebb3a07ff17d305077ea0 552 stable/binary-aarch64/Packages.xz
+ fd03f3e150b0dd88a4eda8a24ac91e42 7484 stable/Contents-aarch64
+ 3e961541a6e648178ec36fb2fdba68d6 620 stable/Contents-aarch64.xz
+SHA1:
+ c24e246f1a8c34208b8a068c1548f67e161f1f99 673 stable/binary-aarch64/Packages
+ 2ad39bd372b97a8a625ce85637ce29c5303320d0 552 stable/binary-aarch64/Packages.xz
+ 325780ef54da2319490b632bea7fdd469c707d47 7484 stable/Contents-aarch64
+ e5befb4a06d48e3268dae849ec0fc6902b35a197 620 stable/Contents-aarch64.xz
+SHA256:
+ cd10cce218a317e57d75af421b7ed2bf2fb25b369ad38d3b88dd9efb3008b455 673 stable/binary-aarch64/Packages
+ 19bf082f2514eea837de4877553fc52bd8484ff5b4054be9d3d457cfae7904ae 552 stable/binary-aarch64/Packages.xz
+ 48c7f5978e7780bd96ace49e996b863346c8cc986cc812311902aadbec2cca20 7484 stable/Contents-aarch64
+ 3319d0824260e405e980d8dbc96a9cfd58d2e7c0f918acc4f4c5b9c7e99cc3d7 620 stable/Contents-aarch64.xz
+SHA512:
+ 0f9ffa6783e8bcd475e189a988d5e66a0e1c974a05ca6caa95362e356fa9a04ca4d43ae9447c72da9f6d731f501023ace7efae56182def9e6fbd086642cc31f7 673 stable/binary-aarch64/Packages
+ ebf93b087eb95ac54d1eea934e8eb2a6eaa9f67039dd024b8b1d879e348013eb71b1271d3b467c118e051af8be04018a616270ccc4e514598133ed101cc569a7 552 stable/binary-aarch64/Packages.xz
+ 772fe7cabff4ed6d0eaa0e1b697de91e419c4b79390c20caa6764b4daf443843d501590bfcdacdba4bd29b804ac107a90fed95e7c6ef1c4d797fdf4c3835cf09 7484 stable/Contents-aarch64
+ 87e488177a7ab31f320f4ae35c6bdaf91112a0b329ae3856676f5126908304d1544f2d2386864d20ebccafe8c91d798a2fd4e74ba83da040ae08d529cf0c3f5c 620 stable/Contents-aarch64.xz
