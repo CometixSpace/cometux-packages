@@ -81,3 +81,6 @@ data/data/dev.cometix.cometux/files/usr/share/man/man8/xtables-monitor.8.gz     
 data/data/dev.cometix.cometux/files/usr/share/man/man8/xtables-nft.8.gz          iptables
 data/data/dev.cometix.cometux/files/usr/share/man/man8/xtables-translate.8.gz    iptables
 data/data/dev.cometix.cometux/files/usr/share/xtables/iptables.xslt              iptables
+data/data/dev.cometix.cometux/files/usr/bin/tcpdump                              tcpdump
+data/data/dev.cometix.cometux/files/usr/share/doc/tcpdump/copyright              tcpdump
+data/data/dev.cometix.cometux/files/usr/share/man/man1/tcpdump.1.gz              tcpdump
