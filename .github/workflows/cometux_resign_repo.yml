@@ -1,0 +1,59 @@
+# Cometux-specific workflow (not from upstream). Re-signs the published
+# apt repositories in place, without rebuilding anything.
+#
+# Exists to break a circular dependency: the build now pulls prebuilt
+# dependencies from our repository (-I), and termux_get_repo_files
+# requires a detached Release.gpg next to Release. That signature is
+# produced by the publish job, which only runs after a successful
+# build — so a repository missing Release.gpg cannot recover on its own.
+#
+# Also useful for key rotation or repairing a bad signature.
+name: Cometux resign repo
+
+on:
+  workflow_dispatch:
+
+permissions: {}
+
+concurrency:
+  group: cometux-apt-repo-publish
+  cancel-in-progress: false
+
+jobs:
+  resign:
+    permissions:
+      contents: write
+    runs-on: ubuntu-latest
+    steps:
+      - name: Clone gh-pages
+        uses: actions/checkout@v4
+        with:
+          ref: gh-pages
+          path: pages
+
+      - name: Import signing key
+        run: echo "${{ secrets.APT_SIGNING_KEY }}" | base64 -d | gpg --import
+
+      - name: Sign Release files
+        run: |
+          set -e
+          signed=0
+          while IFS= read -r release; do
+            gpg --batch --yes --armor --detach-sign \
+              --output "${release}.gpg" "$release"
+            echo "signed $release"
+            signed=$((signed + 1))
+          done < <(find pages -type f -path '*/dists/*' -name Release)
+          if [ "$signed" -eq 0 ]; then
+            echo "No Release files found under pages/" >&2
+            exit 1
+          fi
+
+      - name: Push gh-pages
+        run: |
+          cd pages
+          git config user.name "Cometux CI"
+          git config user.email "ci@cometix.dev"
+          git add -A
+          git commit -m "sign Release files (run ${{ github.run_id }})" || exit 0
+          git push
