@@ -175,6 +175,21 @@ SHA1: a90bfeaa400fe98b0812bb65086eefceda7d6053
 SHA256: ef990a29f51914356f493b19744ccb4fe0165e47fb880efee3e00ab4b3366945
 SHA512: fff149aaa722e2d55ada00b1d804441476151c7d8c19538a908d57f620b297b3c90dc26e2567b5d4d39eb06fcb32408d50c1b389cd7fdcaa1e80f914df44c6b1
 
+Package: bsdtar
+Architecture: aarch64
+Installed-Size: 1520
+Maintainer: @termux
+Version: 3.8.9
+Homepage: https://www.libarchive.org/
+Depends: libarchive (= 3.8.9)
+Description: The tar(1) and cpio(1) programs from FreeBSD, using libarchive
+Filename: dists/stable/main/binary-aarch64/bsdtar_3.8.9_aarch64.deb
+Size: 351804
+MD5Sum: d104531be1d7c2c3b1bf82779f08b042
+SHA1: 21e282290e881f41fb8179c2be3bfcc44ef06650
+SHA256: a1712a13980d4fc451ef7fdb1342054ba8a682ac45082edeb4a5b4c700ae6d22
+SHA512: f0b9576ba178ec972853b1a8c324e119446e40c83e4f0a68ab30d8b6762fab895df45dbb3eaa389a43dff5d74967d190e4e819bf8ff739cc134a6959b8c419b1
+
 Package: bzip2
 Architecture: aarch64
 Installed-Size: 120
@@ -1191,6 +1206,38 @@ SHA1: fed2cb7722e93202bb6ea369521de5162b946285
 SHA256: 9d92ccfe7b85181e448323a3fc772534f89b1a4a3807df8e690e1ab65d852529
 SHA512: 2ef4db78d7ce69588fb0968af971b7673a291625b8fab5d3274251dcc89ac5a3a1d2b482e20d40670149885bdab21141fb4ecc8f8e0fce3be8a6b161e155bf22
 
+Package: libarchive-static
+Architecture: aarch64
+Installed-Size: 2044
+Maintainer: @termux
+Version: 3.8.9
+Homepage: https://www.libarchive.org/
+Depends: libarchive (= 3.8.9)
+Description: Static libraries for libarchive
+Filename: dists/stable/main/binary-aarch64/libarchive-static_3.8.9_aarch64.deb
+Size: 363228
+MD5Sum: 9d42d298f5d07ccc9b9cec82b5658afa
+SHA1: c663a754926f7d5cd75a3b8283c864bcd9a7da80
+SHA256: d580b81dd81f714eedb2bb03611a8806a3f0b5bf460c9334ecd7a2e6b71afa88
+SHA512: 52466b6779dbb138d0830ee8a75516bd220db35f730247b6d75337b0cb8c9c8cf4a362f0befbffacdd67a24251e95bdda8e5697c73c6b7eddee5ec1ea578073a
+
+Package: libarchive
+Architecture: aarch64
+Installed-Size: 1040
+Maintainer: @termux
+Version: 3.8.9
+Homepage: https://www.libarchive.org/
+Breaks: libarchive-dev
+Depends: libbz2, libiconv, liblzma, libxml2, openssl, zlib
+Replaces: libarchive-dev
+Description: Multi-format archive and compression library
+Filename: dists/stable/main/binary-aarch64/libarchive_3.8.9_aarch64.deb
+Size: 394440
+MD5Sum: 3eb5ede21ead8426e95eb63aaf79630c
+SHA1: f4ddf282f4be32d9d7868687154672a10e10d6e2
+SHA256: 6b54da6415ce7c4060a0be002ead2ec8f2e904141e040166defb414e6cae3c3f
+SHA512: 816fb20929759fe820820ddbc70129acc20afb8eb9793f780bac440de2b6fc2b4bb514a35c93f00541e2f54b5d9fa0e2bd8d22bb10bc7543423a4b2f246486f3
+
 Package: libassuan-static
 Architecture: aarch64
 Installed-Size: 180
@@ -2064,34 +2111,34 @@ SHA512: 6d50d2f8ea99373f07fa60175f2cd20a96facd277b2ddec1390a15bc77d7fa036780df60
 
 Package: libnghttp2-static
 Architecture: aarch64
-Installed-Size: 320
+Installed-Size: 324
 Maintainer: @termux
-Version: 1.69.0
+Version: 1.70.0
 Homepage: https://nghttp2.org/
-Depends: libnghttp2 (= 1.69.0)
+Depends: libnghttp2 (= 1.70.0)
 Description: Static libraries for libnghttp2
-Filename: dists/stable/main/binary-aarch64/libnghttp2-static_1.69.0_aarch64.deb
-Size: 63812
-MD5Sum: d3300f32671d35c5fee2936ef30af037
-SHA1: d2c956d4da929a4be2afc609b1d25e1fd4fc408a
-SHA256: b96ccc695474693f103ea8566777e63917c2daa2f09f58e1539447b07dae9861
-SHA512: 4972eddb4531c568fbece08ec6e0f39cb3e359391151c998a2dfa1e08499947cf5e1229f73d25eed7cf2af93085bde748e2e0773612bf2b0f38e5ea6a1cd4482
+Filename: dists/stable/main/binary-aarch64/libnghttp2-static_1.70.0_aarch64.deb
+Size: 64060
+MD5Sum: 58576d3822aec9787a68da6dcbd91a84
+SHA1: b7cc426ca1b6068268eebf9c828908850526b9d6
+SHA256: 9b43fbbcf929c6d40f4f61cfabde17be849d833b5253d15fec6f2c98c3e98587
+SHA512: 22c8c72590549bc870bff6ccb93108507d662bdd850f5d4330feea517fbcb8800167d4c54ad4e8a1f5e2ebb241807d9a06690ac42eb308186e7cbce3605466b5
 
 Package: libnghttp2
 Architecture: aarch64
 Installed-Size: 520
 Maintainer: @termux
-Version: 1.69.0
+Version: 1.70.0
 Homepage: https://nghttp2.org/
 Breaks: libnghttp2-dev
 Replaces: libnghttp2-dev
 Description: nghttp HTTP 2.0 library
-Filename: dists/stable/main/binary-aarch64/libnghttp2_1.69.0_aarch64.deb
-Size: 95640
-MD5Sum: ad4e08b52f83836bdb4bcc39ece69a23
-SHA1: 25eabf0c674c0a43bb28c3259aedfc4e93aec668
-SHA256: bc11bdec513f7a78d8adf1064a6c90a5efc4cb871be4bd0a7b7f233f1ff4a7c2
-SHA512: 0c02f625a091d3a8e4dc01250a41b7126daf31f55cd1f0416ff1dea3a79295aad5996b7b54f03f68400f8a628516463585b7c4233a9c8e96d28ffc65faa59568
+Filename: dists/stable/main/binary-aarch64/libnghttp2_1.70.0_aarch64.deb
+Size: 95892
+MD5Sum: 4965c60b5ca075becaf74a5d6dfaaf68
+SHA1: 954a6e32c5dd67790a8733d03576a09f3b59ab50
+SHA256: becf2cda1d0f22e7b275045bf9c8462b01ee1dd1c3bf662546f3451c9795853a
+SHA512: 34023d7c462632e15b0af060d59108857d71c9645d0af07ad71e956ed883069664e4238d2739674bb1952a261c966e0775b12e60827de54550e9aaf5cdd4896b
 
 Package: libnghttp3-static
 Architecture: aarch64
@@ -4522,9 +4569,9 @@ SHA512: 6553d11050fa7cd1fdaa0858e5868a2c2a6e807aacb41d2fb888e08744da4680a0ac1620
 
 Package: vim
 Architecture: aarch64
-Installed-Size: 35032
+Installed-Size: 35092
 Maintainer: Joshua Kahn <tom@termux.dev>
-Version: 9.2.0800
+Version: 9.2.0850
 Homepage: https://www.vim.org
 Breaks: vim-python, vim-runtime
 Depends: libiconv, libsodium, ncurses
@@ -4534,12 +4581,12 @@ Replaces: vim-python, vim-runtime
 Provides: vim-python
 Suggests: luajit, perl, python, ruby, tcl
 Description: Vi IMproved - enhanced vi editor
-Filename: dists/stable/main/binary-aarch64/vim_9.2.0800_aarch64.deb
-Size: 6764432
-MD5Sum: 596c1e025509b851846a19048bbe78e3
-SHA1: a65ff97c887543c6d7b09876a0025f3a2d400740
-SHA256: 907ecdca4754aa26a590299aa8c9725b9c824245007a5a47fab1e7abc35dc0dc
-SHA512: 8575d7dccce659272f40b4966fb00ea6a77cb7f76c1f581b85801530fb631140d8ba204bc4edd62dd98d688a3d1681310b02fcee68ca5357ad53d7fcf3e044e3
+Filename: dists/stable/main/binary-aarch64/vim_9.2.0850_aarch64.deb
+Size: 6770320
+MD5Sum: 92235074a2648e61f257e61836084067
+SHA1: f2061651e10abc04bb3c7a7248a92dcca1b9b5b8
+SHA256: f1580489cc7268d0a4f3b6cbc84803c068a709cab2a310ee4723f6d0504e3afc
+SHA512: 6cd8eedae7a3e1dfe9f9b15f72199fcd54ea03a4e2673a4195b28488ac2f59af74fe6ac5069a39a7bb2418db36d227b220bafb127f81d771211157ebe87508a1
 
 Package: wget
 Architecture: aarch64
@@ -4590,15 +4637,15 @@ Package: xxd
 Architecture: aarch64
 Installed-Size: 68
 Maintainer: Joshua Kahn <tom@termux.dev>
-Version: 9.2.0800
+Version: 9.2.0850
 Homepage: https://www.vim.org
 Description: Hexdump utility from vim
-Filename: dists/stable/main/binary-aarch64/xxd_9.2.0800_aarch64.deb
-Size: 13492
-MD5Sum: be88d732669e30a347fbf1e7773e8cd9
-SHA1: a4792a82cbf7e468d5c38c8ad3c97350e238e1e1
-SHA256: f9ddcf5bbadcea993269516dec49cee55699a7fd281e55ab1bfb737ff976be16
-SHA512: 3668c1dc923c9177f95669be46dbd45270a4a60026ea1b8346f9089e18676b89a706aa8db4f0914de1b45b596b82559f14e3b13654fdac2968614aea7ee19191
+Filename: dists/stable/main/binary-aarch64/xxd_9.2.0850_aarch64.deb
+Size: 13500
+MD5Sum: eae56cf7764408bbb019d4828c2cabfe
+SHA1: 21cfaabda524b8db6a54938ca6197d837ddad9f9
+SHA256: 61fab2d001b619414c7bc4aa8458e99c5f30295fc7810fb341edb2d4fa4f798c
+SHA512: ec0b457f2d1a74b0872e84964d666f9964d77ce86f7de424c38f5036a3c3ae32040e8351c1a5bc9061a3585978934b9df6ad91116090e5d2f889df064767de14
 
 Package: xxhash-static
 Architecture: aarch64
