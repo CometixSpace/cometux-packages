@@ -128,9 +128,13 @@ jobs:
       - name: Process package updates
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          # Bump-only: builds are dispatched below, and issues stay off
-          # for the fork.
-          BUILD_PACKAGES: "false"
+          # BUILD_PACKAGES=false is upstream's dry-run mode: the updater
+          # returns before it ever rewrites a recipe, so the commit/push
+          # switches below are unreachable and every scheduled run is a
+          # no-op report. "true" is what actually bumps — each bumped
+          # recipe is rebuilt here as a verification gate before it is
+          # committed.
+          BUILD_PACKAGES: "true"
           CREATE_ISSUE: "false"
           GIT_COMMIT_PACKAGES: "true"
           GIT_PUSH_PACKAGES: "true"
@@ -141,17 +145,31 @@ jobs:
 
           git rev-parse HEAD > /tmp/before-updates
 
-          if [ "${{ github.event_name }}" == "workflow_dispatch" ]; then
+          if [ "${{ github.event_name }}" == "workflow_dispatch" ] \
+              && [ -n "${MANUAL_INPUT_PACKAGES// /}" ] \
+              && [ "${MANUAL_INPUT_PACKAGES}" != "@all" ]; then
             # Ensure MANUAL_INPUT_PACKAGES is newline free, and put it
             # into an array
             read -a PACKAGES <<< "${MANUAL_INPUT_PACKAGES//$'\n'/ }"
-            ./scripts/bin/update-packages "${PACKAGES[@]}"
           else
-            ./scripts/bin/update-packages "@all"
+            # Scheduled runs scan the maintained set rather than upstream's
+            # ~26000-recipe @all sweep: verification builds make an
+            # unbounded sweep a 6h-job-limit hazard.
+            readarray -t PACKAGES < <(
+              grep -vE '^\s*(#|$)' .github/cometux-maintained-packages.txt
+            )
           fi
+          echo "Scanning ${#PACKAGES[@]} recipes for updates."
+          # The updater exits non-zero when any single package fails its
+          # version probe (dead upstream URLs are routine across a set
+          # this size). Record it, but let the dispatch step below still
+          # run for whatever did get bumped.
+          ./scripts/bin/update-packages "${PACKAGES[@]}" \
+            || echo "updater exited $? — see SUMMARY above for failed probes"
       # Pushes made with the default token do not trigger workflows, so
       # dispatch the build for whatever the updater bumped.
       - name: Dispatch builds for updated packages
+        if: ${{ !cancelled() }}
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
