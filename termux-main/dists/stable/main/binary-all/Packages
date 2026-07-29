@@ -8,10 +8,10 @@ Depends: tor, apt (= 2.8.1-2)
 Description: APT transport for anonymous package downloads via Tor
 Filename: dists/stable/main/binary-all/apt-transport-tor_2.8.1-2_all.deb
 Size: 928
-MD5Sum: f14b30dcd1325138b2bf0afa83141722
-SHA1: 42090a9ff036ce4e6e905071d474c8c3eb1d58c7
-SHA256: b0c4465e5c8ed2c053c8e8e0a076123b826793188f8a13f6821e341dd9b9e970
-SHA512: 2ba5efe40e743383e03dd9135ad1a2546f8c95ebf30fc2b32b2b9a8dc2bc493d858604b324420c9b482f50f378922321dbd1ba5607a2b70a08d2a57fa473421a
+MD5Sum: 763e254964b864dc799d88a2c5e2056f
+SHA1: 1950236ac01075e039ca3b9e3a6ac68a426cd5f5
+SHA256: 5e8cd6d8533282fa0e54afd32e3e759e55dec8c5c2274dea4c0dcad553ee0693
+SHA512: 6ab487688c7f9b3775f80aa06eb45994053b4dfc4233d7686b01062c13716e3f2a424087666d090ea9444dd3727bf5fe62ad458783fb398aa55555abd0d144fd
 
 Package: bash-completion
 Architecture: all
