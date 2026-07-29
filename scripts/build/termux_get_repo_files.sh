@@ -46,14 +46,22 @@ termux_get_repo_files() {
 					fi
 
 					if [[ "$TERMUX_REPO_PKG_FORMAT" == "debian" ]]; then
+						# Fetch every list the Release advertises rather than
+						# stopping at the first hit. Upstream repos are aptly
+						# mirrors with no separate binary-all, so 'all' yields
+						# no hash there and the loop falls through to the real
+						# architecture. Ours is built by termux-apt-repo, which
+						# does emit binary-all — stopping early would leave the
+						# architecture's own list undownloaded, and every
+						# dependency lookup would miss and fall back to a
+						# source build.
 						for arch in all "${TERMUX_ARCH}"; do
 							PACKAGES_HASH="$(./scripts/get_hash_from_file.py "${RELEASE_FILE}" "${arch}" "${TERMUX_REPO_COMPONENT[$idx]}")"
 
 							# If packages_hash = "" then the repo probably doesn't contain debs for $arch
 							[[ -n "$PACKAGES_HASH" ]] && \
 								termux_download "${repo_base}/${TERMUX_REPO_COMPONENT[$idx]}/binary-$arch/Packages" \
-										"${TERMUX_COMMON_CACHEDIR}-$arch/${dl_prefix}-Packages" "$PACKAGES_HASH" && \
-								exit 0
+										"${TERMUX_COMMON_CACHEDIR}-$arch/${dl_prefix}-Packages" "$PACKAGES_HASH"
 						done
 					fi
 					exit 0

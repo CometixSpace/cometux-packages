@@ -40,7 +40,11 @@ termux_download_deb_pac() {
 			local PACKAGE_FILE_PATH="${TERMUX_REPO_NAME}-json"
 		fi
 		if [ "${PACKAGE_ARCH}" = 'all' ]; then
-			for arch in 'aarch64' 'arm' 'i686' 'x86_64'; do
+			# 'all' comes first for repos that keep a real binary-all list
+			# (termux-apt-repo does; aptly mirrors fold those packages into
+			# each architecture instead, where the rest of this list finds
+			# them).
+			for arch in 'all' 'aarch64' 'arm' 'i686' 'x86_64'; do
 				if [ -f "${TERMUX_COMMON_CACHEDIR}-${arch}/${PACKAGE_FILE_PATH}" ]; then
 					if [ "$TERMUX_REPO_PKG_FORMAT" = "debian" ]; then
 						read -rd "\n" PKG_PATH PKG_HASH < <(./scripts/get_hash_from_file.py "${TERMUX_COMMON_CACHEDIR}-${arch}/$PACKAGE_FILE_PATH" "$PACKAGE" "$VERSION")
