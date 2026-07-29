@@ -664,6 +664,13 @@ if [[ "${TERMUX_INSTALL_DEPS-false}" == "true" || "${TERMUX_PACKAGE_LIBRARY-bion
 		gpg --import "$TERMUX_SCRIPTDIR/packages/termux-keyring/termux-pacman.gpg"
 		gpg --no-tty --command-file <(echo -e "trust\n5\ny") --edit-key 998DE27318E867EA976BA877389CEED64573DFCA
 	}
+	# Cometux repository signing key: repo.json points at our own
+	# repository, so its Release signature is what actually gets verified
+	# here.
+	gpg --list-keys 6D59C9CE4039D8621A879EFF38EC3D44BD6B8BD0 > /dev/null 2>&1 || {
+		gpg --import "$TERMUX_SCRIPTDIR/packages/termux-keyring/cometixspace.gpg"
+		gpg --no-tty --command-file <(echo -e "trust\n5\ny") --edit-key 6D59C9CE4039D8621A879EFF38EC3D44BD6B8BD0
+	}
 fi
 
 for (( i=0; i < ${#PACKAGE_LIST[@]}; i++ )); do

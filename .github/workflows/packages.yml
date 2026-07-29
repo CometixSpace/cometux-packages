@@ -567,6 +567,16 @@ jobs:
           if ls root-pool/*.deb >/dev/null 2>&1; then
             termux-apt-repo -s root-pool pages/termux-root root stable
           fi
+          # termux-apt-repo only emits the inline-signed InRelease, which
+          # is what apt on device prefers. The build scripts
+          # (termux_get_repo_files) fetch Release plus a detached
+          # Release.gpg instead, and abort the build if it 404s — so sign
+          # Release separately as well.
+          for dist_dir in pages/termux-main/dists/stable pages/termux-root/dists/root; do
+            [ -f "$dist_dir/Release" ] || continue
+            gpg --batch --yes --armor --detach-sign \
+              --output "$dist_dir/Release.gpg" "$dist_dir/Release"
+          done
       - name: Push gh-pages
         run: |
           cd pages
