@@ -1,16 +1,27 @@
-# Cometux-specific workflow (not from upstream): builds bootstrap
-# archives from local package sources via build-bootstraps.sh, which is
-# designed for forked apps and needs no published apt repo. Kept as a
-# separate file so upstream rebases never conflict.
+# Cometux-specific workflow (not from upstream). Assembles bootstrap
+# archives the way upstream does: pull already-built debs from the
+# self-hosted apt repository rather than compiling the world locally.
+#
+# The older build-bootstraps.sh path (build every package from source,
+# then extract) is what produced the ~135MB archives carrying build
+# residue and a broken dpkg-perl; generate-bootstraps.sh installs only
+# the runtime closure and lands around 30MB. It needs a published
+# repository, which is why it could not be used before group B.
+#
+# Kept as a separate file so upstream rebases never conflict.
 name: Cometux bootstrap
 
 on:
   workflow_dispatch:
     inputs:
       architectures:
-        description: "Space-separated architectures to build"
+        description: "Comma-separated architectures to assemble"
         required: false
-        default: "aarch64"
+        default: "aarch64,arm,i686,x86_64"
+      repository:
+        description: "APT repository base url to pull packages from"
+        required: false
+        default: "https://cometixspace.github.io/cometux-packages/termux-main"
 
 permissions: {}
 
@@ -23,27 +34,24 @@ jobs:
     permissions:
       contents: read
     runs-on: ubuntu-latest
-    timeout-minutes: 350
+    timeout-minutes: 60
     steps:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Free disk space
-        run: ./scripts/free-space.sh
-
-      # Our scripts/ diverges from the upstream ghcr image (extra SDK
-      # components for building termux-am from source, which the
-      # restricted AppArmor profile forbids installing at build time),
-      # so build the image locally instead of pulling.
-      - name: Build docker image
+      # generate-bootstraps.sh runs on the host: it only needs to fetch
+      # debs and repack them, so no builder image is involved.
+      - name: Install dependencies
         run: |
-          docker build -t ghcr.io/termux/package-builder:latest scripts/
-          docker buildx prune -af
+          sudo apt-get update
+          sudo apt-get install -y --no-install-recommends \
+            binutils curl jq xz-utils zip
 
-      - name: Build bootstrap archives from source
+      - name: Assemble bootstrap archives
         run: |
-          ./scripts/run-docker.sh ./scripts/build-bootstraps.sh \
-            --architectures "${{ inputs.architectures }}"
+          ./scripts/generate-bootstraps.sh \
+            --architectures "${{ inputs.architectures }}" \
+            --repository "${{ inputs.repository }}"
 
       - name: Collect artifacts
         run: |
@@ -51,26 +59,21 @@ jobs:
           find . -maxdepth 2 -name 'bootstrap-*.zip' -exec mv {} bootstrap-output/ \;
           ls -la bootstrap-output/
 
+      # Size is the whole point of this path, so make it visible in the
+      # run summary instead of only inside the artifact.
+      - name: Report archive sizes
+        run: |
+          {
+            echo "| archive | size |"
+            echo "|---|---|"
+            for f in bootstrap-output/*.zip; do
+              echo "| $(basename "$f") | $(du -h "$f" | cut -f1) |"
+            done
+          } >> "$GITHUB_STEP_SUMMARY"
+
       - name: Upload bootstrap archives
         uses: actions/upload-artifact@v4
         with:
           name: bootstrap-archives
           path: bootstrap-output/*.zip
           if-no-files-found: error
-
-      # The same run builds every deb in the dependency closure; publish
-      # them as an artifact so the apt repository can be refreshed from
-      # the exact bits that went into the bootstrap. Tarred first: deb
-      # names with epoch versions contain ':' which upload-artifact
-      # rejects (same reason packages.yml tars its debs).
-      - name: Pack built debs
-        run: |
-          if ls output/*.deb >/dev/null 2>&1; then
-            tar cf debs.tar -C output .
-          fi
-      - name: Upload built debs
-        uses: actions/upload-artifact@v4
-        with:
-          name: debs
-          path: debs.tar
-          if-no-files-found: warn
