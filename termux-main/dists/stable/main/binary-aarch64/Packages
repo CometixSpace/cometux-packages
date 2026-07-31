@@ -1,3 +1,19 @@
+Package: abseil-cpp
+Architecture: aarch64
+Installed-Size: 9452
+Maintainer: @termux
+Version: 20260526.0
+Homepage: https://abseil.io/
+Depends: libc++
+Conflicts: libgrpc (<< 1.52.0-1)
+Description: Abseil C++ Common Libraries
+Filename: dists/stable/main/binary-aarch64/abseil-cpp_20260526.0_aarch64.deb
+Size: 1198104
+MD5Sum: 3bd4f7b21494ab22b52d74338606f055
+SHA1: 8dfc5fecba2fcae95a55938b49ced2b67aa12fa0
+SHA256: 5a461a180b651e00904a316a0d9e36e7fcf347bbcc5d706514557eda30545b97
+SHA512: a2b7da1a1efc3a456708bd7ee47504a62d8ce9871d5e32ca22d377356db6247c649dd2bd8def50d9edb9ee2a21fb843eb1275f8c9f307532c7376c0639866f44
+
 Package: apr-static
 Architecture: aarch64
 Installed-Size: 424
@@ -96,6 +112,21 @@ MD5Sum: 3d470bec1465583d16183b6db5960102
 SHA1: 6a74856b85380c23193a5662c66f914c49a19bc0
 SHA256: 2d6b1ea58e1f16d6c72abc6223a2cff115ab1b99190ec7ec71962633e7007682
 SHA512: 599a400f28a50ca639477c1b0de05d55c4bc6a40d68a3bda9284e0849aaedbc552bc65fe746de22728b7d2f9d88013474ec0f5030c5d878cda669064f9cd1818
+
+Package: aria2
+Architecture: aarch64
+Installed-Size: 2696
+Maintainer: @termux
+Version: 1.37.0-3
+Homepage: https://aria2.github.io
+Depends: libc++, c-ares, openssl, libxml2, zlib
+Description: Download utility supporting HTTP/HTTPS, FTP, BitTorrent and Metalink
+Filename: dists/stable/main/binary-aarch64/aria2_1.37.0-3_aarch64.deb
+Size: 680652
+MD5Sum: 9523cc445ed66b5ea9bbbe7ab2af6c56
+SHA1: 2dc8d640a6d566ef72a54917b226789d08bb7676
+SHA256: ba23039643a2b71fdb9b2eb2a1a9e42b90856355aa10b42193a1314b6ecd1284
+SHA512: 6abc4ba60cf6ad54be03504ba66ef0708e88575257d781dc63b09bf84fbd4963626b81e546434b0140fbf3881e31eb8c31336c2639a884dcdf14a37da0ffc982
 
 Package: attr-static
 Architecture: aarch64
@@ -353,6 +384,20 @@ MD5Sum: b4b093821f3ce8db369a4556a702fb70
 SHA1: d233470469a6966382dd7584d71c978eb5d0dec2
 SHA256: dac0393a22adaa6571c467c6cc0efaa0aab0ac2b7d7da8ba75e5494a06934991
 SHA512: 6b3c06bfe1f94bff07aa4c3e044ee295ca110e1056df08b4a7184f5b251fc803fa92c4d0a0382d78aae34d756faf2f6a7f874d25d6e92987c3b86d4ca7b16212
+
+Package: croc
+Architecture: aarch64
+Installed-Size: 11148
+Maintainer: @termux
+Version: 1:10.5.0
+Homepage: https://github.com/schollz/croc
+Description: Easily and securely send things from one computer to another
+Filename: dists/stable/main/binary-aarch64/croc_1:10.5.0_aarch64.deb
+Size: 2994304
+MD5Sum: b546a34a8db0dec0523d0a04a209c948
+SHA1: 8287586add06d1b62500b969afe735d21de94ba6
+SHA256: eb14d5e01f1ff167a506a1129317047dc8ad30949b3f0e40d9886faf2f44118b
+SHA512: 529de9bea6d906aacc50e484688fec369f8709c19df4b570ec0bbf41fee2f5a9537a01a2a1426b512d3764b0aa6ba83fc404ed72a68f576632ac1e9418429e7b
 
 Package: curl
 Architecture: aarch64
@@ -2674,6 +2719,24 @@ SHA1: e73b471e53d2b879ce3d2df282a6799e6542deb1
 SHA256: 3635795e8f079dd8d2f18c3bf92ec69a3113bf9deb70ba6ade8667e92934bb12
 SHA512: eabc213c05992c8a74804d01202ae49ecb6d0625f70626e5c91a698e7dfe0e24a46f5d486903be080869dcbcb6efa3e2d017cd5e01f76b79b8905ab33094b7b4
 
+Package: libprotobuf
+Architecture: aarch64
+Installed-Size: 9192
+Maintainer: @termux
+Version: 2:35.1
+Homepage: https://github.com/protocolbuffers/protobuf
+Breaks: libprotobuf-dev, protobuf-dev, protobuf-static, libutf8-range
+Depends: abseil-cpp, libc++, zlib
+Conflicts: protobuf-static
+Replaces: libprotobuf-dev, protobuf-dev, protobuf-static, libutf8-range
+Description: Protocol buffers C++ library
+Filename: dists/stable/main/binary-aarch64/libprotobuf_2:35.1_aarch64.deb
+Size: 1387912
+MD5Sum: 41d4362ae0793728694856764609704f
+SHA1: f016ba244ec4f937ecdd689cf71419218c7b3ed6
+SHA256: 98b30732ac53529bdc783139185a991d9e7106cac440676dd2f430def03a4299
+SHA512: 0f0442ee4a60f4ebd3a16d8758be1861223485728417807f2a682b3b078dc6e5ecf4df848862057182c2fbc271f0109231c107c56f1f7105d42a5162545905cb
+
 Package: libresolv-wrapper
 Architecture: aarch64
 Installed-Size: 104
@@ -3828,6 +3891,39 @@ SHA1: 1c6b5c7e297c82d8c30c1ba8228ef47a80ebcaba
 SHA256: 29c08beeb01a70b7873bf269e75e8228bcc57f4387bd27aa7a0bb6c5247ff754
 SHA512: 49a9440240c7b7a901095187d6671769bfb253762c88ea4590093ab8affe049ea5f9e211a050fc84aa77fb612bc9e997b6fda166f2bea3286b9c3e999f61ce3c
 
+Package: mosh-perl
+Architecture: aarch64
+Installed-Size: 48
+Maintainer: @termux
+Version: 1.4.0-17
+Homepage: https://mosh.org
+Depends: perl, mosh (= 1.4.0-17)
+Conflicts: mosh (<< 1.3.2-37)
+Replaces: mosh (<< 1.3.2-37)
+Description: The mosh Perl script
+Filename: dists/stable/main/binary-aarch64/mosh-perl_1.4.0-17_aarch64.deb
+Size: 6632
+MD5Sum: 782a0293af4c3cb911103adaf23c5992
+SHA1: 787e55ef8c27cc8ea5c29b252bbe629ebf67e9c5
+SHA256: d70b81747422805d672a1c91dc4653d7e4ea4cd6cfcf6a371770d4a5bcdc3a5b
+SHA512: afa5a7f1f6397b48f9377685e1c059ae9ef18a5dd1819683905f0916596cbd142cce02eb2eb51ff5e4b5723de551f26a43c7c257f0f64821e84122c156d6913b
+
+Package: mosh
+Architecture: aarch64
+Installed-Size: 748
+Maintainer: @termux
+Version: 1.4.0-17
+Homepage: https://mosh.org
+Depends: abseil-cpp, libandroid-support, libc++, libprotobuf, ncurses, openssl, openssh | dropbear
+Suggests: mosh-perl
+Description: Mobile shell that supports roaming and intelligent local echo
+Filename: dists/stable/main/binary-aarch64/mosh_1.4.0-17_aarch64.deb
+Size: 153008
+MD5Sum: 5272c44a0b8579acceef61068c796370
+SHA1: f46ed3281e3cf353b5a5275ece3c6e6ff89debc2
+SHA256: 326169b7fe427be4696da4461793f5e1c304784eebc64d2e11f3de01a757ccc0
+SHA512: 164bfca1a50d74e3f8b461c6465e19ccc2488550affc73c7e2e48835811f71fed08a689f0f26e5a57ed9c51314da3798f4202b4b9d8615631d43b2d49cd4d6b4
+
 Package: mount-utils
 Architecture: aarch64
 Installed-Size: 584
@@ -4314,6 +4410,21 @@ SHA1: 4fa4e3f204a00db1ae20829065e656e4cc3e8da3
 SHA256: 3d5340d972ecd2ebaf199f53ce4c684f5998a95da634806b592c0faa14d89592
 SHA512: df892e1ab6c2fc36384868a8aa68cb29f063ccceec66f400d425a60ca8f4de4096d6748b67022d4277f1a7294b861bac1ee9181ad9fc8f14247f10ee7f06566a
 
+Package: protobuf
+Architecture: aarch64
+Installed-Size: 5900
+Maintainer: @termux
+Version: 2:35.1
+Homepage: https://github.com/protocolbuffers/protobuf
+Depends: libprotobuf (= 2:35.1)
+Description: Compiler for protocol buffer definition files
+Filename: dists/stable/main/binary-aarch64/protobuf_2:35.1_aarch64.deb
+Size: 1193768
+MD5Sum: 30f88e79af3bd276d7f0ee347364d1e5
+SHA1: 5cf54f04f04e53bbc11fa8f189ec1066a01dd8ea
+SHA256: 4a13275edf73526e48e82ce6d796b352d0d25f6ca83151b0f118ca30520a488a
+SHA512: ffad8956412126cf68a0ee6533bbfd3b8898c772f54b47bb579f527515db5cdb13809546ce4d67001934764cbfdb8c71e34b9dd3d392502d6090d2d1abff9762
+
 Package: psmisc
 Architecture: aarch64
 Installed-Size: 340
@@ -4412,6 +4523,20 @@ MD5Sum: b7393e038245f223b4467640c88a9693
 SHA1: 83e3b1e88482f9590776241e865ca7f5fa87784b
 SHA256: 813d85d08528bd606c900e5e512da06af1cf564190024a9874cd1c0658a02c93
 SHA512: 29607a24a5a3b33d679008a4d3a0962aa2f8fd6e5a1812766eb5fd150b9435f42ae4afd8c5dd9514005006165bafac0c0c379ba966e2152de8609542ff9b2b28
+
+Package: rclone
+Architecture: aarch64
+Installed-Size: 80940
+Maintainer: @termux
+Version: 1.74.4
+Homepage: https://rclone.org/
+Description: rsync for cloud storage
+Filename: dists/stable/main/binary-aarch64/rclone_1.74.4_aarch64.deb
+Size: 18220872
+MD5Sum: 162bc415a553f7b4b214842a9ec76d44
+SHA1: 92a36c51f5225ff81ed2b67fe7fdbccdcf25e9e6
+SHA256: 4a6cdc5d36ec05c328966702b0d706c1b1455dad7826e20ce587008f0cca5276
+SHA512: 78b05f5413a1fea4b2c89970fbf0b21990db7bc0bf879498cacb765d454cbb328540f23d755e0bff0664aa415dba95145846f70c8f88b94a043e100835d8ebf2
 
 Package: readline-static
 Architecture: aarch64
