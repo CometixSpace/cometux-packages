@@ -28,6 +28,27 @@ termux_step_pre_configure() {
 termux_step_post_make_install() {
 	TERMUX_PKG_CONFFILES="$(cat "$TERMUX_PKG_BUILDDIR/conffiles")"
 
+	# Replace the upstream mirror set with our repository.
+	#
+	# pkg does not read sources.list to decide where to fetch from: it
+	# weighs the files under etc/termux/mirrors, picks one, and rewrites
+	# sources.list from it. Shipping the stock list therefore routes
+	# installs to official Termux mirrors, whose debs carry the
+	# com.termux prefix and cannot be unpacked here — dpkg fails on
+	# 'unable to stat ./data/data/com.termux'. It also makes apt believe
+	# dozens of packages are upgradable against a tree we do not use.
+	rm -rf "$TERMUX_PREFIX/etc/termux/mirrors"
+	mkdir -p "$TERMUX_PREFIX/etc/termux/mirrors"
+	cat <<- EOF > "$TERMUX_PREFIX/etc/termux/mirrors/default"
+	# This file is sourced by pkg
+	# The Cometux repository: packages rebuilt for the
+	# ${TERMUX_APP_PACKAGE} prefix. Stock Termux mirrors are
+	# ABI-incompatible with a renamed app, so this is the only entry.
+	WEIGHT=1
+	MAIN="https://cometixspace.github.io/cometux-packages/termux-main"
+	ROOT="https://cometixspace.github.io/cometux-packages/termux-root"
+	EOF
+
 	# Cometux branding (ZeroTermux-style fork policy: user-visible
 	# strings only, the termux-* command namespace stays untouched).
 	local motd
