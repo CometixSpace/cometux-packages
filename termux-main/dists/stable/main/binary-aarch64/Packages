@@ -2197,34 +2197,34 @@ SHA512: 6d50d2f8ea99373f07fa60175f2cd20a96facd277b2ddec1390a15bc77d7fa036780df60
 
 Package: libnghttp2-static
 Architecture: aarch64
-Installed-Size: 320
+Installed-Size: 324
 Maintainer: @termux
-Version: 1.69.0
+Version: 1.70.0
 Homepage: https://nghttp2.org/
-Depends: libnghttp2 (= 1.69.0)
+Depends: libnghttp2 (= 1.70.0)
 Description: Static libraries for libnghttp2
-Filename: dists/stable/main/binary-aarch64/libnghttp2-static_1.69.0_aarch64.deb
-Size: 63828
-MD5Sum: ebc5584db2d3603bfc4a9f38759baa11
-SHA1: 7fc43b07a7b20764f990871e0724415911f51c59
-SHA256: 7244cb8339eeb3be4581d37a5c9bfb606e7bf6fbc134804a86d948473e931677
-SHA512: 1f91b860cb9bcd3446ed35b515832067a8c577b1acb7e27c353d057a495e809b08b7c4d63d33d8d6b90fc7adc07736739de9ec29063169aef88d6724d67ba6c2
+Filename: dists/stable/main/binary-aarch64/libnghttp2-static_1.70.0_aarch64.deb
+Size: 64180
+MD5Sum: 1a4c53ac567b6d31b92735607b070b33
+SHA1: 2d1ce4fc49c194618203d539f408e6cde65bb9f7
+SHA256: 057c4740d852474bd5e0550ad66fa0fe7b4a7c189df46e44ea93aca6faeb2ab5
+SHA512: cdc14e9629bc8f2ea826714d15dd12bab16aa0b39161b750384975001e0be3174842835382ce13692b74115ec75e968bf2e15cf5aae2def48f5dd68d4d90fd1b
 
 Package: libnghttp2
 Architecture: aarch64
 Installed-Size: 520
 Maintainer: @termux
-Version: 1.69.0
+Version: 1.70.0
 Homepage: https://nghttp2.org/
 Breaks: libnghttp2-dev
 Replaces: libnghttp2-dev
 Description: nghttp HTTP 2.0 library
-Filename: dists/stable/main/binary-aarch64/libnghttp2_1.69.0_aarch64.deb
-Size: 95624
-MD5Sum: d595ee237ec2d9049a32e5df7ba13c6e
-SHA1: 2af84ec7a8da42605a39403f8c7a8daf973d4209
-SHA256: 066fc86dea66fb99e5a52e6b9c764206a457fad5215706015b296a5f6d313232
-SHA512: f0f7c6da17dee91f847d4a10a1d5edf3ed8a27eb007a1607a28361d466ec52b6b209772dab3c5782ab836cddba072a6b259ad4be124678d318beb3b780d6226b
+Filename: dists/stable/main/binary-aarch64/libnghttp2_1.70.0_aarch64.deb
+Size: 95944
+MD5Sum: 8b93609d56606a20a3e63d603794c315
+SHA1: 500f5db504029a61ce54ec819de861b7291ef936
+SHA256: 785de793c410dc2a0003b4c44ba444422cda7e5d03cadc0f489aa2328e606b55
+SHA512: 18db977a6bd65cc31f21e5602fdc67e4513fd6e1e04b6583c3a73aa2e6b3de254bc448513cc005636ab0e53aeb613b862dcf6355f3ef1c510e95be721d9bc264
 
 Package: libnghttp3-static
 Architecture: aarch64
@@ -4466,7 +4466,7 @@ SHA512: 382938f9aafd364408b4bfbca17f7f259ce48bf8031b394bf8018e12dd885293a5b5c6da
 
 Package: termux-tools
 Architecture: aarch64
-Installed-Size: 552
+Installed-Size: 248
 Maintainer: @termux
 Version: 1.46.0+really1.45.0-1
 Homepage: https://termux.dev/
@@ -4478,11 +4478,11 @@ Recommends: ed, dos2unix, inetutils, net-tools, patch, unzip
 Suggests: termux-api
 Description: Basic system tools for Termux
 Filename: dists/stable/main/binary-aarch64/termux-tools_1.46.0+really1.45.0-1_aarch64.deb
-Size: 33656
-MD5Sum: 92bf14c72462ca6ead5f53179c05ef09
-SHA1: 457bb82d9b7341b10abda45a1ff5118ffd605cad
-SHA256: 350f2ac0ce33f28269fc124bb12d9bb4ea9d7e98c2e870ad65608701a4ff6d92
-SHA512: d25fc45c146c6fe92442608c04f8f940c7ca25dd3c29d8503c7a4679d966cd0b5056664cfc2d3505e236d576af4ba119eb1fa5ddf822d1ebea3bdeedfcaf4f27
+Size: 30104
+MD5Sum: f5ac6920b37228dab1f46a1c52ad2f6c
+SHA1: 2fbb9db102b6c9985ca6b30634ea166836b44430
+SHA256: 2ac8ef314aecc86b6c94a907faee1f6579143d1770867e7bccdee3ba8e0a65fa
+SHA512: babf7ce971dc6aadd126be523b7336c14ff875337579b8180030b67c2687a9717557e837e50f233376a5041bbad27f688b4ef251acdba711eb55f46ec2b10ddf
 
 Package: tk
 Architecture: aarch64
