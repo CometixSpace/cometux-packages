@@ -3,34 +3,44 @@
 # The auto-update workflow scans exactly these recipes instead of the
 # upstream @all sweep: with BUILD_PACKAGES=true every bumped package is
 # rebuilt in CI for verification, so an unbounded sweep over ~26000
-# recipes risks blowing the 6h job limit. This list is the union of what
-# the self-hosted apt repository already ships and the expansion set we
-# intend to keep current.
+# recipes risks blowing the 6h job limit.
+#
+# Contents: everything the self-hosted repository currently ships, plus
+# packages recommended by those (npm was the tell — upstream split it out
+# of nodejs in v25.3.0-1, so `pkg install nodejs` no longer provides it
+# and nothing pulled it into the build set).
 #
 # Names are recipe directory names, not binary package names — a
-# subpackage (clang -> libllvm, bzip2 -> libbz2) has no recipe of its
-# own and is rejected by the build workflow.
+# subpackage (clang -> libllvm, bzip2 -> libbz2) has no recipe of its own
+# and is rejected by the build workflow.
 #
-# Regenerate the "already shipping" part from the live repository:
-#   curl -s <pages>/termux-main/dists/stable/main/binary-aarch64/Packages \
-#     | grep '^Package:' | cut -d' ' -f2
-# then map each binary package back to the recipe that produces it.
+# To regenerate: map every Package: field in the live repository's
+# Packages files back to the recipe that produces it, then union with the
+# TERMUX_PKG_RECOMMENDS of those recipes.
 apr
 apr-util
 apt
 attr
 bash
+bash-completion
 bat
-binutils
 brotli
 c-ares
+ca-certificates
 cmake
+command-not-found
 coreutils
 dash
+debianutils
 dialog
 diffutils
+docbook-xml
+docbook-xsl
+dos2unix
 doxygen
 dpkg
+dropbear
+ed
 fd
 file
 findutils
@@ -41,10 +51,10 @@ gawk
 gdbm
 git
 gnupg
-golang
 grep
 gzip
 htop
+inetutils
 iptables
 jq
 krb5
@@ -55,8 +65,10 @@ libandroid-execinfo
 libandroid-glob
 libandroid-posix-semaphore
 libandroid-selinux
+libandroid-spawn
 libandroid-support
 libandroid-utimes
+libarchive
 libassuan
 libbz2
 libc++
@@ -70,6 +82,7 @@ libevent
 libexpat
 libffi
 libgcrypt
+libgit2
 libgmp
 libgnutls
 libgpg-error
@@ -81,19 +94,24 @@ libllvm
 liblz4
 liblzma
 libmd
+libmnl
 libmpfr
 libmsgpack
 libnettle
+libnftnl
 libnghttp2
 libnghttp3
 libngtcp2
 libnpth
+libpcap
 libpng
+libpopt
 libresolv-wrapper
 libsodium
 libsqlite
 libssh2
 libtasn1
+libtirpc
 libunbound
 libunibilium
 libunistring
@@ -111,6 +129,7 @@ libxrender
 libxslt
 libxss
 libyaml
+lsof
 lua-lpeg
 lua51
 lua52
@@ -120,27 +139,33 @@ lua55
 luajit
 luv
 make
+mandoc
 nano
 ncurses
 neovim
+net-tools
 nmap
 nodejs
+npm
+oniguruma
 openssh
 openssl
 p11-kit
 p7zip
+patch
 pcre2
 perl
 pinentry
+pkg-config
 procps
 psmisc
 python
+python-pip
 readline
 resolv-conf
 ripgrep
 rsync
 ruby
-rust
 sed
 serf
 subversion
@@ -149,10 +174,13 @@ swig
 tar
 tcl
 tcpdump
+termux-am
 termux-am-socket
 termux-auth
 termux-core
 termux-exec
+termux-keyring
+termux-licenses
 termux-tools
 tk
 tmux
@@ -162,16 +190,24 @@ tree-sitter
 tree-sitter-c
 tree-sitter-lua
 tree-sitter-markdown
+tree-sitter-parsers
 tree-sitter-query
 tree-sitter-vim
 tree-sitter-vimdoc
 tsu
+ttf-dejavu
+unzip
 utf8proc
 util-linux
 vim
 wget
 which
+xcb-proto
+xorg-util-macros
+xorgproto
+xtrans
 xxhash
 zlib
 zsh
+zsh-completions
 zstd
