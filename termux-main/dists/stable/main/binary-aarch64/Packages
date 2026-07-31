@@ -464,6 +464,34 @@ SHA1: 0fecee56c852d7034e698c0c082f3834dbdff526
 SHA256: 812e6161c00d4c22817e28ba96521a5ed001c15290feefc7ec60589e114b4d50
 SHA512: 7ba7b7b4b52094c67531ae48cc216cf9eefb4da5d1ebd018afb55e1c7a04b3b45e3be5c2658519de11d02e7a8d59fa656d19baf9ed4ac023905d25b4a1e43cf9
 
+Package: duf
+Architecture: aarch64
+Installed-Size: 3668
+Maintainer: Krishna kanhaiya @kcubeterm
+Version: 0.9.1
+Homepage: https://github.com/muesli/duf
+Description: Disk usage/free utility
+Filename: dists/stable/main/binary-aarch64/duf_0.9.1_aarch64.deb
+Size: 951864
+MD5Sum: bd4c7c5f8f1bd3c6483cd4e971047cf3
+SHA1: 3d873990a9c8175566bc720e7c31162c74023682
+SHA256: b6adf1353675d4012fb49e68d034b91124fdca156bd91f2c8d57cf177007064a
+SHA512: e4910530a296d029834742ad2cfe3b2f6934748090ea4c55a92aa16707a0ddf94ec269339bd5114208caec8d2e17b8dd829b958d0450a3f59ec0da52f0b566c4
+
+Package: dust
+Architecture: aarch64
+Installed-Size: 2628
+Maintainer: @termux
+Version: 1.2.4
+Homepage: https://github.com/bootandy/dust
+Description: A more intuitive version of du in rust
+Filename: dists/stable/main/binary-aarch64/dust_1.2.4_aarch64.deb
+Size: 784876
+MD5Sum: 31d1a08e1976d26bf277d9cc5b538f71
+SHA1: c0db5181781adcd1b90a6145199764e4de38c0d3
+SHA256: 87ed198a1c33d07a83fec87a3972112c0841cae606cb0dd14bc0d4e5274e17ca
+SHA512: 1156b59fe6fd20ac9ab85eb7cecb95bcd49ba446a70fd97c7cd220c8e6fc8a856856d95b3bf3a53918cc11b97671c5edad3ad881f3c01ea998799defe755e084
+
 Package: ed
 Architecture: aarch64
 Installed-Size: 180
@@ -477,6 +505,23 @@ MD5Sum: 05d1461c9860fae2e19a843f6f99c714
 SHA1: 4dd5cb6e84158f38e0e33643307b0c8c278a5d7f
 SHA256: 9bd2b5e71f584f963a528c65e304083f2dae9e247612d1923311c5032e5df497
 SHA512: 4a0a0a98b3e6451efc44e856ae8fdbebe3387a193f0f8bb45aced311e3a039d80e9d0a9eaa6a18c1033715bcd46a6564f032dc91b182053a6cb39882851132f6
+
+Package: eza
+Architecture: aarch64
+Installed-Size: 1784
+Maintainer: Joshua Kahn <tom@termux.dev>
+Version: 0.23.5
+Homepage: https://github.com/eza-community/eza
+Breaks: exa
+Depends: libgit2
+Replaces: exa
+Description: A modern replacement for ls
+Filename: dists/stable/main/binary-aarch64/eza_0.23.5_aarch64.deb
+Size: 599328
+MD5Sum: 7648bed37396c91a01706edee1765751
+SHA1: 7a738ea9d9b69c26f367e0163ba9ed69196c50d2
+SHA256: b2e59c85398ac1805ff104918b1e4938afefd315bcc92dc3917b08958e898081
+SHA512: 039bbbdf99a4b7f7d1112ca96b6d3649d4ba55a9de9ff829d9fda967b716208b33d1b5d364042ff2d6f6f47ef7aa424f01c831bacdad67cc5d10a15a00f36446
 
 Package: fd
 Architecture: aarch64
@@ -715,6 +760,21 @@ SHA1: 975dfd4cc3c33cb479352326549b8ca5bc1e1e1f
 SHA256: be1f7d13c50f27bac53c43ee54ee9e420046efa003bda0057f5ed2afbafa59ec
 SHA512: e66a5c2623e10e79d373a894f8fd2cc9a700376cd291c5a813d7d2ae432d066e6cb76de75be8b9b490c6fad76c837964b368fc7dfc7760832ebb0cc65fbb2d7b
 
+Package: git-delta
+Architecture: aarch64
+Installed-Size: 5440
+Maintainer: Joshua Kahn <tom@termux.dev>
+Version: 0.19.2
+Homepage: https://dandavison.github.io/delta/
+Depends: git, libgit2, oniguruma
+Description: A syntax-highlighter for git and diff output
+Filename: dists/stable/main/binary-aarch64/git-delta_0.19.2_aarch64.deb
+Size: 2120160
+MD5Sum: 141ab0f6e129a6181390aeba74936acf
+SHA1: 9687ba06c9f2445d85a696952592724da1489ca4
+SHA256: 42c5b53b820f1649cac305f70c6f3d98e769fc429f8e0c6e6fb77e44845a06e8
+SHA512: 6d97d44826fc7e42d86b48d4c69e86a7965c72417296969d808420506ff784520edceb46f9a2bbb44d97631b31408df3e6dcad82bb8bf9fb51201e5d91e56bba
+
 Package: git-gitk
 Architecture: aarch64
 Installed-Size: 972
@@ -875,6 +935,20 @@ MD5Sum: 49bef0053676f23ce9456e954eb5de96
 SHA1: 0e51827853242bac8504e9a5a4b438d128c58f3b
 SHA256: 536adf72167bd49572a10ee6ce6bb01a95fe9ea3328f0008d324d687e50a9821
 SHA512: fd95cc894ab9ae4a0880c7de24076967bab1246b33af96fe3b83f131f57abee5395c87fd7dd033acde9ac3ec3439bdfbbdf339bf14bfd729f536ae961507d798
+
+Package: hyperfine
+Architecture: aarch64
+Installed-Size: 1204
+Maintainer: @termux
+Version: 1.20.0
+Homepage: https://github.com/sharkdp/hyperfine
+Description: A command-line benchmarking tool
+Filename: dists/stable/main/binary-aarch64/hyperfine_1.20.0_aarch64.deb
+Size: 439448
+MD5Sum: b566f1e517d6e47f17bff2a834b5871c
+SHA1: 3c13e0f25508db850eddeee7ee50477ba2b4b309
+SHA256: fb2439a107be17e0944b9a0039bd5a305753b7d63844d90b07c5e75e53789af6
+SHA512: 9e3e9cb1f92d141a76dbd7987971a609514847c112b10afa7851de5ae03ea1b4dc78e1871393ad74918e03758dc01eca62442a30b654f7ca2c984381a158e4ac
 
 Package: iconv
 Architecture: aarch64
@@ -4039,6 +4113,20 @@ SHA1: abc61374794b2027d5ddced73378ed1e44454ccd
 SHA256: 0d1ca9de82b9273b6e4cef7934cff9cc9bb4d8c2c992f67122a41d783e8eb125
 SHA512: 5db24254a5b7261b83e1805b0746cc448d3f4b62eb3a4a90d073850b562f040b1da653b2e12685d3b8f230674895b0164febd6feb9c2177cd522c9f547f23daf
 
+Package: procs
+Architecture: aarch64
+Installed-Size: 5008
+Maintainer: @termux
+Version: 0.14.12
+Homepage: https://github.com/dalance/procs
+Description: A modern replacement for ps
+Filename: dists/stable/main/binary-aarch64/procs_0.14.12_aarch64.deb
+Size: 1420684
+MD5Sum: d4d6237883e6289f22c3456b62dddaf2
+SHA1: 4fa4e3f204a00db1ae20829065e656e4cc3e8da3
+SHA256: 3d5340d972ecd2ebaf199f53ce4c684f5998a95da634806b592c0faa14d89592
+SHA512: df892e1ab6c2fc36384868a8aa68cb29f063ccceec66f400d425a60ca8f4de4096d6748b67022d4277f1a7294b861bac1ee9181ad9fc8f14247f10ee7f06566a
+
 Package: psmisc
 Architecture: aarch64
 Installed-Size: 340
@@ -4250,6 +4338,20 @@ SHA1: af0424efda464dfd5c0fe058e0725bd3d21ee398
 SHA256: c82479142025d1b0806ebbbe2c83171e2e900ed3fd21b820d59f30b8360fc658
 SHA512: 181f731f5429d47f78940c91c3968a1bc011a791b6047651295f1ad09738ba0a731a78ed4640fbade73a0ceb92de1e126e5303c48bbbc1dfa0aded1e0a7cecfe
 
+Package: sd
+Architecture: aarch64
+Installed-Size: 2180
+Maintainer: @termux
+Version: 1.1.0
+Homepage: https://github.com/chmln/sd
+Description: An intuitive find & replace CLI
+Filename: dists/stable/main/binary-aarch64/sd_1.1.0_aarch64.deb
+Size: 624396
+MD5Sum: f897684620a4a19b4ccf206ba795ebc3
+SHA1: 1cb9c1606f5ce03bfb2754eaa57e41638a5645ee
+SHA256: e8672a77395478097aeb652041088eafb8e2a9440f0eb450430a8cbc3ca32bbd
+SHA512: 9a681e3448ae4e019a205fec56411bd9e1c34bd514df52bd72315eb6745a1cee672a554a360e728c02d9438047622ff680e99cde5ab56cb84689480e9eb8e77c
+
 Package: sed
 Architecture: aarch64
 Installed-Size: 412
@@ -4311,6 +4413,21 @@ MD5Sum: 0211e0a3c144f03a868def0b78156589
 SHA1: 31427675ad65513c7c24ab2d670e2f00fcbccda2
 SHA256: 556e5ecd4a50fe3897dc47ceafa843ba5e63d30c770ba969a453b78e6f920b28
 SHA512: 2d950911ee70572f2a484a2494a8023a8ec96685bdd94589d8411968bf9eec006e84dbc2f9e2302fd8d0d66c210b8d1bee5fa1bbaab0f399d34131e064c74363
+
+Package: starship
+Architecture: aarch64
+Installed-Size: 11420
+Maintainer: Joshua Kahn <tom@termux.dev>
+Version: 1.26.0
+Homepage: https://starship.rs
+Suggests: nerdfix, taplo
+Description: A minimal, blazing fast, and extremely customizable prompt for any shell
+Filename: dists/stable/main/binary-aarch64/starship_1.26.0_aarch64.deb
+Size: 3255404
+MD5Sum: a08521ce67ed1928b79a014b65b7719a
+SHA1: 2c0a0bf1876f56277ec312a32838a12936d18d43
+SHA256: 5c1442eb1007fe258a99e8f352dd92f59d9e78f269bae264bc695fef7f25fa16
+SHA512: 2c53f78946a0bdc91768c9b078157f45fcc7a5000ab1c1c30be1eb3dd636844cdda66475aec791b87492e91f730318bb2caa8ef842c9a3eeedb01d95e61ab727
 
 Package: subversion-perl-static
 Architecture: aarch64
@@ -4421,6 +4538,20 @@ MD5Sum: 8854690be7f288072854d638bec49ec6
 SHA1: 5285ab43f6061fd7a007384e49c410649b6255fb
 SHA256: 8f0137abd10972ec5dac7872a6139684cd7ead6ab42537076fa3e69ace8be223
 SHA512: 022b05b9d33aab730cd7311b052fcf7fc25404d05add8d20474c5bd1d074854ce4b2bf3cb2f39a9c5c4e7b3b26d62504367e9701191f25a8614dea42792b6a9d
+
+Package: tealdeer
+Architecture: aarch64
+Installed-Size: 2784
+Maintainer: @termux
+Version: 1.8.1
+Homepage: https://tealdeer-rs.github.io/tealdeer/
+Description: A very fast implementation of tldr in Rust
+Filename: dists/stable/main/binary-aarch64/tealdeer_1.8.1_aarch64.deb
+Size: 1141596
+MD5Sum: 0b30e875411cc4bdec009320c554f6b8
+SHA1: 4ee5c3688f2094a1a746f08d00ffade4e0a9d689
+SHA256: 29b06470926229ecb8f0ae6094f0b94fdbc96b82eac4a6daa2d3645a7f6edb45
+SHA512: 761b3ff8da387ad331b27d1bcde670d5cfb484639d2f07a0a814f719ea3304146b9e3625df11c16e8c22408852731a6048746f12c6263156bcbb71f19554b556
 
 Package: termux-am-socket
 Architecture: aarch64
@@ -4958,6 +5089,20 @@ MD5Sum: 5ca70920704543a5ab8ad05eb35cd17c
 SHA1: a0b389c1bcdca10dc66a1186e4a1cdbd8404025a
 SHA256: 4eae285ab24035d1d4aa10abe297e8af99af3ada4e3fbc60511d45af0ac8ae8a
 SHA512: 69ec9e4b81c04b5964bc4965ba67fe5d9dec9f2e693936f76b68aa00be2a2bd09fb13d397bc9fdec404da7fb856de13c410a24df075b71194db0213f350239fd
+
+Package: zoxide
+Architecture: aarch64
+Installed-Size: 1128
+Maintainer: @termux
+Version: 0.10.0
+Homepage: https://github.com/ajeetdsouza/zoxide
+Description: A faster way to navigate your filesystem
+Filename: dists/stable/main/binary-aarch64/zoxide_0.10.0_aarch64.deb
+Size: 372972
+MD5Sum: adb5c0c32321facf2ea00d6f31556382
+SHA1: ab6583e25d9cdca7e2a7848b4f69eb856d69295d
+SHA256: cea270bb36ef681b9f798df6e9c7ca97246e0438fd0f999b4e1303f32d9c7aff
+SHA512: a382aa8edde7ace93e2ebe61eb50f02195a1e0bb3421b71f221be8b1b620aeb67397454c87d31c1947db4b4cc0d189270b070e77ee7472c56a4a14e777cf29d6
 
 Package: zsh
 Architecture: aarch64

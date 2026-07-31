@@ -13,6 +13,21 @@ SHA1: 1950236ac01075e039ca3b9e3a6ac68a426cd5f5
 SHA256: 5e8cd6d8533282fa0e54afd32e3e759e55dec8c5c2274dea4c0dcad553ee0693
 SHA512: 6ab487688c7f9b3775f80aa06eb45994053b4dfc4233d7686b01062c13716e3f2a424087666d090ea9444dd3727bf5fe62ad458783fb398aa55555abd0d144fd
 
+Package: asciidoctor
+Architecture: all
+Installed-Size: 6464
+Maintainer: @termux
+Version: 2.0.26
+Homepage: https://asciidoctor.org/
+Depends: ruby
+Description: An implementation of AsciiDoc in Ruby
+Filename: dists/stable/main/binary-all/asciidoctor_2.0.26_all.deb
+Size: 598700
+MD5Sum: 6e28324301299429aa0a61b2e8ed7917
+SHA1: 12aa1a130cc38ff6d8ecc9b461dae93a6bc4cc2e
+SHA256: 67597dc43639c5fccb8a0bb690d046d0a61efe8d2f7cb90600980e7b5ba693e4
+SHA512: 3012a9377155d96ceb7cb147720f4046096c9b3d38e05272f952fa841e5dfc424897358c843f4106021f78b819674d1471621ad1a91e6ca1443b75bf54ded219
+
 Package: bash-completion
 Architecture: all
 Installed-Size: 2724
