@@ -160,6 +160,35 @@ SHA1: 6a74856b85380c23193a5662c66f914c49a19bc0
 SHA256: 2d6b1ea58e1f16d6c72abc6223a2cff115ab1b99190ec7ec71962633e7007682
 SHA512: 599a400f28a50ca639477c1b0de05d55c4bc6a40d68a3bda9284e0849aaedbc552bc65fe746de22728b7d2f9d88013474ec0f5030c5d878cda669064f9cd1818
 
+Package: argp-static
+Architecture: aarch64
+Installed-Size: 200
+Maintainer: @termux
+Version: 1.5.0-1
+Homepage: https://github.com/argp-standalone/argp-standalone
+Depends: argp (= 1.5.0-1)
+Description: Static libraries for argp
+Filename: dists/stable/main/binary-aarch64/argp-static_1.5.0-1_aarch64.deb
+Size: 42144
+MD5Sum: f4529238f5236b65342ee0df01fc0dc4
+SHA1: 2e765eabf6c264943c06c7121d1c04127dbf8275
+SHA256: 6d172db1fb1c9f27f126d8a537d00c3518c2aab2782a36021d37588cb0d1b78d
+SHA512: 09c016844f6c0ff36596170dd551522a003dfa11cc4a0e56da808098c1a781cee3b021443dafdd8e8e1b3e69f13930cd42272f0a5e84285373c5094ddc9151b6
+
+Package: argp
+Architecture: aarch64
+Installed-Size: 108
+Maintainer: @termux
+Version: 1.5.0-1
+Homepage: https://github.com/argp-standalone/argp-standalone
+Description: Standalone version of arguments parsing functions from GLIBC
+Filename: dists/stable/main/binary-aarch64/argp_1.5.0-1_aarch64.deb
+Size: 21300
+MD5Sum: 693d9d015b9310dd79d70d4d2f758d38
+SHA1: 90ced1a6a37e632f9877a42751eca0af6726549c
+SHA256: 6cf4149ea3d731515e2827d8fd6ffaf16b0b856f4c34b5c26553103f9f211396
+SHA512: eef00c1da4a1a372bc266f3ba8a1fb12f56a77126d4d8cd2f839094bf7c67fe3f8a21fe9c190c81792331bd0d88f668ea157f55734e8a70c9eeb70431ea97843
+
 Package: aria2
 Architecture: aarch64
 Installed-Size: 2696
@@ -411,6 +440,36 @@ SHA1: 4881d201d58181c4e8a929d19c0d9cc4e2ab99c8
 SHA256: 83932517eb362f895ee9ea8efeceeefab9923a6ac6cf31b9f98b449b18bec4a8
 SHA512: 7886b635e9733ed9b6eacb894dc0b7fc6a36b67cdca7e5d17888b824c75c9f483a596128605744181c0d1961e62da28498831cd9501e649982c3770eec5ffafd
 
+Package: chafa-static
+Architecture: aarch64
+Installed-Size: 532
+Maintainer: @termux
+Version: 1.18.2-1
+Homepage: https://hpjansson.org/chafa/
+Depends: chafa (= 1.18.2-1)
+Description: Static libraries for chafa
+Filename: dists/stable/main/binary-aarch64/chafa-static_1.18.2-1_aarch64.deb
+Size: 104032
+MD5Sum: 4265caaa5311c25a6dd367907cb9dead
+SHA1: fd844a9792a13529282d8db8db7cf07a1344b4a7
+SHA256: 7de8be8a10929e22a18fbbb39d99dd425e8122c0d1d00bac5a99fa0730c61de4
+SHA512: b0c44a4b8c84c642983ad50452725d99f33e76e96bc32c2d2ed03dae27a070718ce338525e4b065471d9a3bad3d800b78e24a51a70fa877d86e4164defe84c6e
+
+Package: chafa
+Architecture: aarch64
+Installed-Size: 792
+Maintainer: @termux
+Version: 1.18.2-1
+Homepage: https://hpjansson.org/chafa/
+Depends: freetype, glib, libavif, libcairo, libheif, libjpeg-turbo, libjxl, librsvg, libtiff, libwebp
+Description: Image-to-text converter supporting a wide range of symbols, etc.
+Filename: dists/stable/main/binary-aarch64/chafa_1.18.2-1_aarch64.deb
+Size: 176016
+MD5Sum: fad9cdf1952b172cf2c430d5fdc7f8d6
+SHA1: e309d0e0e3c0882a2c0540e7867548f6ec1518cb
+SHA256: 80ab5ccd35e0be9fd7dbe396270402eb13b4277a0171f8ff88675917241e5cac
+SHA512: 2137807bce52c5c9469c303d62ca23f4def44c05d4bdf1fce72cfe2ffb07f6c4ef981123e6b3dc604da34f812ea72f8e145c58b3936a5f8fdc235700cf39cb03
+
 Package: clang
 Architecture: aarch64
 Installed-Size: 186820
@@ -551,6 +610,23 @@ MD5Sum: d9bca705818ba96f5916e2974385507a
 SHA1: c972dd39f979e7cb5e5c957a0d0024e991fcfa16
 SHA256: 02002c6a11e2b98b725925bdb3a21e87773e40d52ac417b37de65d8cb6a42412
 SHA512: bffc72a09d9a9a1bc26e0930c4ee61d522808349749de9e0b3bacca8a497ec894abdea63e6e61d58b4753c59f1f1842facf47af0422eebae0f599aec23f2662e
+
+Package: dbus
+Architecture: aarch64
+Installed-Size: 1740
+Maintainer: @termux
+Version: 1.16.2-3
+Homepage: https://dbus.freedesktop.org
+Breaks: dbus-dev
+Depends: libexpat, libx11
+Replaces: dbus-dev
+Description: Freedesktop.org message bus system
+Filename: dists/stable/main/binary-aarch64/dbus_1.16.2-3_aarch64.deb
+Size: 428812
+MD5Sum: 9e8de16236e3845aec090fa22da5a241
+SHA1: efd2514581ed3407b91ba64ca6154ee696b78252
+SHA256: 71bab98ad67256000251fca87543a11c9604a7e2137d3c2bd393bdda314bdcc0
+SHA512: 83a019aff289a79f35c38719911484aa78086b3af92636934ae735ae0c613d4e6c7fde96cb307d163844dfdf9c527335c60e873722ce31c47e729b52f0a64584
 
 Package: debianutils
 Architecture: aarch64
@@ -748,6 +824,21 @@ MD5Sum: 05d1461c9860fae2e19a843f6f99c714
 SHA1: 4dd5cb6e84158f38e0e33643307b0c8c278a5d7f
 SHA256: 9bd2b5e71f584f963a528c65e304083f2dae9e247612d1923311c5032e5df497
 SHA512: 4a0a0a98b3e6451efc44e856ae8fdbebe3387a193f0f8bb45aced311e3a039d80e9d0a9eaa6a18c1033715bcd46a6564f032dc91b182053a6cb39882851132f6
+
+Package: elfutils
+Architecture: aarch64
+Installed-Size: 2868
+Maintainer: @termux
+Version: 0.193-1
+Homepage: https://sourceware.org/elfutils/
+Depends: argp, libarchive, libasm, libc++, libdebuginfod, libdw, libmicrohttpd, libsqlite, libelf (= 0.193-1)
+Description: A collection of utilities to read, create and modify ELF binary files
+Filename: dists/stable/main/binary-aarch64/elfutils_0.193-1_aarch64.deb
+Size: 443728
+MD5Sum: 8ddf604dae7fea4608f7c24f83feeddf
+SHA1: 3e442d45e7b6540260e12fbcf71015a79234deae
+SHA256: 486ab05bc3abcdedf430e359cdf710b2581e9555357463aad9603d0ea2e587f2
+SHA512: 598a89dc428dca7838f0f9ecb703c2600b1fbd362b86db50e2bdeef923b8936aa4e32f989d85d1c264caf738d9faf38307650cceac579f88d277d978ef6de24a
 
 Package: eza
 Architecture: aarch64
@@ -1685,6 +1776,37 @@ SHA1: 10d5cd0b6b91472e5012c6a36a79f0b8745ded15
 SHA256: 2a279afed7b85bcb7a931c4427f174a419ed204d0baf25640ab6f43896be73e4
 SHA512: 28ae4b4fae2d64746de31a07e7aef0b9da52aa3536e372665a0524fa24c80ec414769aa963c48b324c39b2c1b5708c34e54e778da3797734dc755177483b79e5
 
+Package: json-c-static
+Architecture: aarch64
+Installed-Size: 180
+Maintainer: @termux
+Version: 0.19
+Homepage: https://github.com/json-c/json-c/wiki
+Depends: json-c (= 0.19)
+Description: Static libraries for json-c
+Filename: dists/stable/main/binary-aarch64/json-c-static_0.19_aarch64.deb
+Size: 31112
+MD5Sum: fdd57fd9788db24b20534e4a897653b3
+SHA1: a044a1354cfb4ca23f5281574d609075c838d7fd
+SHA256: d3b53663a8175bcbde1221b90eab8f358a15c1497d486a7983aec6f4638150bc
+SHA512: b652c9a825d49db19e36d1d71d63ee43b6a9e87e449e127565b8d3bc9a83c17fa873f0537acfc7a9b115f3857af8d64a03668217b67da47bcbdd842e094e391a
+
+Package: json-c
+Architecture: aarch64
+Installed-Size: 296
+Maintainer: @termux
+Version: 0.19
+Homepage: https://github.com/json-c/json-c/wiki
+Breaks: json-c-dev
+Replaces: json-c-dev
+Description: A JSON implementation in C
+Filename: dists/stable/main/binary-aarch64/json-c_0.19_aarch64.deb
+Size: 52004
+MD5Sum: 4301516ed7118e17c5c2c9ad82955475
+SHA1: ca6db0b3dd38204a769eb97d4527face9e3ecd55
+SHA256: cc18a0f29ad25b08b6781345c37571035e131835e948b5755ea7f1d87cf4e8bd
+SHA512: c09e358f59a63d66f22addc61bb98ccd44e027f4793afa7733f288494c6fb8a3332b7301adf0c436f7e134f7845b693b18b6859f97f531fc34e20f957560d902
+
 Package: jsoncpp-static
 Architecture: aarch64
 Installed-Size: 472
@@ -2103,6 +2225,35 @@ SHA1: fed2cb7722e93202bb6ea369521de5162b946285
 SHA256: 9d92ccfe7b85181e448323a3fc772534f89b1a4a3807df8e690e1ab65d852529
 SHA512: 2ef4db78d7ce69588fb0968af971b7673a291625b8fab5d3274251dcc89ac5a3a1d2b482e20d40670149885bdab21141fb4ecc8f8e0fce3be8a6b161e155bf22
 
+Package: libandroid-wordexp-static
+Architecture: aarch64
+Installed-Size: 36
+Maintainer: @termux
+Version: 0.1-1
+Homepage: https://man7.org/linux/man-pages/man3/wordexp.3.html
+Depends: libandroid-wordexp (= 0.1-1)
+Description: Static libraries for libandroid-wordexp
+Filename: dists/stable/main/binary-aarch64/libandroid-wordexp-static_0.1-1_aarch64.deb
+Size: 2672
+MD5Sum: eef11ec5378ddb17ba20a6064c97c729
+SHA1: 44afa85a447abbc2e91d252bf8977218953e93e5
+SHA256: d13ef46aef47ef89abd2c91ee963ef124b997e34897a3eb054ab5b922dcf0da4
+SHA512: b543f3bb8561f40f24757eed1240a9ceb6d5938a8516a824407a82b107d5fb4f3a86cfde6d444b0d32aeec9e8fe923826c3bddbb3ea634a6410f654dfd5740b8
+
+Package: libandroid-wordexp
+Architecture: aarch64
+Installed-Size: 56
+Maintainer: @termux
+Version: 0.1-1
+Homepage: https://man7.org/linux/man-pages/man3/wordexp.3.html
+Description: Shared library for the wordexp(3) system function
+Filename: dists/stable/main/binary-aarch64/libandroid-wordexp_0.1-1_aarch64.deb
+Size: 3676
+MD5Sum: 1ac2317ef335263574d09aa2d2b9f262
+SHA1: cd84402064168c11fa39f1e1beddaa40e40a6a83
+SHA256: fe2511ae1396f0688691c9a3c2379679775a65f2d90421e3bee1600288924f67
+SHA512: 55ba22afcd3f603cc24215dd329029ae3a15578be72b79b83b2b34cb5035480d29573fc4394e30ea5de270defca0540a0c3046e4fbc733e6d1ca494c0ea95161
+
 Package: libaom-static
 Architecture: aarch64
 Installed-Size: 8908
@@ -2163,6 +2314,36 @@ MD5Sum: 3eb5ede21ead8426e95eb63aaf79630c
 SHA1: f4ddf282f4be32d9d7868687154672a10e10d6e2
 SHA256: 6b54da6415ce7c4060a0be002ead2ec8f2e904141e040166defb414e6cae3c3f
 SHA512: 816fb20929759fe820820ddbc70129acc20afb8eb9793f780bac440de2b6fc2b4bb514a35c93f00541e2f54b5d9fa0e2bd8d22bb10bc7543423a4b2f246486f3
+
+Package: libasm-static
+Architecture: aarch64
+Installed-Size: 104
+Maintainer: @termux
+Version: 0.193-1
+Homepage: https://sourceware.org/elfutils/
+Depends: libasm, libelf (= 0.193-1)
+Description: Static library to assemble and disassemble instructions
+Filename: dists/stable/main/binary-aarch64/libasm-static_0.193-1_aarch64.deb
+Size: 13236
+MD5Sum: d32a0705b766027d7811949ea18dbe71
+SHA1: 787bf743d982d83824b3aa601c95675c287d6583
+SHA256: c6b7743ab50c361af9fca2db1e3ddb5b86ae756eac0181287750241bd728b96e
+SHA512: c50701740037677f49cc462a16d4925ddb4cea2c13939c58698e4c48309d4ccab7c5302ad8ca481d726c041f5e5c56054db24c3243499130ab1569458af14e3b
+
+Package: libasm
+Architecture: aarch64
+Installed-Size: 72
+Maintainer: @termux
+Version: 0.193-1
+Homepage: https://sourceware.org/elfutils/
+Depends: libdw, libelf (= 0.193-1)
+Description: Library to assemble and disassemble instructions
+Filename: dists/stable/main/binary-aarch64/libasm_0.193-1_aarch64.deb
+Size: 13372
+MD5Sum: a08708e009f8d390b6269d6bc3a90be4
+SHA1: c2a5444fecc5476b610505607b2976065ce15252
+SHA256: f45651bcf62637896abef677c825def7efb57ec100b82bf889167b8a62a28212
+SHA512: 9784f33680e86cb630e17db305b5b224e161ed2abc1331b1106fa5ca2a9bd3f0e11ab0bea2e4184cdfacd60f849ecf923a68d96a21763b563792688c45e86549
 
 Package: libassuan-static
 Architecture: aarch64
@@ -2466,6 +2647,51 @@ SHA1: 002563965a78023b5f457d29256df574f32d9d41
 SHA256: 79443176351ace7dfe5957f94fb59cccb0d8321e2f56930e7bed74516ed716c7
 SHA512: 11e91c91474d7c4a2ced4465ad4e5446c7f05f2856ce75f6e00407cccda69d89300fe7cba4972b317b398333e74b24896bc76ed1624b744b324bc0d23ed6f29b
 
+Package: libdebuginfod
+Architecture: aarch64
+Installed-Size: 152
+Maintainer: @termux
+Version: 0.193-1
+Homepage: https://sourceware.org/elfutils/
+Depends: libcurl, libelf (= 0.193-1)
+Description: Library for debuginfod
+Filename: dists/stable/main/binary-aarch64/libdebuginfod_0.193-1_aarch64.deb
+Size: 20428
+MD5Sum: abd58ecc847c48b661f01b9ddf14959c
+SHA1: 0266c37cd375db4b23c062e0a70d068b950f92a5
+SHA256: ad5e838f0f2bcf81474e548896ccd258623aab703bd3eefc68d2608b503e28a8
+SHA512: d197e5d96b78844e9d46bc6378db93566f4b5b3bb82379a13f9de2dffad93213d85f461b1e5634e649731d0c2e25dc73463c9c0d57e8b4b4c79a51db1f1c14f6
+
+Package: libdw-static
+Architecture: aarch64
+Installed-Size: 1504
+Maintainer: @termux
+Version: 0.193-1
+Homepage: https://sourceware.org/elfutils/
+Depends: libdw, libelf (= 0.193-1)
+Description: Static library to read DWARF information
+Filename: dists/stable/main/binary-aarch64/libdw-static_0.193-1_aarch64.deb
+Size: 237652
+MD5Sum: c2d1a5190c8f98216cefd45833df9a8b
+SHA1: 0acfd6b9f47190f0267e5bc68f51b248457fb360
+SHA256: 1b3ee31658585109439d0f0299cec82c0f797f1386579887c433f5f86bc1a951
+SHA512: b6f7a68fea62b5ddeb6de553fbb908107c7eeb4489b95ab7552b68a5253211a54ec927ca6933daa78aecc9ed95b80b85f9accc322518966e2168040604d660b0
+
+Package: libdw
+Architecture: aarch64
+Installed-Size: 816
+Maintainer: @termux
+Version: 0.193-1
+Homepage: https://sourceware.org/elfutils/
+Depends: argp, libbz2, liblzma, libelf (= 0.193-1)
+Description: Library to read DWARF information
+Filename: dists/stable/main/binary-aarch64/libdw_0.193-1_aarch64.deb
+Size: 212132
+MD5Sum: a2bdbb58c4ecceee07488e004e4c9809
+SHA1: f5af1bef912a232fe1a99b10ac77b26995da1178
+SHA256: 9fde09a4064aaeb8320d995b44c338e43f49ea4ee15158a7d58e4b1bc26ea3e6
+SHA512: 68cd577e2131e56a5afcde71ef2538dec9683a3ed15b4b6931520573e87d0a9061151858908b057782f7d18c1c2239f50ba0f57eea79daddeecc426559112411
+
 Package: libedit-static
 Architecture: aarch64
 Installed-Size: 384
@@ -2497,6 +2723,38 @@ MD5Sum: be45c6f1d7720e4e22b95f91a4a82d9a
 SHA1: 88fe29470a0a3fc43fadbe08c8b9c022dc7d2de4
 SHA256: 1fc912db248cd55fe78e863da86fd5135c44843e8e7b0d2049ec5474d8d81f1e
 SHA512: e91da236fa15ac4124271849ca662a22d771db0393643e2b400cce48b556938beb0468f7fee66850c54c3b6ad1729f470be192bcfaca0defdffe7f9357eb754c
+
+Package: libelf-static
+Architecture: aarch64
+Installed-Size: 324
+Maintainer: @termux
+Version: 0.193-1
+Homepage: https://sourceware.org/elfutils/
+Depends: libelf (= 0.193-1)
+Description: Static libraries for libelf
+Filename: dists/stable/main/binary-aarch64/libelf-static_0.193-1_aarch64.deb
+Size: 45320
+MD5Sum: d58e19aa6e5d3dde15b8cfb60a58b14c
+SHA1: 50cd518675ddd93c325db6e42269bfbeb66fa540
+SHA256: c6ae0225fce4466ecb6efccb13cc97b55a900bf85a21d3ddbc912af83ad36629
+SHA512: efc4dcce830c51e6ca30b84b3cb452433a4c48480e39185a33a31a3324716ccd35b430a0b6fbaaf5ba91649bc2fcb3c39c597be7d29f5ce648ac1412f9cb0d78
+
+Package: libelf
+Architecture: aarch64
+Installed-Size: 372
+Maintainer: @termux
+Version: 0.193-1
+Homepage: https://sourceware.org/elfutils/
+Depends: libandroid-support, zlib, zstd, json-c
+Conflicts: libelf-dev
+Replaces: libelf-dev
+Description: ELF object file access library
+Filename: dists/stable/main/binary-aarch64/libelf_0.193-1_aarch64.deb
+Size: 66176
+MD5Sum: 7b11868d4480a6754e3772ea145521ab
+SHA1: 139affad64d2bffea0988b1c0862ca370d96832d
+SHA256: 9e4f00c810efadc5ea7e4967767c9d821fa57d13b1654f7dd10d4ef6056ffa6a
+SHA512: 6a3683d13d1fb8afab1aa90c9f4c05b3692d32a05a7821499134c3f0e5c422523e7d1b9dbc899c55e24686f05fd558d313abb3abfcf1a2e4c81f3255f2741fab
 
 Package: libevent
 Architecture: aarch64
@@ -3298,6 +3556,38 @@ MD5Sum: f7604937f3b98519d8405027755d63fd
 SHA1: 177564f29dab2d5841460af94a9852aa08d8a7b7
 SHA256: b59230d52345a2d2139c57468bd51094811f3d4b4d7ed348783642ef8d3ebfd2
 SHA512: 0ff486c6a4055a7d2c4de19f8f2704192c291756530dd93c0d69f442d8ef103e3ba0ff8d645d2bf1f822aa89ad77dc7fc020cf3491c6a7059d242b37c99b8448
+
+Package: libmicrohttpd-static
+Architecture: aarch64
+Installed-Size: 312
+Maintainer: @termux
+Version: 1.0.6
+Homepage: http://www.gnu.org/software/libmicrohttpd/
+Depends: libmicrohttpd (= 1.0.6)
+Description: Static libraries for libmicrohttpd
+Filename: dists/stable/main/binary-aarch64/libmicrohttpd-static_1.0.6_aarch64.deb
+Size: 75508
+MD5Sum: e0f69331e74ccd24a8eb00fe0db3df81
+SHA1: f49b974c598d127621a28706833aec98d05729da
+SHA256: 2584835cb3a55bc21bad88cf2f1f56edb3d82717ec9598a5819907a18f27544e
+SHA512: 2aa694f12264294bb1a0e5b76e2eaa1c14d2eba0f1dd97c188c3f0bfa9543a566c45f185bf2784e1c865194bce68c6ddc3b3e3b1c428c83cbb2be7314b4dcf9e
+
+Package: libmicrohttpd
+Architecture: aarch64
+Installed-Size: 992
+Maintainer: @termux
+Version: 1.0.6
+Homepage: http://www.gnu.org/software/libmicrohttpd/
+Breaks: libmicrohttpd-dev
+Depends: libgnutls
+Replaces: libmicrohttpd-dev
+Description: A small C library that is supposed to make it easy to run an HTTP server as part of another application
+Filename: dists/stable/main/binary-aarch64/libmicrohttpd_1.0.6_aarch64.deb
+Size: 206128
+MD5Sum: f00b95756281deec698dd7a62710bba5
+SHA1: ed313a7ba3ce0243188439bf0759539818c527c6
+SHA256: 605c3f6a79808b19361fb6e637ba45823516ab1d5a1b29a1c702eafadae1974a
+SHA512: 8d5705f29a31ffa9f41cc73dfba08ceb007a48140c1e8d4bc5c9be2210382cf7e6bf8ed54e2117307ea68777b6a6c4410ea694cdb17ff5aba7208bc14b62fd52
 
 Package: libmnl-static
 Architecture: aarch64
