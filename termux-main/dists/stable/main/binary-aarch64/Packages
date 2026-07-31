@@ -162,6 +162,36 @@ SHA1: eebb959fd996b4af3fe37242b197ddfefc6c46d3
 SHA256: 8c551c71c020f3f7fc4525a600c4caa5f5905c9e2310d880f81002cdcfc610f1
 SHA512: 0c08e27059f7e0d4db28684a89ab62bd74d6ab4f9cb6bdd14e3e4cdb9cd1a75c885ecac9cfd602b6eb005c1de4bc484f277eadfb98f81f520941ea89577263e6
 
+Package: bison-static
+Architecture: aarch64
+Installed-Size: 32
+Maintainer: @termux
+Version: 3.8.2-4
+Homepage: https://www.gnu.org/software/bison/
+Depends: bison (= 3.8.2-4)
+Description: Static libraries for bison
+Filename: dists/stable/main/binary-aarch64/bison-static_3.8.2-4_aarch64.deb
+Size: 1540
+MD5Sum: 06bd98e1643e0e4d1214d531b4908cf6
+SHA1: cfe9d88e70963ffeba116b84e996315a7d56f505
+SHA256: 1ef98baa0870422a250496933a01ef0e97198b56021dc05bf0d1b033018b3d32
+SHA512: 2441558241a1db2bfd6c160649e98fb3b059ec33c2f7e93360541c8ebded384f60ae9709213098ca14ff95b4fff6f4aa9d57b73d6cc9352ba305416440f11d48
+
+Package: bison
+Architecture: aarch64
+Installed-Size: 2668
+Maintainer: @termux
+Version: 3.8.2-4
+Homepage: https://www.gnu.org/software/bison/
+Depends: m4
+Description: General-purpose parser generator
+Filename: dists/stable/main/binary-aarch64/bison_3.8.2-4_aarch64.deb
+Size: 534420
+MD5Sum: c0af7933eafd4ef78634e7e6fb6e534b
+SHA1: 15f4da5802eedf577618a0f8e0b28e16ed7f1aa3
+SHA256: 73db370a6356fc9c3c770b1f38ebfa45ccbadf77e65d508fd7ee1dcbe432a1cd
+SHA512: b40c1377ba23b2a70092859fe550a878d916d68d5fcf18f5d3b63345385b63a918b954a4bae52b170053a329107a6e6c6b94efccffdb6c6f6a123c1be3635c45
+
 Package: blk-utils
 Architecture: aarch64
 Installed-Size: 920
@@ -259,6 +289,37 @@ MD5Sum: 17b966b143550ca6154bcc0750d9fccd
 SHA1: 7327e373662a700c9cd6045f3efa018e60ffc43d
 SHA256: 25ed44e1f3307e971f88e99e552263e8136209c55447ccf683fb671a552dd8d9
 SHA512: 4c12c808e105a13ef9c61ef774746bc065953f504a54fdb425a8b69a27195395b09dfa3483e30b845aa1326f788a27bd1b1fb58f6b72913dcf702c383d67316a
+
+Package: cmake-curses-gui
+Architecture: aarch64
+Installed-Size: 9428
+Maintainer: @termux
+Version: 4.4.0
+Homepage: https://cmake.org/
+Depends: ncurses-ui-libs, cmake (= 4.4.0)
+Description: Curses based user interface for CMake (ccmake)
+Filename: dists/stable/main/binary-aarch64/cmake-curses-gui_4.4.0_aarch64.deb
+Size: 2470460
+MD5Sum: 5d595676a6179fca2ad223651ae2fb56
+SHA1: 4d0a67050be342ff09e22556ff5086103468947e
+SHA256: 8243381ba65d1a6e33455eae602ab6d4c6ac3bf3438d8345c0b9e1f7170e0aa4
+SHA512: 6de1a126a2101fffc6bbf543047462ce42e0ed25f8a7462df21e6d2c1eab257bc93509192af916ea3c59cd98693695150a2f5a1840b5ce90adf221bb6ec2b4f9
+
+Package: cmake
+Architecture: aarch64
+Installed-Size: 55792
+Maintainer: @termux
+Version: 4.4.0
+Homepage: https://cmake.org/
+Depends: libarchive, libc++, libcurl, libexpat, jsoncpp, libuv, rhash, zlib
+Recommends: clang, make
+Description: Family of tools designed to build, test and package software
+Filename: dists/stable/main/binary-aarch64/cmake_4.4.0_aarch64.deb
+Size: 10628708
+MD5Sum: 4b20f49723fb84ec43df875b5c0a99f6
+SHA1: 803374ec60e6ff63b8b1f7fbe9505a388a7e640c
+SHA256: ab4ae120d15766b928a0c89bd94e107e7f973f41d88d86409f8e1de4b90cde49
+SHA512: b94eed553e7e635590e327fadd0accf073932aa681ebe75c2a246a344bff8084583210b926ba81d0bfb6b4a0cb933d666f5a7e81282542696435d25f21c2d46c
 
 Package: command-not-found
 Architecture: aarch64
@@ -600,6 +661,38 @@ SHA1: dd449c85c8fd912d8c04236f0159dc606f27083c
 SHA256: a93c3cf16f9e4cbc5c52174fe9f37661cd9ced064e9371d8a92865c7903af030
 SHA512: a091c44becafc20f29bdb20b7c1599808d9ef8e2e76d0b863990aaa4eb28f97a4a10dfadf795c6ccf418ed622a18439428c8cfedea4108fd2af7a0fa5b5b33ec
 
+Package: flex-static
+Architecture: aarch64
+Installed-Size: 36
+Maintainer: @termux
+Version: 2.6.4-5
+Homepage: https://github.com/westes/flex
+Depends: flex (= 2.6.4-5)
+Description: Static libraries for flex
+Filename: dists/stable/main/binary-aarch64/flex-static_2.6.4-5_aarch64.deb
+Size: 1896
+MD5Sum: d796ebdc4667af2b29f5464e3f2d9c1e
+SHA1: 3d39b325fe3fac47778666186660f374e72f93cb
+SHA256: 8258dca8d35bb49016b8536972459fdbb66879f7fcc3b9629182bc786fb401b0
+SHA512: 603c31673688f2f3e4476ccdce75280758d9c7444630b43d2fb6df15276ca420f82976485d4ba23fc119c67f416854f413fd0f157439c6a189b81a104b53c6c1
+
+Package: flex
+Architecture: aarch64
+Installed-Size: 908
+Maintainer: @termux
+Version: 2.6.4-5
+Homepage: https://github.com/westes/flex
+Depends: m4
+Conflicts: flex-dev
+Replaces: flex-dev
+Description: Fast lexical analyser generator
+Filename: dists/stable/main/binary-aarch64/flex_2.6.4-5_aarch64.deb
+Size: 202348
+MD5Sum: c331299808f43d6b6cf9809f5476a9c5
+SHA1: 61ff677518fe3aa5925a6914b6de568c4a2c9972
+SHA256: d509874fe9b868c034114cee5ed04de1f58665b29eaa6de29fb3d3c1adcb35c3
+SHA512: a13b4119b5c0e54a16d9a6b7c6b94a71c9e1ce01a9d7e243f184db45653c8adf8b3bfb285f9d3301ef8f4a71fbc7d7ab198efdd48b972b6faeb84ba624c6816f
+
 Package: fontconfig-static
 Architecture: aarch64
 Installed-Size: 680
@@ -872,6 +965,21 @@ SHA1: 91b386c613094574bddff3a416e3ecc6b0b9f6c8
 SHA256: 76273cbcd1fdf4a513fb299d50d16e67c3c3cd7e0d44fbdd9e7d5721bf0c8754
 SHA512: 6dfd9bd076a57fbb32338a51eca2c8ec88d661e53687b4b9ae2a80a1973ddaf583bbcaf14e14254b853414db7830183f68450311c9f02ef4ab5def0f79da71c4
 
+Package: gperf
+Architecture: aarch64
+Installed-Size: 384
+Maintainer: @termux
+Version: 3.3-1
+Homepage: https://www.gnu.org/software/gperf
+Depends: libc++
+Description: A perfect hash function generator
+Filename: dists/stable/main/binary-aarch64/gperf_3.3-1_aarch64.deb
+Size: 87076
+MD5Sum: 88bdc1cf70bc39bade1e43865e843ae0
+SHA1: b2d22d4b23c298f047997659ffac3a91ce6bae26
+SHA256: dad31d9047032fdb7f3f4b0091754a31552fcfb85ceef5a91eef5c8bcb958a96
+SHA512: 6d1c6c3e1a51ad163a32058cdc6b8812502454c0537e7342faa5eb1d5e7e65680442f959b15bcc976dd3956de110c71fb468e1d673d161bf1417d430b7c32c6e
+
 Package: gpgv
 Architecture: aarch64
 Installed-Size: 508
@@ -1042,6 +1150,38 @@ MD5Sum: 4048a7ff2418b20633f2f97f2a2e1bc5
 SHA1: 10d5cd0b6b91472e5012c6a36a79f0b8745ded15
 SHA256: 2a279afed7b85bcb7a931c4427f174a419ed204d0baf25640ab6f43896be73e4
 SHA512: 28ae4b4fae2d64746de31a07e7aef0b9da52aa3536e372665a0524fa24c80ec414769aa963c48b324c39b2c1b5708c34e54e778da3797734dc755177483b79e5
+
+Package: jsoncpp-static
+Architecture: aarch64
+Installed-Size: 472
+Maintainer: @termux
+Version: 1.9.8
+Homepage: https://github.com/open-source-parsers/jsoncpp
+Depends: jsoncpp (= 1.9.8)
+Description: Static libraries for jsoncpp
+Filename: dists/stable/main/binary-aarch64/jsoncpp-static_1.9.8_aarch64.deb
+Size: 72952
+MD5Sum: 3050202d1d2697880676f0a046b0d58a
+SHA1: c68a403233725db46d31747e612812e017da8bd4
+SHA256: 1bc60e9f66fa8439a0d2ebc01c4f5292923065301319af0ce901490d8a67bdc1
+SHA512: bed9b239fcd05b2a6c4ea893f075abe6ae6b521a1153d70ab65a7153a4ba14e13cc7a75fdf02e141bfdf369977a82bc8b565516c192703d0c2557418f6f365fa
+
+Package: jsoncpp
+Architecture: aarch64
+Installed-Size: 452
+Maintainer: @termux
+Version: 1.9.8
+Homepage: https://github.com/open-source-parsers/jsoncpp
+Breaks: jsoncpp-dev
+Depends: libc++
+Replaces: jsoncpp-dev
+Description: C++ library for interacting with JSON
+Filename: dists/stable/main/binary-aarch64/jsoncpp_1.9.8_aarch64.deb
+Size: 96320
+MD5Sum: bac4b74b527cbc8712164953ca7d4b02
+SHA1: 42716a77f6b4c59f3aa65e3570cfeaf23abd70de
+SHA256: 0567d14406803c477d3b8152c00cb67e8ab37f17d2962f1997dc9ddbcab50a10
+SHA512: 2bd5e594745c01c16b0f1a54f0dba27a573a9fdf200877db31e45fceacfc1621abcde1de287319e8335d6fc19a73cdc3013559735fc7f858af64afd7dfd6e4a9
 
 Package: krb5
 Architecture: aarch64
@@ -2036,6 +2176,22 @@ SHA1: 11f1dab12c9e73559de650ebadb199608203b3fe
 SHA256: 8d5fb118506e5e8ceb27640284317abeb7da875e25818b52b71c457509c506f8
 SHA512: f02f28f1d564c32697124bde3c09fbd15212b1e1d4510826678a8712cd6707985120358d2779da1778f5328fe2aaee37801434e63d65f55062afbfa0e58255e9
 
+Package: libltdl
+Architecture: aarch64
+Installed-Size: 96
+Maintainer: @termux
+Version: 2.6.2
+Homepage: https://www.gnu.org/software/libtool/
+Breaks: libtool (<< 2.4.7-2)
+Replaces: libtool (<< 2.4.7-2)
+Description: Library for dlopening libraries
+Filename: dists/stable/main/binary-aarch64/libltdl_2.6.2_aarch64.deb
+Size: 17972
+MD5Sum: 9866c6050574b9fd409c717530eb5e50
+SHA1: f9cdbe7e158e02319241309b75378e31df1f1776
+SHA256: b21b61ed19b2c7388781fcc03a201fa766f4e47b90ee2e5180cdcabeab639868
+SHA512: aaafad9bf029f70d19207f09701f422ba547a5a3c9dd72a2630449680b0a0fa4cddce5343cffa1ad76bdd127285fdf2322f5d05f1bca776a50397aec6c35b670
+
 Package: liblz4
 Architecture: aarch64
 Installed-Size: 340
@@ -2718,6 +2874,23 @@ MD5Sum: 291a4116a69d0f0c818a9fdef4f6b551
 SHA1: 039a77638aedd489081292f09c25f138df94784d
 SHA256: b85cba86e44ad39e48fb74bb346b03bbbc8e75aca83b6a0889343bed7c2b30ce
 SHA512: 0998f326e388d5d51557d8a278f1c1cbf6b7add8c8823004d0949d0b4ca7adbc58988fa7a98fe381f89d774b6fe3d85724d5bd77e6de5a731a5e6065267e3db1
+
+Package: libtool
+Architecture: aarch64
+Installed-Size: 2872
+Maintainer: @termux
+Version: 2.6.2
+Homepage: https://www.gnu.org/software/libtool/
+Depends: bash, grep, sed, libltdl
+Conflicts: libtool-dev, libtool-static
+Replaces: libtool-dev, libtool-static
+Description: Generic library support script hiding the complexity of using shared libraries behind a consistent, portable interface
+Filename: dists/stable/main/binary-aarch64/libtool_2.6.2_aarch64.deb
+Size: 401416
+MD5Sum: e8388f739ecd71c17967b9f0448cdd4b
+SHA1: e3c4bc7babcdb1568b304d55724d7700480ed4e7
+SHA256: a0f62f0886504b53e1a7ec9d8dffcb1049718417c9c52d2119275226ec1163df
+SHA512: 51131526f3ce5d1db6561ce43e0355031b45cbe1c4bdd432d63e11e46bc18be373456f4cb08ac72620cbcc56ab5c81df4cd93455e26fb6198a196188613f724a
 
 Package: libunbound-static
 Architecture: aarch64
@@ -3591,6 +3764,20 @@ SHA1: bfd1e04594b91d3179b475f6b6e11616f1e3b2ed
 SHA256: b6898308db37e4d3791e9ff456864a5a68ed4c335fb01dd73f88d46ce6a55ef7
 SHA512: ccd10c1872df977b2ae687252c3051cdc5547ec26a70af0d51677dabc85c8b818d370fe0c668220e45f59823caa571f1e2798d29f6ecad53395b1ec3b9f13016
 
+Package: m4
+Architecture: aarch64
+Installed-Size: 672
+Maintainer: @termux
+Version: 1.4.19-5
+Homepage: https://www.gnu.org/software/m4/m4.html
+Description: Traditional Unix macro processor
+Filename: dists/stable/main/binary-aarch64/m4_1.4.19-5_aarch64.deb
+Size: 191564
+MD5Sum: 9ef4ee7e07e7319b876fb58491accb4c
+SHA1: 19667276fc8a4e4b2adad71aea9c02dba765c2dc
+SHA256: 047a776a114bdb3e219a4ad01f726c3868f301e62c903fbdf85d7a7a8125bc9d
+SHA512: 9ae148edc1dacd1dd51d2c7ce34db3486700bfd470337d5856f5594504ebdb9f4c862946945275472bbcb0837a31a9d4a2fbb3cbf3cae29ef49dc6337c78b898
+
 Package: make
 Architecture: aarch64
 Installed-Size: 944
@@ -4271,6 +4458,38 @@ MD5Sum: 4e3b66535307086b7528ac9bbce27961
 SHA1: 6e465442216e0e294cf3aaf7cd0cfb4af803a435
 SHA256: f82b2d3f3c709c8c5113eca56b1da05bb7e5a2976c24d364e9251e471129b029
 SHA512: 8fbc8c2e5fedb109449a88568d623c0adbd3b2be047131b00eadc30b5dc5fbedb796ddcdd11ec536f4a99a0304ed03f5ff6ac4fc9ce544a28563b5138cfe2f0f
+
+Package: rhash-static
+Architecture: aarch64
+Installed-Size: 352
+Maintainer: @termux
+Version: 1.4.6-1
+Homepage: https://github.com/rhash/RHash
+Depends: rhash (= 1.4.6-1)
+Description: Static libraries for rhash
+Filename: dists/stable/main/binary-aarch64/rhash-static_1.4.6-1_aarch64.deb
+Size: 130948
+MD5Sum: f4256012ef2a17293f514dd4a3056c0a
+SHA1: 05a56af005a9019a355903b4b3727e30f0d5394b
+SHA256: 7a9b8cb5a1dfdead88ef34633f6f4f82dcb722a2e4bfb08c210ba05643c5018f
+SHA512: 68ee4b9812a19c2362e1094085b080b3104ff2f86baf67f45ab8e2406f927de7aec82ad501eb605931f9f58ad6d39c4788cbade26073dcc53a7fdafc8a03e887
+
+Package: rhash
+Architecture: aarch64
+Installed-Size: 384
+Maintainer: @termux
+Version: 1.4.6-1
+Homepage: https://github.com/rhash/RHash
+Depends: openssl
+Conflicts: librhash, rhash-dev
+Replaces: librhash, rhash-dev
+Description: Console utility for calculation and verification of magnet links and a wide range of hash sums
+Filename: dists/stable/main/binary-aarch64/rhash_1.4.6-1_aarch64.deb
+Size: 162400
+MD5Sum: 0b26dbd22b308a53f0b2059e1298930c
+SHA1: b1c4288c32129feec353358621508ef74bc7fcc2
+SHA256: 17a68d668dd2855e59c94cc9ac82ddf7f773a8418b4fac32f216403876c0c637
+SHA512: ac13b41ff7332c60dfc1c40707c7f3c5fc2130a7064626559feeb23083da16f49fbd9e60c01ab7c6556036c64b9ff12246d06e6b7338a4b518db4a9a005f15cb
 
 Package: ripgrep
 Architecture: aarch64

@@ -28,6 +28,36 @@ SHA1: 12aa1a130cc38ff6d8ecc9b461dae93a6bc4cc2e
 SHA256: 67597dc43639c5fccb8a0bb690d046d0a61efe8d2f7cb90600980e7b5ba693e4
 SHA512: 3012a9377155d96ceb7cb147720f4046096c9b3d38e05272f952fa841e5dfc424897358c843f4106021f78b819674d1471621ad1a91e6ca1443b75bf54ded219
 
+Package: autoconf
+Architecture: all
+Installed-Size: 3680
+Maintainer: @termux
+Version: 2.73
+Homepage: https://www.gnu.org/software/autoconf/autoconf.html
+Depends: m4, make, perl
+Description: Creator of shell scripts to configure source code packages
+Filename: dists/stable/main/binary-all/autoconf_2.73_all.deb
+Size: 624712
+MD5Sum: c07bb7189a29b1765517cdb97ef41ca2
+SHA1: a08c7f6e77cf1ecf5f2341246dfa2a990391352e
+SHA256: 623b7ede9d930db61900b82080c0de972013bd5efe9322c78b2dd1694426300d
+SHA512: 642379daf21c0bee7e584955e6911cbb8c46746ecadee60135e0feaefc357478cc50b3d8d19a55146d6bee8411c2fe576bd68ec636720262f3ec98ea820c7621
+
+Package: automake
+Architecture: all
+Installed-Size: 2860
+Maintainer: @termux
+Version: 1.18.1
+Homepage: https://www.gnu.org/software/automake/
+Depends: autoconf
+Description: Tool for automatically generating Makefile.in files
+Filename: dists/stable/main/binary-all/automake_1.18.1_all.deb
+Size: 576584
+MD5Sum: 9fee88af03d60c1f0880a6b729400d16
+SHA1: d8282d3bbc0ba9fb4f48e83f7729cd217f5b190f
+SHA256: 70f0afd9544b655f0aa7541d8d9d794f2dc66c3a23091ba083ef8f25c11fc354
+SHA512: 59f6e8abfc68f750be490a9f2abb6462417a48c6b6385e75a1ad3a3398b51433cac369fa4f7841c1b3923d5c96b54a6d6a7feba7b8f9afc0f494b102af9a3def
+
 Package: bash-completion
 Architecture: all
 Installed-Size: 2724
