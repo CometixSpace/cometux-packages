@@ -762,6 +762,23 @@ SHA1: c060eaf64e21b6f3e9b8b6703b4c6bd11ae3c01c
 SHA256: 9e56a7d72006cfcdcb482afb38f3b62423234af25ba24c19dc3e15b832dc39a3
 SHA512: 63204e4fd274cb6f265b57953601d6223ccc5f644e2bc649e0c5dcff6478a193a69bae30a169f0916866e9ea42471a0f30397b64b331f6de7b836f075c03761e
 
+Package: glib
+Architecture: aarch64
+Installed-Size: 20872
+Maintainer: @termux
+Version: 2.88.2-1
+Homepage: https://developer.gnome.org/glib/
+Breaks: glib-dev, glib-bin
+Depends: libandroid-support, libffi, libiconv, pcre2, resolv-conf, zlib, python
+Replaces: glib-dev, glib-bin
+Description: Library providing core building blocks for libraries and applications written in C
+Filename: dists/stable/main/binary-aarch64/glib_2.88.2-1_aarch64.deb
+Size: 2556160
+MD5Sum: 70deee584948a442463c64ba42fb4f4f
+SHA1: 58c9f5f75e4abbc29d9f85cd360e63f676c2dbca
+SHA256: cf9d4098f2bd8070239b3a94647b120957426f16a383d30fbe88fedf79b9b00a
+SHA512: fb45a65ab210bd09ccd8fa8a5e4359656c3e9fba5a5c2fba0f541a839244eb48c24416e129ad7d281d74e54025989950255e56ff687b5c65cbf38f9a0dce8d99
+
 Package: gnupg
 Architecture: aarch64
 Installed-Size: 5544
@@ -3517,6 +3534,24 @@ SHA1: 2fc85ef3c27a1b04c4da4188a768c6fa36b6edde
 SHA256: c9518eb926458de4a72b1fb9e7fcce93e6fbcd1ba546a181694cb4bcb510434d
 SHA512: 1bd1c6446e174dafc1a34ec57cd70ceb677679ba0d7639b8a7c79a5eccb4c57bac0c9bcd8d1ad4332955da9b8ade6e00f98ba3cb68ba2accc785deb52e954d28
 
+Package: mandoc
+Architecture: aarch64
+Installed-Size: 908
+Maintainer: Joshua Kahn <tom@termux.dev>
+Version: 1.14.6-6
+Homepage: https://mdocml.bsd.lv/
+Breaks: man
+Depends: less, libandroid-glob, zlib
+Replaces: man
+Provides: man
+Description: Man page viewer from the mandoc toolset
+Filename: dists/stable/main/binary-aarch64/mandoc_1.14.6-6_aarch64.deb
+Size: 277008
+MD5Sum: 1750a4d6212bf842ad811bb1afb70df1
+SHA1: f73d128e7d8022901515061af31293f9c7636c0f
+SHA256: 29a13d68192f42887d3e16cf9042b969869ecdc5ea3490e56be64344ba5c7fd2
+SHA512: 3a60e009874a9b4291eab18690fb46b31f27a6b01b9816fb44bf9a4267eb3235aaf246f29ac9a23cd0f85e13b3b464969e14fc822d2442b20fb88047967da7ad
+
 Package: mlir
 Architecture: aarch64
 Installed-Size: 269068
@@ -3955,6 +3990,21 @@ MD5Sum: 208de09087627125ad84534725574108
 SHA1: 5c8f8c16a132e63cb3ba866cd217bb7d117ff1c6
 SHA256: 7348678e15a30d8c19c0a3d825d492c783f425bc83b4e680e1a1fb30551b5d58
 SHA512: a826baa1502a29530008f85c919bcfe5d23b35e224be14fdb2bbfd57c76aa350177d8df0480843bc57b8560c03da45e69233396ff7f440044701a6ba5b901dd3
+
+Package: pkg-config
+Architecture: aarch64
+Installed-Size: 140
+Maintainer: @termux
+Version: 0.29.2-3
+Homepage: https://www.freedesktop.org/wiki/Software/pkg-config/
+Depends: glib
+Description: Helper tool used when compiling applications and libraries
+Filename: dists/stable/main/binary-aarch64/pkg-config_0.29.2-3_aarch64.deb
+Size: 32760
+MD5Sum: f6e44f9da8abb541025af5fd885ce9b8
+SHA1: dc5304ba59235b3f2d391be35057c15d70b23154
+SHA256: b04e1e527ceb6414cf61636b5b391cd57a2567e13a213bc79136f063c63d24c3
+SHA512: 1550ee9f057653615748770642f6bcc0718df7b19d109169998129a967691bd566a73f6a58b75955f3144fcad4d3b10399d5e75290a86449d507e6f50f89d18e
 
 Package: procps-static
 Architecture: aarch64

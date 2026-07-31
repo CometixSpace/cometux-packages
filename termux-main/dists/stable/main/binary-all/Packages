@@ -22,11 +22,11 @@ Homepage: https://github.com/scop/bash-completion
 Depends: bash
 Description: Programmable completion for the bash shell
 Filename: dists/stable/main/binary-all/bash-completion_2.18.0_all.deb
-Size: 194688
-MD5Sum: 4dc6d64d956d6a9198c265f0d2733ec8
-SHA1: 2b1f3d90f76f61c7b4000da65d08759ac2fbc846
-SHA256: 232bdd8aa557cb04bced3edb66ffb804721b66704834d50046b504c2c072efa5
-SHA512: a9c490854226256efdef3013c4744f1c62c2fab878a39a11f3f3fb6b090ed18e7d7e93dcf3504de71cb4a06b43670df31fc668be7b709a00b5f10bec461b928c
+Size: 194620
+MD5Sum: 67e91a6fb99aa75e772f9b9377382737
+SHA1: a47eaa888ffbfbbd2f67f892a5f19ea8c6df1ecf
+SHA256: 2a71ec4abe8355503e7b6b7ac279608eef1d8ced83ca74f3c5bfde1bd61b40c0
+SHA512: d5898cde95dcbbb5afe6721a170b647ad0c567bc8681a4790f912b877da30b58c2c7a98933280f000748945c9eac0ba3960eda6b1d773831649fe06db98baf3e
 
 Package: ca-certificates-java
 Architecture: all
@@ -133,6 +133,37 @@ SHA1: 589a8a1c18e834c435340382f7dffc52b0cfb12b
 SHA256: 03e5cf7c7a68eda673b982a480bd05425c793bdd81f02c6444d4f6c626719f3c
 SHA512: fb3736c322a79c0de91d9482597189c0275492aa71c95a8858d16d2bda1789f9bb846590bdab8aa9cb1c039cdd68ac12d66cdc8a298fe0130226fd6b47a44f0e
 
+Package: glib-cross
+Architecture: all
+Installed-Size: 83076
+Maintainer: @termux
+Version: 2.88.2-1
+Homepage: https://developer.gnome.org/glib/
+Depends: glib (= 2.88.2-1)
+Description: glib for host (NOT for Termux)
+Filename: dists/stable/main/binary-all/glib-cross_2.88.2-1_all.deb
+Size: 13147444
+MD5Sum: 76cad996b9a54fdd45ed5f584f1189a3
+SHA1: 30383fc7f313169668a96fd3651f359e0029d0ba
+SHA256: 7f9a03d8cee3f2c7af60465efcf4e77f240c8e9f45443d2287f0c83101db8066
+SHA512: f96d8ac03b07ee129dde856aa5373092e508a3afccfadc6532d0018c1c00f097504fc4b5cc840405771bd2eee8cd4d053ae1c2a3e8d89e51b9bdd831475d4453
+
+Package: npm
+Architecture: all
+Installed-Size: 18200
+Maintainer: Yaksh Bariya <thunder-coding@termux.dev>
+Version: 11.18.0
+Homepage: https://docs.npmjs.com/cli/
+Depends: nodejs | nodejs-lts
+Conflicts: nodejs (<= 25.3.0), nodejs-lts (<= 24.13.0)
+Description: The package manager for JavaScript
+Filename: dists/stable/main/binary-all/npm_11.18.0_all.deb
+Size: 2028532
+MD5Sum: 32b7f2246d0aea3faec6ebf89f71ca4e
+SHA1: 150d9b85506a47b0a3ce14456bf78b01e69948a6
+SHA256: e003192a5933bb89178e32949f47d62e56b8224822f61a290f564f4f659d5da7
+SHA512: d82b7ff2ca3e1719f83b63f79c7f9bae9a241b9128e12c2ab09ff2ce4560e4dcc4c5fcd21ddae8c25eeb6ad444c6de22fac7fe9d3b87cf50db6d3432d33d9349
+
 Package: python-ensurepip-wheels
 Architecture: all
 Installed-Size: 1812
@@ -149,6 +180,23 @@ MD5Sum: 55e0c916276d8ae3eb49ac4144829a07
 SHA1: 7dd6548f821402ef562d94f006854531fdc9f92e
 SHA256: db65d0bf108acdd4c8841439af1dc31beec597d196294a68b4463211ca6512bc
 SHA512: 58272c33b632de030a3362eaa0e9abf74d44688a2441c56040401468648e6b9d2164bb3a39f46f13ca7ac45853ab150e45171973a1c385e5cd6ff76e67b7f2cf
+
+Package: python-pip
+Architecture: all
+Installed-Size: 7384
+Maintainer: @termux
+Version: 26.1.2-1
+Homepage: https://pip.pypa.io/
+Breaks: python (<< 3.11.1-1)
+Depends: python (>= 3.11.1-1)
+Recommends: clang, make, pkg-config
+Description: The PyPA recommended tool for installing Python packages
+Filename: dists/stable/main/binary-all/python-pip_26.1.2-1_all.deb
+Size: 1193276
+MD5Sum: 8f198c53c1fc6176d4fc54c9cf729405
+SHA1: 28bc3cbca745b7c851c5a9af373d657bd0a8efed
+SHA256: 6290fd224cf8d9fbc257ef18fe58ca1e78001161e6e8ce39c3394681c920fa70
+SHA512: 2f4f6bb3600dedf426541bdc6d6585267f98b0d69bd7b0fde8611a22dc0111ffb1e18888f85a24012ba90dea3059e276ccc6cad7084f539792bb5f138bb2089e
 
 Package: python-xcbgen
 Architecture: all
@@ -349,4 +397,19 @@ MD5Sum: f20d4cc716da62b6a93d1b0d3289f838
 SHA1: f21bcb745e361b559fc3ac65fe6dd6965b02116f
 SHA256: c9219290fb998b18e98bcab553153f7f863cbc915f60d7d05b2e69bcca821f7e
 SHA512: 73525a0e0421b91d42a3eb822ec4759aaba7cc38a772ba3844b9566663e2b7a20978f9872ea19b86c73825330de66973f273a0db29f40eb1f1a9a79cc2d25f5f
+
+Package: zsh-completions
+Architecture: all
+Installed-Size: 1976
+Maintainer: @termux
+Version: 0.36.0
+Homepage: https://github.com/zsh-users/zsh-completions
+Depends: zsh
+Description: Additional completion definitions for Zsh
+Filename: dists/stable/main/binary-all/zsh-completions_0.36.0_all.deb
+Size: 299172
+MD5Sum: 2a3b2f7cfbc82544b8ff2549b1b9180a
+SHA1: b30f0766170ab9da0d066917c48b501a8eae907e
+SHA256: b974e2d3e1d2334947fc4fb8d6128a24fbb32b99c25c7bca423d7023ca3a7636
+SHA512: c4eb61b93cbe328da903394e65cf136af4e080833ab70e12a7175e09988fe8357da309d16d27823ad6ec87ea780720949d5b812f128ae67f061fc125b20279a0
 
