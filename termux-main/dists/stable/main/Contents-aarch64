@@ -957,6 +957,11 @@ data/data/dev.cometix.cometux/files/usr/share/man/man3/attr_remove.3.gz         
 data/data/dev.cometix.cometux/files/usr/share/man/man3/attr_removef.3.gz         attr
 data/data/dev.cometix.cometux/files/usr/share/man/man3/attr_set.3.gz             attr
 data/data/dev.cometix.cometux/files/usr/share/man/man3/attr_setf.3.gz            attr
+data/data/dev.cometix.cometux/files/usr/bin/atuin                                atuin
+data/data/dev.cometix.cometux/files/usr/share/bash-completion/completions/atuin  atuin
+data/data/dev.cometix.cometux/files/usr/share/doc/atuin/LICENSE                  atuin
+data/data/dev.cometix.cometux/files/usr/share/fish/vendor_completions.d/atuin.fish atuin
+data/data/dev.cometix.cometux/files/usr/share/zsh/site-functions/_atuin          atuin
 data/data/dev.cometix.cometux/files/usr/bin/bash                                 bash
 data/data/dev.cometix.cometux/files/usr/etc/bash.bashrc                          bash
 data/data/dev.cometix.cometux/files/usr/etc/profile                              bash
@@ -1207,6 +1212,9 @@ data/data/dev.cometix.cometux/files/usr/share/man/man8/mkswap.8.gz              
 data/data/dev.cometix.cometux/files/usr/share/man/man8/partx.8.gz                blk-utils
 data/data/dev.cometix.cometux/files/usr/share/man/man8/swaplabel.8.gz            blk-utils
 data/data/dev.cometix.cometux/files/usr/share/man/man8/wipefs.8.gz               blk-utils
+data/data/dev.cometix.cometux/files/usr/bin/broot                                broot
+data/data/dev.cometix.cometux/files/usr/share/doc/broot/copyright                broot
+data/data/dev.cometix.cometux/files/usr/share/man/man1/broot.1.gz                broot
 data/data/dev.cometix.cometux/files/usr/bin/brotli                               brotli
 data/data/dev.cometix.cometux/files/usr/include/brotli/decode.h                  brotli
 data/data/dev.cometix.cometux/files/usr/include/brotli/encode.h                  brotli
@@ -8522,6 +8530,8 @@ data/data/dev.cometix.cometux/files/usr/share/perl5/Git/LoadCPAN/Mail/Address.pm
 data/data/dev.cometix.cometux/files/usr/share/perl5/Git/LoadCPAN.pm              git
 data/data/dev.cometix.cometux/files/usr/share/perl5/Git/Packet.pm                git
 data/data/dev.cometix.cometux/files/usr/share/perl5/Git.pm                       git
+data/data/dev.cometix.cometux/files/usr/bin/gitui                                gitui
+data/data/dev.cometix.cometux/files/usr/share/doc/gitui/LICENSE.md               gitui
 data/data/dev.cometix.cometux/files/usr/bin/gapplication                         glib
 data/data/dev.cometix.cometux/files/usr/bin/gdbus                                glib
 data/data/dev.cometix.cometux/files/usr/bin/gdbus-codegen                        glib

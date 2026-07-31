@@ -159,6 +159,20 @@ SHA1: d1457f6bf944bad17c3cfc7d713d9adb7d9d32c8
 SHA256: e9dcdae90b90c853604b45cfa4f388bc0d46319309b2213ef7e4ac10e6563993
 SHA512: 77de169ce2a76958206e5815414bd5c537233b28f4ba2e880a93f84f9294000bdfc535f3688e76d5aacc359028054a22af1e5c174dc5d8da1f435312b0443b2d
 
+Package: atuin
+Architecture: aarch64
+Installed-Size: 27152
+Maintainer: @termux
+Version: 18.17.1
+Homepage: https://atuin.sh/
+Description: Magical shell history
+Filename: dists/stable/main/binary-aarch64/atuin_18.17.1_aarch64.deb
+Size: 6812520
+MD5Sum: 58c0201d78641fb9fdf1c79b4a8471fa
+SHA1: 8a65465b41660190f439f73107f3221ee349533e
+SHA256: 67eae8a29d1d419d498185eb235b4cf9cc39dfd3b0bfbecba1f802159699b623
+SHA512: 81330925332c6068949f32aef1eb822b89b9d3d26a4b5d2fecd8f5d3579fe0e4166f068aeedb9e453f9256d636edaf6dece13962137d6ec219abe4ce380510f0
+
 Package: bash
 Architecture: aarch64
 Installed-Size: 4732
@@ -239,6 +253,21 @@ MD5Sum: 34c1b5495740bdd7c09b6cb9192f3bcf
 SHA1: 6df2aa8fb07b9ac7d8e51191dd77d421a1403bf6
 SHA256: 658687f1c011d3371107ff9b6577d52e173eff8034c9d7c95c3ca28b25296cb1
 SHA512: bc5ea4786d5696b9cf9394222bc8b963019f6a4ee7a7c6fea251f4b80f37c849388753ad1e2fdd9f813d9ec038590136846eaf566ff8b73c83c683c2c046511c
+
+Package: broot
+Architecture: aarch64
+Installed-Size: 10252
+Maintainer: @termux
+Version: 1.58.0
+Homepage: https://github.com/Canop/broot
+Depends: libgit2
+Description: A better way to navigate directories
+Filename: dists/stable/main/binary-aarch64/broot_1.58.0_aarch64.deb
+Size: 3642900
+MD5Sum: e8d06f839706565e94180bd1a6ea85bc
+SHA1: 3a2ee7b2df3e479c871f4f60e790a132127bea90
+SHA256: 7719cb11a165840512214ed4feea7bac7bc6b691bce25e22665e61c9884232c8
+SHA512: c2e0d4de63d089204b215a77770f50fc91177ac79411d3333c514759f6e3d1b48fdc9f72c16f463be84b8a98f6c65bccf3cec9e05cb24c5db9bbf6283a92802a
 
 Package: brotli
 Architecture: aarch64
@@ -959,6 +988,21 @@ MD5Sum: f439a043d7413b8bb0842fb4d09e6263
 SHA1: c060eaf64e21b6f3e9b8b6703b4c6bd11ae3c01c
 SHA256: 9e56a7d72006cfcdcb482afb38f3b62423234af25ba24c19dc3e15b832dc39a3
 SHA512: 63204e4fd274cb6f265b57953601d6223ccc5f644e2bc649e0c5dcff6478a193a69bae30a169f0916866e9ea42471a0f30397b64b331f6de7b836f075c03761e
+
+Package: gitui
+Architecture: aarch64
+Installed-Size: 7600
+Maintainer: @termux
+Version: 0.28.1
+Homepage: https://github.com/gitui-org/gitui
+Depends: libgit2, libssh2, openssl, zlib
+Description: Blazing fast terminal-ui for git written in rust
+Filename: dists/stable/main/binary-aarch64/gitui_0.28.1_aarch64.deb
+Size: 3305836
+MD5Sum: 99bddac8a55edc763ceb9afd80977e50
+SHA1: c687ae083ce2adc92f9d840e49cc3eec4f78645d
+SHA256: 7d4919e05d66eb2a215cd2d7f75124ca3d616f4c1127fb935f50634b8f6de14c
+SHA512: 8e6002e494bfdcce68a45f8a2104cbf0e00fff7911501afc8f56f7b8b2962ed7b86b288e645ce7e020ed3b1827c7b41e473475c2a4fb61b14e0dfd28b1d6ba0c
 
 Package: glib
 Architecture: aarch64
