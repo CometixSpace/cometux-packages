@@ -3988,16 +3988,16 @@ Package: nano
 Architecture: aarch64
 Installed-Size: 1036
 Maintainer: @termux
-Version: 9.1
+Version: 9.2
 Homepage: https://www.nano-editor.org/
 Depends: libandroid-support, ncurses
 Description: Small, free and friendly text editor
-Filename: dists/stable/main/binary-aarch64/nano_9.1_aarch64.deb
-Size: 240260
-MD5Sum: 9a1be8290680e8933e4ab605940cd356
-SHA1: 6809271fd2efd10364dec756043d90ffa2f5437b
-SHA256: 62dd9c9a29bc14cd2e9ff9e05e23b2958237d42d8044e62186f4a0702d35aca1
-SHA512: df0d896a50b9383929b1bbff7f8751cbb1fa5ab7c132ae272f223289f3ec71dfde29d85d152a3afeac7ba151c9884ab21e586cea8276dadda44403ad6d694dbd
+Filename: dists/stable/main/binary-aarch64/nano_9.2_aarch64.deb
+Size: 240700
+MD5Sum: 7f0054543e51c603fb080f27d2175552
+SHA1: d111115627f68be84b9dba9a7718c9e60ddbec13
+SHA256: cff86b68f1beebab0b9370c98c2f67770fc9f324779777d7746c60fea43345bf
+SHA512: 8d01bef9e48708d1c13cab46aa0d8ab6033cb4b6409a96a6a05ece1dbf29e037473d33b51dc175a04bf224e427f96c40826465d0f77eda187362f499ef1f7310
 
 Package: ncurses-static
 Architecture: aarch64
