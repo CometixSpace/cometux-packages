@@ -489,34 +489,34 @@ SHA512: 4c12c808e105a13ef9c61ef774746bc065953f504a54fdb425a8b69a27195395b09dfa34
 
 Package: cmake-curses-gui
 Architecture: aarch64
-Installed-Size: 9428
+Installed-Size: 9436
 Maintainer: @termux
-Version: 4.4.0
+Version: 4.4.2
 Homepage: https://cmake.org/
-Depends: ncurses-ui-libs, cmake (= 4.4.0)
+Depends: ncurses-ui-libs, cmake (= 4.4.2)
 Description: Curses based user interface for CMake (ccmake)
-Filename: dists/stable/main/binary-aarch64/cmake-curses-gui_4.4.0_aarch64.deb
-Size: 2470460
-MD5Sum: 5d595676a6179fca2ad223651ae2fb56
-SHA1: 4d0a67050be342ff09e22556ff5086103468947e
-SHA256: 8243381ba65d1a6e33455eae602ab6d4c6ac3bf3438d8345c0b9e1f7170e0aa4
-SHA512: 6de1a126a2101fffc6bbf543047462ce42e0ed25f8a7462df21e6d2c1eab257bc93509192af916ea3c59cd98693695150a2f5a1840b5ce90adf221bb6ec2b4f9
+Filename: dists/stable/main/binary-aarch64/cmake-curses-gui_4.4.2_aarch64.deb
+Size: 2472164
+MD5Sum: 95143b0fbccaa55ba341e31234bcf40c
+SHA1: a057db2927e4701534fc343649a96b1f97a934ce
+SHA256: ae5de49e471e3fbce5e4b6a39c54246525199781d861f99acfca37cbab719a59
+SHA512: feccdd776a7adf53d8455820c37e1581ad9e5a3a8ee7962d1d894233603c11907d1502b5b5245b83759052a970ed53a1e8ff1a58072034a308466631e6d20609
 
 Package: cmake
 Architecture: aarch64
-Installed-Size: 55792
+Installed-Size: 55824
 Maintainer: @termux
-Version: 4.4.0
+Version: 4.4.2
 Homepage: https://cmake.org/
 Depends: libarchive, libc++, libcurl, libexpat, jsoncpp, libuv, rhash, zlib
 Recommends: clang, make
 Description: Family of tools designed to build, test and package software
-Filename: dists/stable/main/binary-aarch64/cmake_4.4.0_aarch64.deb
-Size: 10628708
-MD5Sum: 4b20f49723fb84ec43df875b5c0a99f6
-SHA1: 803374ec60e6ff63b8b1f7fbe9505a388a7e640c
-SHA256: ab4ae120d15766b928a0c89bd94e107e7f973f41d88d86409f8e1de4b90cde49
-SHA512: b94eed553e7e635590e327fadd0accf073932aa681ebe75c2a246a344bff8084583210b926ba81d0bfb6b4a0cb933d666f5a7e81282542696435d25f21c2d46c
+Filename: dists/stable/main/binary-aarch64/cmake_4.4.2_aarch64.deb
+Size: 10641096
+MD5Sum: 1b44f8714b290fcb79de9e7a15ed5f1d
+SHA1: 74c48fe6f25fb784c51e225bfeca319e46d42c10
+SHA256: b580c501822ecadea349020f99d43f7d5f899b986dd205f1765497da7894c053
+SHA512: dc16352d31edc28197a507f6c83f95f5827e4cec95ab18aa3e161aa636ac06dfd7bd9f43439ecde9ad442823ffb5e669893b378da3c40f4ded34ee74521a474d
 
 Package: command-not-found
 Architecture: aarch64
@@ -1110,19 +1110,19 @@ SHA512: aba14377e494372115b75dfc0a6dc2c7f3595a2824e48774036670a05a7fea63dc622441
 
 Package: fzf
 Architecture: aarch64
-Installed-Size: 5276
+Installed-Size: 5296
 Maintainer: @termux
-Version: 0.74.1
+Version: 0.74.2
 Homepage: https://junegunn.github.io/fzf/
 Depends: bash, findutils, ncurses-utils
 Suggests: tmux
 Description: Command-line fuzzy finder
-Filename: dists/stable/main/binary-aarch64/fzf_0.74.1_aarch64.deb
-Size: 1416416
-MD5Sum: be9afbd0e6aceccfd4e27864c903f856
-SHA1: c59683c9254ba56e98a6918491634769d66a177b
-SHA256: d051f98a967b0682aa384e032cc0f475cfcf4b684fa527fe499b8b1bdd03721a
-SHA512: f86688c38455168578a22b5e48c2f0fb175813d02a4cba7bcb758851c46322fb132bd95ce571115013497fad6cb0e34719d3c9d37318c263ddf381710139549a
+Filename: dists/stable/main/binary-aarch64/fzf_0.74.2_aarch64.deb
+Size: 1424560
+MD5Sum: cd6868900809b37ebea1ee9328bdee42
+SHA1: b9c1d68db00e240e2a20f29e217a99aa3af07645
+SHA256: 930e87347c9bc4d4e13b83a94919886b78d50bd8534c0bcc451b3d0c2592e8f4
+SHA512: 1e1d8b446ba38f8a1979f8aee4893d30643a0a6627e2510f0fd0eaaf482d7f3834c5c6efa0d161c57488d6b3f379aac96b4c44cb86b3872cf3cdea217909b052
 
 Package: g-ir-scanner
 Architecture: aarch64
