@@ -45013,6 +45013,7 @@ data/data/dev.cometix.cometux/files/usr/share/vim/vim92/syntax/dylan.vim        
 data/data/dev.cometix.cometux/files/usr/share/vim/vim92/syntax/dylanintr.vim     vim
 data/data/dev.cometix.cometux/files/usr/share/vim/vim92/syntax/dylanlid.vim      vim
 data/data/dev.cometix.cometux/files/usr/share/vim/vim92/syntax/ecd.vim           vim
+data/data/dev.cometix.cometux/files/usr/share/vim/vim92/syntax/ed.vim            vim
 data/data/dev.cometix.cometux/files/usr/share/vim/vim92/syntax/edif.vim          vim
 data/data/dev.cometix.cometux/files/usr/share/vim/vim92/syntax/editorconfig.vim  vim
 data/data/dev.cometix.cometux/files/usr/share/vim/vim92/syntax/eiffel.vim        vim
@@ -45225,6 +45226,7 @@ data/data/dev.cometix.cometux/files/usr/share/vim/vim92/syntax/manconf.vim      
 data/data/dev.cometix.cometux/files/usr/share/vim/vim92/syntax/manual.vim        vim
 data/data/dev.cometix.cometux/files/usr/share/vim/vim92/syntax/maple.vim         vim
 data/data/dev.cometix.cometux/files/usr/share/vim/vim92/syntax/markdown.vim      vim
+data/data/dev.cometix.cometux/files/usr/share/vim/vim92/syntax/marko.vim         vim
 data/data/dev.cometix.cometux/files/usr/share/vim/vim92/syntax/masm.vim          vim
 data/data/dev.cometix.cometux/files/usr/share/vim/vim92/syntax/mason.vim         vim
 data/data/dev.cometix.cometux/files/usr/share/vim/vim92/syntax/master.vim        vim
