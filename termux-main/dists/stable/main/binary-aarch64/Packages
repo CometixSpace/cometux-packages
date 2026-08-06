@@ -999,50 +999,50 @@ SHA512: a13b4119b5c0e54a16d9a6b7c6b94a71c9e1ce01a9d7e243f184db45653c8adf8b3bfb28
 
 Package: fontconfig-static
 Architecture: aarch64
-Installed-Size: 680
+Installed-Size: 688
 Maintainer: @termux
-Version: 2.18.2
+Version: 2.18.3
 Homepage: https://www.freedesktop.org/wiki/Software/fontconfig/
-Depends: fontconfig (= 2.18.2)
+Depends: fontconfig (= 2.18.3)
 Description: Static libraries for fontconfig
-Filename: dists/stable/main/binary-aarch64/fontconfig-static_2.18.2_aarch64.deb
-Size: 133192
-MD5Sum: 3fc84b1901c279fb26da96c83ef8ac2b
-SHA1: f49020433ae803a224e50615af2b8c2b456df153
-SHA256: ab588f3fe4aca239233f763abcfb17397918f0d53af8552f1fd1559fd3fb19c3
-SHA512: b4ad45676372c46b3cfa1f76b9512981cbf8cf493cde6147afa152a3c3011abe6118483aa7115bd4c741518fd570bc296fbc476db975e70b1ed1e580ffdcab76
+Filename: dists/stable/main/binary-aarch64/fontconfig-static_2.18.3_aarch64.deb
+Size: 135548
+MD5Sum: af499f8d042a87c90c30b4b730f35e9f
+SHA1: 5127165d15562da550bdccd030b5ba8b6c0afdfc
+SHA256: ade3768ff19745024f9a084d028a87c8679807e563e65bf114f60c2a096a7ddf
+SHA512: a48804d1a88596d8f3736fe19326a8cc14f86e9d8a6b0f6242f3a4104409b2f62e1e8e824319349a828343a219cfa8fda1c4440d4f4cac5cc264f1cc7da12701
 
 Package: fontconfig-utils
 Architecture: aarch64
 Installed-Size: 132
 Maintainer: @termux
-Version: 2.18.2
+Version: 2.18.3
 Homepage: https://www.freedesktop.org/wiki/Software/fontconfig/
-Depends: fontconfig (= 2.18.2)
+Depends: fontconfig (= 2.18.3)
 Description: Fontconfig binaries
-Filename: dists/stable/main/binary-aarch64/fontconfig-utils_2.18.2_aarch64.deb
-Size: 14520
-MD5Sum: 8eb7c3f474a1c0d54f2ea3fc53c2f592
-SHA1: 62e42dbc5e108ed034a329dc7d8e3796a02b1f0b
-SHA256: 7d05dd9be81f57051aa1f1709b148c87005482f669ec085c0593ae850aff487c
-SHA512: 27ef13d503682f245edfc0f2fd46f5b17bbe445c26dae76f935d68d540486e4c1b396532bbfba22fd36762ab4a124434fd7f2345ffa895c9a67c469465b7332e
+Filename: dists/stable/main/binary-aarch64/fontconfig-utils_2.18.3_aarch64.deb
+Size: 14552
+MD5Sum: 489e86cde050a4b456615e8ee2bb37df
+SHA1: 4221f1dd071b3425e103cbeebbc58828a92b5ea8
+SHA256: db4b808a99944022a64301578c9275695032a96ac6d0f211196edb46930c2aa2
+SHA512: a09b373d209ad9003778db15c51c9e16249e0f83e746c80079e1c502f3d8d02e6cf6c08b7993c0f91e0868de21623fe8275e1193b6d5733ceebe4fb3b99ee95d
 
 Package: fontconfig
 Architecture: aarch64
-Installed-Size: 868
+Installed-Size: 888
 Maintainer: @termux
-Version: 2.18.2
+Version: 2.18.3
 Homepage: https://www.freedesktop.org/wiki/Software/fontconfig/
 Breaks: fontconfig-dev
 Depends: freetype, libexpat, ttf-dejavu
 Replaces: fontconfig-dev
 Description: Library for configuring and customizing font access
-Filename: dists/stable/main/binary-aarch64/fontconfig_2.18.2_aarch64.deb
-Size: 137836
-MD5Sum: 8b397f144301d97b436baeae5a2048b9
-SHA1: d8dff50cd6d3a9f5be811c0a51ddc9d4cb5aac7d
-SHA256: a060a6e33bd95fe56615407ff6aa63bdea9515062f9684024b08f6af19b89d53
-SHA512: 16536afa0b226fb83a2ef06db7045826f42d9d7b34e5a9123d4e6c8d07d76be0bff733a695ac784db24a6e4e30c29b52467ec2d7c0bc035167a8cea08b28c9e9
+Filename: dists/stable/main/binary-aarch64/fontconfig_2.18.3_aarch64.deb
+Size: 140540
+MD5Sum: 4cd5ed3e1d0b31a50fab4b093b9f2b70
+SHA1: cd41ce064a23a241486110b133b492aa3c212b91
+SHA256: 497cf5996e241744fa186e9e579938996635dada41f91fd86b765f5b26c1024a
+SHA512: f31847290e409603176e3341b0bf4eed2230748248fab8caea39510e1782eeaab3ebe5762cf071de244725b5b817d587f303ae3b7a6aab0d44f1a394ac663c0c
 
 Package: freetype-static
 Architecture: aarch64
