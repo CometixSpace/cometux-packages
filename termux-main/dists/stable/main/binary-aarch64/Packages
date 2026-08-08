@@ -7021,19 +7021,19 @@ SHA512: b983229ab69e12225aa2e43ff2d90d5390656d613447d12b572ee12ff32acb8064bb3703
 
 Package: tree-sitter
 Architecture: aarch64
-Installed-Size: 8640
+Installed-Size: 8648
 Maintainer: Joshua Kahn <tom@termux.dev>
-Version: 0.26.11
+Version: 0.26.12
 Homepage: https://tree-sitter.github.io/
 Breaks: libtreesitter
 Replaces: libtreesitter
 Description: An incremental parsing system for programming tools
-Filename: dists/stable/main/binary-aarch64/tree-sitter_0.26.11_aarch64.deb
-Size: 2391992
-MD5Sum: 966035c73976c0466423906808070265
-SHA1: 5c7c3657ec8b046cb1129d9e9e7c376dfc4cba77
-SHA256: c5899689e9b524d815854d7bf1f0bc736ae485c00dcc7a659b484e8069b652fd
-SHA512: aefa5bc5b8d6dabe1088bec8933ead74619dd381dec23fe383d4aa009cff07413716f183cae2ac82c9b6514a79a1158544137ecf2d8f30003d4ef27ff843f3f7
+Filename: dists/stable/main/binary-aarch64/tree-sitter_0.26.12_aarch64.deb
+Size: 2394184
+MD5Sum: 0abbf6cf3556b9f72c1743d892f3d459
+SHA1: 0e1f494691c5989dc0b182c5aa813528005722b5
+SHA256: 93ef5a0032a7413b7a84ef43bd00a19b73647009a4d0ac004b872b34d84fc32a
+SHA512: ca611d030964bbaa967ebba87e95c032fbfb8d98febe9e834d9a55d9a8015864778ffadb02d5819da3fef12064871b24a4bd35fc44b3c0e05538d610097b2195
 
 Package: tree
 Architecture: aarch64
