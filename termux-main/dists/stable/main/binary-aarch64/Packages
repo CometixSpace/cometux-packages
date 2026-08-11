@@ -5956,35 +5956,35 @@ Package: openssh-sftp-server
 Architecture: aarch64
 Installed-Size: 188
 Maintainer: Joshua Kahn <tom@termux.dev>
-Version: 10.4p1
+Version: 10.5p1
 Homepage: https://www.openssh.com/
 Depends: libandroid-support
 Breaks: openssh (<= 9.9p2-1)
 Replaces: openssh (<= 9.9p2-1)
 Description: OpenSSH SFTP server subsystem
-Filename: dists/stable/main/binary-aarch64/openssh-sftp-server_10.4p1_aarch64.deb
-Size: 56384
-MD5Sum: 44316ce09e7ce7bc1f67998520614511
-SHA1: 4f0701c5a6a29d369c9991888983e92dbc380756
-SHA256: ca8aa8d882ca4859d0bb20c079ee1082563347411ff18a7db6c447abb4ee114e
-SHA512: 6f19d2bd370ccd7d234b1e21407d25caa069365fef023070fd5b5a51f88eefacfc870eac6fec25715d8098e39043d099d25b89ee17137114b33c77865b5ce07f
+Filename: dists/stable/main/binary-aarch64/openssh-sftp-server_10.5p1_aarch64.deb
+Size: 56428
+MD5Sum: 74285afb6f71803094ed4f2bd1b0e76d
+SHA1: 41e29da41fe6682e9f05328261fe14d6eac4739f
+SHA256: d74df4d499ad1df13657eab93743d2a728e09d266ec632448c8fe2e5ddbbbb63
+SHA512: 4b540516dc326f7406f7e351dfcda16a22a4a167cd695a1334568d05db6da50570b1f1fdd060bf74eba3b6729f21037ba05c5a9217feb0cdaca20df2226e80a0
 
 Package: openssh
 Architecture: aarch64
-Installed-Size: 6368
+Installed-Size: 6376
 Maintainer: Joshua Kahn <tom@termux.dev>
-Version: 10.4p1
+Version: 10.5p1
 Homepage: https://www.openssh.com/
 Depends: krb5, ldns, libandroid-support, libedit, openssh-sftp-server, openssl, termux-auth, zlib
 Conflicts: dropbear
 Suggests: termux-services
 Description: Secure shell for logging into a remote machine
-Filename: dists/stable/main/binary-aarch64/openssh_10.4p1_aarch64.deb
-Size: 961040
-MD5Sum: dbef5296c45a2537ff0415761ad6e713
-SHA1: b236b91c163b67924b12ed935f8f309c94ed0945
-SHA256: 1353b4be4523c96e63e75503ff14e0183d0d1542d0224e3410e8deed7674af51
-SHA512: 2e0f31052a6d306a2c317377a95c17cb6c50ff65760faf930f657dc1f1e5e33b86b2bca1a949fe07ed0a14e5c48b7ab1e6b5ac2ebe396ee0d2b694f0114dc10d
+Filename: dists/stable/main/binary-aarch64/openssh_10.5p1_aarch64.deb
+Size: 961740
+MD5Sum: ece6229e69d7ff4f648f309ae59b80a5
+SHA1: 6517ba35a5b0d731f6f715d80e9f861bc3a6e1b4
+SHA256: db45d51fee87035596afd023e996abdc2a3c6574deccdad039a0276042938d30
+SHA512: 2e5528006325a47a400847c30bd73d7e7ceebbb30f7e22f668f1c3fdc2a011128de8a4d409456abb16012383c9507c65d3912c6c1c69352598d04dc460682b95
 
 Package: openssl-static
 Architecture: aarch64
