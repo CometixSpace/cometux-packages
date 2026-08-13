@@ -6471,18 +6471,18 @@ SHA512: 689406fbfe276d7ac4fb3e18818209d96e2af4c7f1a5ec4f0040e06db2c247a1143746f2
 
 Package: rsync
 Architecture: aarch64
-Installed-Size: 608
+Installed-Size: 640
 Maintainer: Joshua Kahn <tom@termux.dev>
-Version: 3.4.4
+Version: 3.5.0
 Homepage: https://rsync.samba.org/
 Depends: libiconv, liblz4, libpopt, openssh | dropbear, openssl, openssl-tool, xxhash, zlib, zstd
 Description: Fast incremental file transfer utility
-Filename: dists/stable/main/binary-aarch64/rsync_3.4.4_aarch64.deb
-Size: 278716
-MD5Sum: 05207961d88cbcbc5fcf441501a8cb4e
-SHA1: 7830e2f14b39a747eda86ead7919932d744805f4
-SHA256: bcd078ca2ffb9eb5e82551770d82146c5e6040246ca207687b1ffcbe58fee196
-SHA512: 73a3632846882c8a94d45d916932453a4c1e26902fb21ce2578528ac97ae29b011e5c7726256f42f2251a73429335011787ec90e006ed2088599b367d0ca852a
+Filename: dists/stable/main/binary-aarch64/rsync_3.5.0_aarch64.deb
+Size: 298484
+MD5Sum: 16dd5322e0227ecfb2745bd9b79f141c
+SHA1: 10eab8abc45387f2f35c9c045c8ecfe0135ea722
+SHA256: ff2920f478c83347edb887f1dcc6164566c8ae929a00ace1356c9cb67fae14e3
+SHA512: 3d685835ffb473d66d28a82eae5720f7c26eaa0a17a57a28bc4e621665fc26d1a5f2b5d3022ba321b7cb8698a9fbe1525d6ced810f924d11801aa4614efa3d51
 
 Package: ruby
 Architecture: aarch64
