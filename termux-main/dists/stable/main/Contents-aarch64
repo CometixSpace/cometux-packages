@@ -44247,6 +44247,7 @@ data/data/dev.cometix.cometux/files/usr/share/vim/vim92/ftplugin/heex.vim       
 data/data/dev.cometix.cometux/files/usr/share/vim/vim92/ftplugin/help.vim        vim
 data/data/dev.cometix.cometux/files/usr/share/vim/vim92/ftplugin/hgcommit.vim    vim
 data/data/dev.cometix.cometux/files/usr/share/vim/vim92/ftplugin/hip.vim         vim
+data/data/dev.cometix.cometux/files/usr/share/vim/vim92/ftplugin/hlsl.vim        vim
 data/data/dev.cometix.cometux/files/usr/share/vim/vim92/ftplugin/hlsplaylist.vim vim
 data/data/dev.cometix.cometux/files/usr/share/vim/vim92/ftplugin/hog.vim         vim
 data/data/dev.cometix.cometux/files/usr/share/vim/vim92/ftplugin/hostconf.vim    vim
@@ -44276,6 +44277,7 @@ data/data/dev.cometix.cometux/files/usr/share/vim/vim92/ftplugin/jq.vim         
 data/data/dev.cometix.cometux/files/usr/share/vim/vim92/ftplugin/json.vim        vim
 data/data/dev.cometix.cometux/files/usr/share/vim/vim92/ftplugin/json5.vim       vim
 data/data/dev.cometix.cometux/files/usr/share/vim/vim92/ftplugin/jsonc.vim       vim
+data/data/dev.cometix.cometux/files/usr/share/vim/vim92/ftplugin/jsonld.vim      vim
 data/data/dev.cometix.cometux/files/usr/share/vim/vim92/ftplugin/jsonnet.vim     vim
 data/data/dev.cometix.cometux/files/usr/share/vim/vim92/ftplugin/jsp.vim         vim
 data/data/dev.cometix.cometux/files/usr/share/vim/vim92/ftplugin/julia.vim       vim
@@ -44604,6 +44606,7 @@ data/data/dev.cometix.cometux/files/usr/share/vim/vim92/indent/handlebars.vim   
 data/data/dev.cometix.cometux/files/usr/share/vim/vim92/indent/hare.vim          vim
 data/data/dev.cometix.cometux/files/usr/share/vim/vim92/indent/hcl.vim           vim
 data/data/dev.cometix.cometux/files/usr/share/vim/vim92/indent/hip.vim           vim
+data/data/dev.cometix.cometux/files/usr/share/vim/vim92/indent/hlsl.vim          vim
 data/data/dev.cometix.cometux/files/usr/share/vim/vim92/indent/hog.vim           vim
 data/data/dev.cometix.cometux/files/usr/share/vim/vim92/indent/html.vim          vim
 data/data/dev.cometix.cometux/files/usr/share/vim/vim92/indent/htmldjango.vim    vim
@@ -44617,6 +44620,7 @@ data/data/dev.cometix.cometux/files/usr/share/vim/vim92/indent/javascriptreact.v
 data/data/dev.cometix.cometux/files/usr/share/vim/vim92/indent/json.vim          vim
 data/data/dev.cometix.cometux/files/usr/share/vim/vim92/indent/json5.vim         vim
 data/data/dev.cometix.cometux/files/usr/share/vim/vim92/indent/jsonc.vim         vim
+data/data/dev.cometix.cometux/files/usr/share/vim/vim92/indent/jsonld.vim        vim
 data/data/dev.cometix.cometux/files/usr/share/vim/vim92/indent/jsp.vim           vim
 data/data/dev.cometix.cometux/files/usr/share/vim/vim92/indent/julia.vim         vim
 data/data/dev.cometix.cometux/files/usr/share/vim/vim92/indent/just.vim          vim
@@ -45112,6 +45116,7 @@ data/data/dev.cometix.cometux/files/usr/share/vim/vim92/syntax/hex.vim          
 data/data/dev.cometix.cometux/files/usr/share/vim/vim92/syntax/hgcommit.vim      vim
 data/data/dev.cometix.cometux/files/usr/share/vim/vim92/syntax/hip.vim           vim
 data/data/dev.cometix.cometux/files/usr/share/vim/vim92/syntax/hitest.vim        vim
+data/data/dev.cometix.cometux/files/usr/share/vim/vim92/syntax/hlsl.vim          vim
 data/data/dev.cometix.cometux/files/usr/share/vim/vim92/syntax/hlsplaylist.vim   vim
 data/data/dev.cometix.cometux/files/usr/share/vim/vim92/syntax/hog.vim           vim
 data/data/dev.cometix.cometux/files/usr/share/vim/vim92/syntax/hollywood.vim     vim
@@ -45160,6 +45165,7 @@ data/data/dev.cometix.cometux/files/usr/share/vim/vim92/syntax/jq.vim           
 data/data/dev.cometix.cometux/files/usr/share/vim/vim92/syntax/json.vim          vim
 data/data/dev.cometix.cometux/files/usr/share/vim/vim92/syntax/json5.vim         vim
 data/data/dev.cometix.cometux/files/usr/share/vim/vim92/syntax/jsonc.vim         vim
+data/data/dev.cometix.cometux/files/usr/share/vim/vim92/syntax/jsonld.vim        vim
 data/data/dev.cometix.cometux/files/usr/share/vim/vim92/syntax/jsp.vim           vim
 data/data/dev.cometix.cometux/files/usr/share/vim/vim92/syntax/julia.vim         vim
 data/data/dev.cometix.cometux/files/usr/share/vim/vim92/syntax/just.vim          vim
