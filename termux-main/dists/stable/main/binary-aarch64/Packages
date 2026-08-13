@@ -735,18 +735,18 @@ SHA512: fa72d1a94b1731e3cd810232f8816a7a9de36c464f7f14ca90b1f7e398683f8c0fe56fa4
 
 Package: doxygen
 Architecture: aarch64
-Installed-Size: 46900
+Installed-Size: 48732
 Maintainer: @termux
-Version: 1.17.0
+Version: 1.18.0
 Homepage: http://www.doxygen.org
 Depends: libc++, libiconv
 Description: A documentation system for C++, C, Java, IDL and PHP
-Filename: dists/stable/main/binary-aarch64/doxygen_1.17.0_aarch64.deb
-Size: 9712540
-MD5Sum: ce66747386004f49044aa1218f3ce564
-SHA1: 02e8566906e58bf65678b07ccbaac6745f01562c
-SHA256: b74ccb72d9431be34275239f0c4b1a483811a5c0e558d4260cbc6d5808e61393
-SHA512: 32fb498637e6a1c2680d2790941e63262f0516ea32d05eda85976ccef3a0090a92639c3a5cb03858e43e5e673f7a0d85d6ff332cf7544b99c9c3e0012b1548b6
+Filename: dists/stable/main/binary-aarch64/doxygen_1.18.0_aarch64.deb
+Size: 10637560
+MD5Sum: 130ba8392494fee0cb0d66dc01e5b8fd
+SHA1: 091116c09e4e3afa322c1a71736e643052465a09
+SHA256: bd3d0266675444c22d7dc1e94ddca1fdb485e9d3d90ef07dd14f0665edd1d340
+SHA512: d0f1a1f0507361ef12c553dc474d8e4c1f376f40bbaa2cb6b2d1a3d4f470aa6dba0614327d75db43ec4f23d8b0010e6b25549ed271d26f58595e32f9cb44fc1b
 
 Package: dpkg
 Architecture: aarch64
