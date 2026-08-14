@@ -3015,18 +3015,18 @@ Package: libgit2
 Architecture: aarch64
 Installed-Size: 3708
 Maintainer: @termux
-Version: 1.9.6
+Version: 1.9.7
 Homepage: https://libgit2.github.com/
 Breaks: libgit2-dev
 Depends: libssh2, openssl, pcre2, zlib
 Replaces: libgit2-dev
 Description: C library implementing Git core methods
-Filename: dists/stable/main/binary-aarch64/libgit2_1.9.6_aarch64.deb
-Size: 720912
-MD5Sum: 9fc5a9a8794852f9e44c0e4d087f19d4
-SHA1: 3ebe3ab09f367898bb754b92aa44f0aa8877de25
-SHA256: f313cf89723f9fc8ac298cbf628cda9316613fd57cf59ec7cb0fb5d818242c61
-SHA512: e1f77ce71b4d3df8ea262eb62548e6ebe6594b4e3f5da591315ac024b420a294dde55575803a6b11e34d602415d8640132c356cbde7631a0962a6f05611ba796
+Filename: dists/stable/main/binary-aarch64/libgit2_1.9.7_aarch64.deb
+Size: 721388
+MD5Sum: c8203fdb4fac16f684b56ddbca31bcce
+SHA1: 6a0ecf8b533311aefc9f6d2240b0de01f8e76b19
+SHA256: 58f7a3cfef05632c52557a0b663376a5f835b3eec37dc3356799b766265952f8
+SHA512: d22a922cd9e98b3d169b5a06b71f2ff31d982845683de032d9e3f64ec84e94e6128863e57d1af0ef97547a203b0e171245dafe487c02e4f299a5420bedb717fa
 
 Package: libgmp-static
 Architecture: aarch64
