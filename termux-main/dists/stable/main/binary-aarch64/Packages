@@ -1639,21 +1639,21 @@ SHA512: bdf19b051c3176e3b538047ba33fb7db8fbf1c4da66c51ad8da297d560cbabec6315257f
 
 Package: htop
 Architecture: aarch64
-Installed-Size: 440
+Installed-Size: 444
 Maintainer: @termux
-Version: 3.5.2
+Version: 3.5.3
 Homepage: https://htop.dev/
 Breaks: htop-legacy
 Depends: libandroid-support, ncurses
 Conflicts: htop-legacy
 Replaces: htop-legacy
 Description: Interactive process viewer for Linux
-Filename: dists/stable/main/binary-aarch64/htop_3.5.2_aarch64.deb
-Size: 128836
-MD5Sum: 49bef0053676f23ce9456e954eb5de96
-SHA1: 0e51827853242bac8504e9a5a4b438d128c58f3b
-SHA256: 536adf72167bd49572a10ee6ce6bb01a95fe9ea3328f0008d324d687e50a9821
-SHA512: fd95cc894ab9ae4a0880c7de24076967bab1246b33af96fe3b83f131f57abee5395c87fd7dd033acde9ac3ec3439bdfbbdf339bf14bfd729f536ae961507d798
+Filename: dists/stable/main/binary-aarch64/htop_3.5.3_aarch64.deb
+Size: 131052
+MD5Sum: 4de212e3eaa7e378e3a59b0d1285e6ba
+SHA1: 6a05c7c57c1c5ab1ea9c9be09695496c87247cc6
+SHA256: 5315619ea16b30a60486321075676d60fe2c75689fd3b7321f76cfe27ea4e475
+SHA512: 80e29de069732fc2e0af1ca5344040d84115f35082f128014b93d42ec930ebda902a1479e0c7f63e62e9e6ff7a580617d7e665855308fd25f7be54ff9ea63d12
 
 Package: hyperfine
 Architecture: aarch64
