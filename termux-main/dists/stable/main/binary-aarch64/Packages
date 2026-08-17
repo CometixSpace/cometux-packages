@@ -6909,16 +6909,16 @@ Package: tmux
 Architecture: aarch64
 Installed-Size: 1192
 Maintainer: Joshua Kahn <tom@termux.dev>
-Version: 3.7b
+Version: 3.7c
 Homepage: https://tmux.github.io/
 Depends: ncurses, libevent, libandroid-support, libandroid-glob
 Description: Terminal multiplexer
-Filename: dists/stable/main/binary-aarch64/tmux_3.7b_aarch64.deb
-Size: 386212
-MD5Sum: 4a4c1e4ecdb120c7a7e5c466d292d386
-SHA1: 80b39dfcbd5761e3fa972bd8f988a2fb2d200154
-SHA256: 2f2a00bb6c91c751b14b1d63320160cb56260556aa1a1dcd49cefc30c0ded2c0
-SHA512: 789ab3937addc6ae6f2ec1fc70f1ee311e06fab855e20e9b2139260151ed6dd1da0c38a92eae46d1968958404713e5ee5c2238650a2fc430eddbece59f94d56d
+Filename: dists/stable/main/binary-aarch64/tmux_3.7c_aarch64.deb
+Size: 386380
+MD5Sum: e4000b82fbf4780ca350e8fcce2577b7
+SHA1: cbf17b62e63464d77768ffd2d7951f9370bca6a4
+SHA256: 83bd3aa33a7a68d86fa6cd0a47f65157eb56a0693d7ae7ac8bfba29bbf92d56f
+SHA512: 0ddf664b69ea4b839595f03e25ad0519cf5eb44d279d910a26f1840a2e74c2b5be836233284aed98902876079e977fc2a8ac6c1df58d8b31e32f38cb7b643fb7
 
 Package: tor
 Architecture: aarch64
