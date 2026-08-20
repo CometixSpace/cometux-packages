@@ -14333,7 +14333,11 @@ data/data/dev.cometix.cometux/files/usr/lib/libcap-ng.so                        
 data/data/dev.cometix.cometux/files/usr/lib/libdrop_ambient.so                   libcap-ng
 data/data/dev.cometix.cometux/files/usr/lib/pkgconfig/libcap-ng.pc               libcap-ng
 data/data/dev.cometix.cometux/files/usr/share/aclocal/cap-ng.m4                  libcap-ng
+data/data/dev.cometix.cometux/files/usr/share/bash-completion/completions/cap-audit libcap-ng
+data/data/dev.cometix.cometux/files/usr/share/bash-completion/completions/filecap libcap-ng
 data/data/dev.cometix.cometux/files/usr/share/bash-completion/completions/libcap-ng.bash_completion libcap-ng
+data/data/dev.cometix.cometux/files/usr/share/bash-completion/completions/netcap libcap-ng
+data/data/dev.cometix.cometux/files/usr/share/bash-completion/completions/pscap  libcap-ng
 data/data/dev.cometix.cometux/files/usr/share/doc/libcap-ng/copyright            libcap-ng
 data/data/dev.cometix.cometux/files/usr/share/man/man3/capng_apply.3.gz          libcap-ng
 data/data/dev.cometix.cometux/files/usr/share/man/man3/capng_apply_caps_fd.3.gz  libcap-ng
@@ -14358,6 +14362,7 @@ data/data/dev.cometix.cometux/files/usr/share/man/man3/capng_stage_additional_gr
 data/data/dev.cometix.cometux/files/usr/share/man/man3/capng_update.3.gz         libcap-ng
 data/data/dev.cometix.cometux/files/usr/share/man/man3/capng_updatev.3.gz        libcap-ng
 data/data/dev.cometix.cometux/files/usr/share/man/man7/libdrop_ambient.7.gz      libcap-ng
+data/data/dev.cometix.cometux/files/usr/share/man/man8/cap-audit.8.gz            libcap-ng
 data/data/dev.cometix.cometux/files/usr/share/man/man8/filecap.8.gz              libcap-ng
 data/data/dev.cometix.cometux/files/usr/share/man/man8/netcap.8.gz               libcap-ng
 data/data/dev.cometix.cometux/files/usr/share/man/man8/pscap.8.gz                libcap-ng
