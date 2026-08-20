@@ -5484,32 +5484,32 @@ Package: luajit-static
 Architecture: aarch64
 Installed-Size: 692
 Maintainer: @termux
-Version: 1:2.1.1787156470+g21ecb36
+Version: 1:2.1.1787165859+g1ee778a
 Homepage: https://luajit.org/
-Depends: luajit (= 1:2.1.1787156470+g21ecb36)
+Depends: luajit (= 1:2.1.1787165859+g1ee778a)
 Description: Static libraries for luajit
-Filename: dists/stable/main/binary-aarch64/luajit-static_1:2.1.1787156470+g21ecb36_aarch64.deb
-Size: 225200
-MD5Sum: 20e2cd8d7c0a233df56516403be58cd6
-SHA1: 3e94bf5b542f31182ff6bc3fe9ba5fc1278224e6
-SHA256: 3c03151fe875d5842aead39cf2b743aaad0e0df876ab211638d631c0c89ad594
-SHA512: 915c4edad9d72ad1cc872453ecb476dc314d9c0ca342d25960d940248c0fef9839a668e3182bfe8402c8341870a5a02243c36118a53d5fc1046cacb396832ba8
+Filename: dists/stable/main/binary-aarch64/luajit-static_1:2.1.1787165859+g1ee778a_aarch64.deb
+Size: 225296
+MD5Sum: 26158f76cc63aeb985caf7a70b0acb0f
+SHA1: 4c2b9f0cb167b34156446d8368a218c3e637b05c
+SHA256: 3ffafe1ba8fd208496bfcdce17cdb565db99c9e33db4877f8958f36b5a9b0334
+SHA512: 75f4089d588f2fb1682541a1d4f0150b59ee81bb820eba2f8e02068e1f9fbeceb31ec53f0193ca6afe103d84b34b51a6accbcb58a7b6dfc399b0e6d05a8fa7cf
 
 Package: luajit
 Architecture: aarch64
 Installed-Size: 1352
 Maintainer: @termux
-Version: 1:2.1.1787156470+g21ecb36
+Version: 1:2.1.1787165859+g1ee778a
 Homepage: https://luajit.org/
 Breaks: libluajit-dev, libluajit
 Replaces: libluajit-dev, libluajit
 Description: Just-In-Time Compiler for Lua
-Filename: dists/stable/main/binary-aarch64/luajit_1:2.1.1787156470+g21ecb36_aarch64.deb
-Size: 292916
-MD5Sum: 526106d0391a66d789ae5811c9c4de65
-SHA1: e0aa35fe207c0e9a53695a42a47563f20c41b1b8
-SHA256: 925467fe4325539dda35fe9a9c84ee324d9d57cc4d7f742b9cbc158048319c0c
-SHA512: ae6b34ce9c707ce55b2ff8004a76cf621f23defc49767c6f1f2d119a10e85fbb8aa60100704d6227b278be98505ff56641400053cf18b5c4aa8e87e9ad44af0e
+Filename: dists/stable/main/binary-aarch64/luajit_1:2.1.1787165859+g1ee778a_aarch64.deb
+Size: 293588
+MD5Sum: 2df542ea6dcdbf5c204bcc774a868db2
+SHA1: 6322c11ac37bdedcde345d7621607c339ec22736
+SHA256: fd86ddb3c1847923c96d3e6633cb449cebe8a4849a1d45cb766ac673720e1090
+SHA512: 7e893d33041b211ab4463d60515a80348fe327653a3a2d3912cfd9f0fc10328564b88e2758b0f6446f319a3fadfc2d7770fd161f9e24c630ffaa73650d5ace34
 
 Package: luv
 Architecture: aarch64
