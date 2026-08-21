@@ -815,15 +815,15 @@ Package: ed
 Architecture: aarch64
 Installed-Size: 180
 Maintainer: Oliver Schmidhauser @Neo-Oli
-Version: 1.22.5
+Version: 1.22.6
 Homepage: https://www.gnu.org/software/ed/
 Description: Classic UNIX line editor
-Filename: dists/stable/main/binary-aarch64/ed_1.22.5_aarch64.deb
-Size: 42900
-MD5Sum: 05d1461c9860fae2e19a843f6f99c714
-SHA1: 4dd5cb6e84158f38e0e33643307b0c8c278a5d7f
-SHA256: 9bd2b5e71f584f963a528c65e304083f2dae9e247612d1923311c5032e5df497
-SHA512: 4a0a0a98b3e6451efc44e856ae8fdbebe3387a193f0f8bb45aced311e3a039d80e9d0a9eaa6a18c1033715bcd46a6564f032dc91b182053a6cb39882851132f6
+Filename: dists/stable/main/binary-aarch64/ed_1.22.6_aarch64.deb
+Size: 43008
+MD5Sum: 75d5319eaaca26c1e15315e66addf09b
+SHA1: c2761e422f028115fd25ffa26f620823aae2ce69
+SHA256: 407ac396b92612241ba143697920f639b14e30ef6b884b3c7dd2017d352e2450
+SHA512: eed138aef62ccfd0bec5df29092053319c93a5a1b87e471b5a8d2ae5e5e558e22b894abf00aceab42a13a1b474664853818cc823a1009c0b63a8095c36791424
 
 Package: elfutils
 Architecture: aarch64
@@ -2529,30 +2529,30 @@ Package: libcap-ng-static
 Architecture: aarch64
 Installed-Size: 68
 Maintainer: @termux
-Version: 2:0.9.4
+Version: 2:0.9.5
 Homepage: https://people.redhat.com/sgrubb/libcap-ng/
-Depends: libcap-ng (= 2:0.9.4)
+Depends: libcap-ng (= 2:0.9.5)
 Description: Static libraries for libcap-ng
-Filename: dists/stable/main/binary-aarch64/libcap-ng-static_2:0.9.4_aarch64.deb
-Size: 9800
-MD5Sum: f1ca2218d247d83559f4456ddbdd8ebb
-SHA1: 82a98cd358286ae14531fcb27a4ed9a5847a7b24
-SHA256: 9e3d8c2230fcbd61278ba8c739d9a95ea81ac156524d9433e89352b2cf93086d
-SHA512: bce8a4e67008327b1432986d254ef5b0a8018a5e0c91ea3a48fdc5fc2ad26bcf6d27706fe0d6505d32cd8cced5e4f4a5c52b0511b739b607ad22502a5575686e
+Filename: dists/stable/main/binary-aarch64/libcap-ng-static_2:0.9.5_aarch64.deb
+Size: 9820
+MD5Sum: 9ba96ef3be040a50c52d777f1a51472e
+SHA1: 6680a1a052ebfe0f9e5e94a4de8cb543b9604da9
+SHA256: 012d2aaf23c8ac2522f4f75d06a76b40b1b443b5b755f3261fa40941ec535602
+SHA512: f48fa79274ea797bb2061da305d97901a86d2694a0f738619485750d47f29a226a12ffe087110149d3c13f51ef6f54565c43c0f13fd367a3d2c890c9fab126b7
 
 Package: libcap-ng
 Architecture: aarch64
 Installed-Size: 312
 Maintainer: @termux
-Version: 2:0.9.4
+Version: 2:0.9.5
 Homepage: https://people.redhat.com/sgrubb/libcap-ng/
 Description: Library making programming with POSIX capabilities easier than traditional libcap
-Filename: dists/stable/main/binary-aarch64/libcap-ng_2:0.9.4_aarch64.deb
-Size: 60776
-MD5Sum: 7e3cf354a60fa2fe6aaef5d089e68eb2
-SHA1: f8a96794e8906d57922320f4189a6c4f63ce6293
-SHA256: dfaf0b0e7a1fc48fcde018c872733e6a1113312dfa8c60eec92f484e8198e1d9
-SHA512: 903be4463b882376b8039cce580016bfa84f22b27e3fcc6fcd5dfe4651653a43fecd93355bd4b06e514ac8806cb2d9e06558fea6c92ee89be74821c4cc74ce92
+Filename: dists/stable/main/binary-aarch64/libcap-ng_2:0.9.5_aarch64.deb
+Size: 57932
+MD5Sum: 4e59fa26259ca978af9ff9f0608bfacf
+SHA1: 87855647b615bf8759d9fc0c04c2316c1fb98d93
+SHA256: 558336827772e4d526d8c69cc7dcc3eccd18a95e04ae19621dca88ef383589a4
+SHA512: b7a51f84f09444cc88935460560ff5306bccbd2f7ff5116bc20f9ca2ab68e5a428d870b8c63b0a0bb8a2d4d171655cd0e3247552ea5cfa6138384ed7e2a590a7
 
 Package: libcap-static
 Architecture: aarch64

@@ -14362,7 +14362,6 @@ data/data/dev.cometix.cometux/files/usr/share/man/man3/capng_stage_additional_gr
 data/data/dev.cometix.cometux/files/usr/share/man/man3/capng_update.3.gz         libcap-ng
 data/data/dev.cometix.cometux/files/usr/share/man/man3/capng_updatev.3.gz        libcap-ng
 data/data/dev.cometix.cometux/files/usr/share/man/man7/libdrop_ambient.7.gz      libcap-ng
-data/data/dev.cometix.cometux/files/usr/share/man/man8/cap-audit.8.gz            libcap-ng
 data/data/dev.cometix.cometux/files/usr/share/man/man8/filecap.8.gz              libcap-ng
 data/data/dev.cometix.cometux/files/usr/share/man/man8/netcap.8.gz               libcap-ng
 data/data/dev.cometix.cometux/files/usr/share/man/man8/pscap.8.gz                libcap-ng
