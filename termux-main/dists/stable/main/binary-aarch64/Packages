@@ -5793,20 +5793,20 @@ SHA512: d5c6a116907eb230432c0aec71b52f8beed39c7aadab87dd4326dadf3f7a02c14530cf29
 
 Package: neovim
 Architecture: aarch64
-Installed-Size: 32428
+Installed-Size: 32436
 Maintainer: Joshua Kahn <tom@termux.dev>
-Version: 0.12.4
+Version: 0.12.5
 Homepage: https://neovim.io/
 Breaks: neovim-nightly
 Depends: libandroid-support, libiconv, libmsgpack, libunibilium, libuv, libvterm (>= 1:0.3-0), lua51-lpeg, luajit, luv, tree-sitter, tree-sitter-parsers, utf8proc
 Conflicts: neovim-nightly
 Description: Ambitious Vim-fork focused on extensibility and agility (nvim)
-Filename: dists/stable/main/binary-aarch64/neovim_0.12.4_aarch64.deb
-Size: 5942040
-MD5Sum: af7af6d614282f03bcbef6eda9399db7
-SHA1: 5f75117fd82e9ce75f19b8a9cfb26b05488526a8
-SHA256: 039c0e50cea76be70dbe7d4efb498585363a1adb937bfe98da88422b3878995b
-SHA512: 2faf45781989e681ca7b096c07af79291ccce2ba4af0f4c0e8bd53097ab7a8e810ea34ab0cad33eba8807580d8e8116210756c3418219cca236a6e15944e98c0
+Filename: dists/stable/main/binary-aarch64/neovim_0.12.5_aarch64.deb
+Size: 5945244
+MD5Sum: 1d2de9dcc9f5fa169bce7972c20f4ceb
+SHA1: 7d68a97930c14f6c72e68fd413626ffadbfa6871
+SHA256: 358368d9b5c50ff4317cbbc63179213ee8f066d099b0014a001577a0ee07358d
+SHA512: 17d0eac22c518a7bb1262fc2880b698c0f3ab2fede5b306c0775b4a86f5fc0f07c125d71b87b5f2cf6ac6fa5daa515b2fdef8cd77a92ab1fed14826db8227a6c
 
 Package: net-tools
 Architecture: aarch64
