@@ -3769,32 +3769,32 @@ Package: libmsgpack-static
 Architecture: aarch64
 Installed-Size: 64
 Maintainer: @termux
-Version: 7.0.1
+Version: 7.0.2
 Homepage: https://github.com/msgpack/msgpack-c/
-Depends: libmsgpack (= 7.0.1)
+Depends: libmsgpack (= 7.0.2)
 Description: Static libraries for libmsgpack
-Filename: dists/stable/main/binary-aarch64/libmsgpack-static_7.0.1_aarch64.deb
-Size: 10616
-MD5Sum: 4bdd879bf643acc23311decddfe01aef
-SHA1: 7020c05e667d6eef40b487af0027ce1b6f976ad7
-SHA256: 98c56272c8eefe639269f5fac78878a91e56f2fef75f1668e06dd3c14b8f611c
-SHA512: 896bd1b91f606593783b4a2a7bde46095ea31723c028f6d30b2189eecc79c7b4bab57fac9710927806653d686bb56686fac4b9be61891ce3b8076b44fc3e2360
+Filename: dists/stable/main/binary-aarch64/libmsgpack-static_7.0.2_aarch64.deb
+Size: 10640
+MD5Sum: 57de54933831fb0c8b3e5c578b5c0df4
+SHA1: 32b1a557e9ce13fbcf798f7a9b57c4d4b8b46f39
+SHA256: 562ad27f5374068fb1dddd8678f0a9e7af624441de91ff4de3b0ee307ad66c38
+SHA512: dffac5b433389cb946144dfdb94ea1334a5ba117b92e2b47754ad9ccef005467b91a013a8c1782e586e3adf56fdcd4c4e35bc689197702fbfe640c51a4dee708
 
 Package: libmsgpack
 Architecture: aarch64
 Installed-Size: 240
 Maintainer: @termux
-Version: 7.0.1
+Version: 7.0.2
 Homepage: https://github.com/msgpack/msgpack-c/
 Breaks: libmsgpack-dev
 Replaces: libmsgpack-dev
 Description: MessagePack implementation for C
-Filename: dists/stable/main/binary-aarch64/libmsgpack_7.0.1_aarch64.deb
+Filename: dists/stable/main/binary-aarch64/libmsgpack_7.0.2_aarch64.deb
 Size: 26284
-MD5Sum: 7d65f33cb51ebf65dc3aa1fe2c3e46a3
-SHA1: d966bb97d60611bef00eba40f66b3f0fb09495c4
-SHA256: 8167afd69b36e3450906baf60b2589607db1d6ba94faadf55f90e3033960fe09
-SHA512: 50e4894085b4919005dc803af9be6a020b3e385785273e2396b235c6ce127ef8f7eb8c3869a9c712388dac4b4e42ce80f6fe207ae8ca5802a2cae643c653d936
+MD5Sum: a9827afb0a3da6175e20fdc1b5517ed6
+SHA1: de53f61804e1693c6cb5180d7b2ff3b32aa0b996
+SHA256: 04826eda3e0f1e03d56a2879344b48238270d9246e25891f37a31681cb3d2bd0
+SHA512: d5d0d9628931e830b4b632b07045d3c8a98654e6499c4861c94e9e2af4a6802116210d5d76e45690755e83470c0389174c6ddae5c7d927b0620056dc67b4a044
 
 Package: libnettle-static
 Architecture: aarch64
