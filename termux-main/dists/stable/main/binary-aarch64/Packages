@@ -3440,33 +3440,33 @@ Package: libksba-static
 Architecture: aarch64
 Installed-Size: 424
 Maintainer: @termux
-Version: 1.8.0
+Version: 1.8.1
 Homepage: https://gnupg.org/related_software/libksba/
-Depends: libksba (= 1.8.0)
+Depends: libksba (= 1.8.1)
 Description: Static libraries for libksba
-Filename: dists/stable/main/binary-aarch64/libksba-static_1.8.0_aarch64.deb
-Size: 92632
-MD5Sum: 60c94b05348e98ec9c717a2fb75d54ca
-SHA1: fb1370e8943accadd7396a50fbd18632881bec58
-SHA256: 75ec1dc4cba0de0c95b10387459c63dd90db442a9ae56ce718d9d018c7bf66e5
-SHA512: 74281ddd1a7a0b0cbf4307b8b2ae73c3ff7281f37bd1aaa12feb1de9b5c1a1d79aa993264a91b0a75efa4da3ba6f5c8d4c87afd3d6d78670538bf13e672f1593
+Filename: dists/stable/main/binary-aarch64/libksba-static_1.8.1_aarch64.deb
+Size: 92792
+MD5Sum: a482281554930c7b3106a6a06f5b4829
+SHA1: a44387eaa61e148ddb003922a1d5d31d8d22cae4
+SHA256: fb14618263c25235f0dd96ba73d51df0f476d01c5b5958ee402857bced2bfd94
+SHA512: 2bf2ab663d9553565e712e6e8bd1dd3ed07868127601b340a690d52fe36fff60689661e4f6f5aea8e49b7530afd660a035f7a268649701cf80a6462270eda818
 
 Package: libksba
 Architecture: aarch64
 Installed-Size: 408
 Maintainer: @termux
-Version: 1.8.0
+Version: 1.8.1
 Homepage: https://gnupg.org/related_software/libksba/
 Breaks: libksba-dev
 Depends: libgpg-error
 Replaces: libksba-dev
 Description: Library for using X.509 certificates and CMS (Cryptographic Message Syntax) easily accessible
-Filename: dists/stable/main/binary-aarch64/libksba_1.8.0_aarch64.deb
-Size: 107040
-MD5Sum: dc756600904f450335fe3cd76d106c48
-SHA1: 2ce14b3626e584a514bf0d8cf52fbaefdbd828c1
-SHA256: c7d2000a2e49631b9cb764e61176f25322f21f7b8de8e5df92d8139e2275a2ad
-SHA512: 7b4dd308e786ca2d11e77e11eae24f619899949fcfc7c6d55245da511480f3f05d0b26cc5efe24120801f5205e818aab81b5a975f9ca959ab980605d4a77f606
+Filename: dists/stable/main/binary-aarch64/libksba_1.8.1_aarch64.deb
+Size: 107012
+MD5Sum: 1a19ceb851d95024f6e60abae2506828
+SHA1: 0d27ac3194afa04662d134c0404ff1ef5ee04b58
+SHA256: 584e84c824780f3e871409b5ec7cdc1afb6b7f5dea5d63ff1b3e66e14a3b9138
+SHA512: 4069b0e2a0fafffd4ef9a895b6f63a15e51f0f7332a65e99f21c8218389f1a6f3fcfd04b2d3f2127f119df382488cbbc2507d8a19236687316fe83bf620fae1c
 
 Package: libllvm-static
 Architecture: aarch64
