@@ -489,34 +489,34 @@ SHA512: 4c12c808e105a13ef9c61ef774746bc065953f504a54fdb425a8b69a27195395b09dfa34
 
 Package: cmake-curses-gui
 Architecture: aarch64
-Installed-Size: 9436
+Installed-Size: 9428
 Maintainer: @termux
-Version: 4.4.2
+Version: 4.4.3
 Homepage: https://cmake.org/
-Depends: ncurses-ui-libs, cmake (= 4.4.2)
+Depends: ncurses-ui-libs, cmake (= 4.4.3)
 Description: Curses based user interface for CMake (ccmake)
-Filename: dists/stable/main/binary-aarch64/cmake-curses-gui_4.4.2_aarch64.deb
-Size: 2472164
-MD5Sum: 95143b0fbccaa55ba341e31234bcf40c
-SHA1: a057db2927e4701534fc343649a96b1f97a934ce
-SHA256: ae5de49e471e3fbce5e4b6a39c54246525199781d861f99acfca37cbab719a59
-SHA512: feccdd776a7adf53d8455820c37e1581ad9e5a3a8ee7962d1d894233603c11907d1502b5b5245b83759052a970ed53a1e8ff1a58072034a308466631e6d20609
+Filename: dists/stable/main/binary-aarch64/cmake-curses-gui_4.4.3_aarch64.deb
+Size: 2472412
+MD5Sum: 68dee739cf1aa768d609c4dc04a298eb
+SHA1: 3cc98e1f6b1f7a0afa4605dd699c5ab1b4089f60
+SHA256: 8925a4b9e8fe7fed687eefa66097deb475bd742386ccd04a5973b1dc0230dd13
+SHA512: 30407ac854fcb590357eba58cdee21032c0944ff4d7992e0661e2f402b5667919e02b563d4f78cf15588a3eceb87ff9b0abd8a67f7d776b57cc29d115d70b977
 
 Package: cmake
 Architecture: aarch64
-Installed-Size: 55824
+Installed-Size: 55816
 Maintainer: @termux
-Version: 4.4.2
+Version: 4.4.3
 Homepage: https://cmake.org/
 Depends: libarchive, libc++, libcurl, libexpat, jsoncpp, libuv, rhash, zlib
 Recommends: clang, make
 Description: Family of tools designed to build, test and package software
-Filename: dists/stable/main/binary-aarch64/cmake_4.4.2_aarch64.deb
-Size: 10641096
-MD5Sum: 1b44f8714b290fcb79de9e7a15ed5f1d
-SHA1: 74c48fe6f25fb784c51e225bfeca319e46d42c10
-SHA256: b580c501822ecadea349020f99d43f7d5f899b986dd205f1765497da7894c053
-SHA512: dc16352d31edc28197a507f6c83f95f5827e4cec95ab18aa3e161aa636ac06dfd7bd9f43439ecde9ad442823ffb5e669893b378da3c40f4ded34ee74521a474d
+Filename: dists/stable/main/binary-aarch64/cmake_4.4.3_aarch64.deb
+Size: 10638504
+MD5Sum: 513cfa51d6085670237b28dba18544c4
+SHA1: 7520afaecbec1785a522b6a91d6467415b6deffb
+SHA256: 3aa015eb9f3f66b4217be2e45cc43ace25a8a5bf84149f2a4daff1868e036b00
+SHA512: 1c2da67a9a1ead419166c6d390e74568d6c346a8ba1463657635af368918ebfab71a7de7d6630a0f449018e845d55ecbf94c781de68339bd15e634407c105bc4
 
 Package: command-not-found
 Architecture: aarch64
