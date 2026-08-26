@@ -859,17 +859,17 @@ SHA512: 039bbbdf99a4b7f7d1112ca96b6d3649d4ba55a9de9ff829d9fda967b716208b33d1b5d3
 
 Package: fd
 Architecture: aarch64
-Installed-Size: 3224
+Installed-Size: 3248
 Maintainer: @termux
-Version: 10.4.2
+Version: 10.5.0
 Homepage: https://github.com/sharkdp/fd
 Description: Simple, fast and user-friendly alternative to find
-Filename: dists/stable/main/binary-aarch64/fd_10.4.2_aarch64.deb
-Size: 944284
-MD5Sum: 20ee991dbe0bffef8a1f366be1819ae5
-SHA1: d1725647ab0e326f7ffb515d03e0054a97a029a6
-SHA256: 30e280d03f82fb724f0174e3a72c317ffa5aa64882ac1cdb96322907ac560955
-SHA512: 53aeb5708d8234f5a79f0db987d8756c11db44de7fddafe01ceb5dea82ebcc70325d69994f4ba8c278807ecbc691404b81a840fa324ad1a4a3baaf059e834622
+Filename: dists/stable/main/binary-aarch64/fd_10.5.0_aarch64.deb
+Size: 952888
+MD5Sum: 119480dbe752bda07a8267139f61eafe
+SHA1: 8b8d4ad4fbec633d4081c5bac1b1da4104a5ae60
+SHA256: fd9fa8ad53aaf729b245192146d9f69800142a7a85f3df8c074fb736644cceb5
+SHA512: 42d4949f4202fd0cc6a899e90b3ef9a8ec5bf3dfdde2b8d711169a1b04a68fee82d22bffb6c5940fdb35bdb5891d409063c16b8496c9c27c9329fa2eab2456ae
 
 Package: fdisk
 Architecture: aarch64
