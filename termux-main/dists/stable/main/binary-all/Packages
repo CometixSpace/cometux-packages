@@ -195,19 +195,19 @@ SHA512: f96d8ac03b07ee129dde856aa5373092e508a3afccfadc6532d0018c1c00f097504fc4b5
 
 Package: npm
 Architecture: all
-Installed-Size: 18200
+Installed-Size: 18228
 Maintainer: Yaksh Bariya <thunder-coding@termux.dev>
-Version: 11.19.0
+Version: 11.19.1
 Homepage: https://docs.npmjs.com/cli/
 Depends: nodejs | nodejs-lts
 Conflicts: nodejs (<= 25.3.0), nodejs-lts (<= 24.13.0)
 Description: The package manager for JavaScript
-Filename: dists/stable/main/binary-all/npm_11.19.0_all.deb
-Size: 2028868
-MD5Sum: 092dcbf8e8356354f0b0ed982486d716
-SHA1: 360888afb324addcd3daa25ed436d92ac146097b
-SHA256: 41d0f2ba23be011a550c9534fa36c37184671f1098e11eb8b984db3fb89debd1
-SHA512: d963c7e66a6a79d58bd34a5ea1df0cb10ea8ca9b76095587361935e383ab6d6c221066e53d3630951c09952aa285ba41b45503567d9240482ddb47b34999ab99
+Filename: dists/stable/main/binary-all/npm_11.19.1_all.deb
+Size: 2032704
+MD5Sum: deaa0660ef3a0dfbd42e06cb087fbd52
+SHA1: 0b02fcc4640d3bbdd7634f884afce7f52270f680
+SHA256: 658852938bc58dbf298a900ba842fc7f9bfa9740b0af56c2cee90f3f3dbcd907
+SHA512: 8e9c4539f29a949fbeef85e118b78978e348d47ac49abdd1e2c732275521505f3c197576d83dcbe073b7e4ae0b885bc045affe05502b699a2016bc03eaccd791
 
 Package: python-ensurepip-wheels
 Architecture: all
