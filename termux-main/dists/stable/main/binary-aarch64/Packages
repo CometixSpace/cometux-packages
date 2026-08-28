@@ -632,15 +632,15 @@ Package: debianutils
 Architecture: aarch64
 Installed-Size: 116
 Maintainer: @termux
-Version: 5.23.2-1
+Version: 5.24
 Homepage: https://packages.debian.org/debianutils
 Description: Small utilities which are used primarily by the installation scripts of Debian packages
-Filename: dists/stable/main/binary-aarch64/debianutils_5.23.2-1_aarch64.deb
-Size: 16728
-MD5Sum: f3d5c7c5c5b19354b3f4bcf5d85a72d3
-SHA1: 887775db3cd848dc1379667d2ff4855a500d0988
-SHA256: 5119c8992c15b8decafa215e7cebad9503c52438397edfd22a9ee8908d2aac96
-SHA512: 29e833e2c4a675fa517e71711f356e61fc00ce070dbc1c26f091311e753007aa250de06bef12be2e30d06f77029a678954dd6f504b77c29ac43c603709e09e1a
+Filename: dists/stable/main/binary-aarch64/debianutils_5.24_aarch64.deb
+Size: 17228
+MD5Sum: 58c1fd35a2606f44262ef5fadc42f3f0
+SHA1: 084ff60256a5e9d8c79cfa6f02eb433eb0a70084
+SHA256: c8f53cdf4b0ff2a44effc90884979187eb3fa2a326cb6f486e7570402b68506b
+SHA512: 4aff137d9d77962e081fc9759a3c9077f5a8903f19684ca49bba57c94cc43357e189ac49487ad50363648daaac08e2913bc5972ae9863218493e287e589e18aa
 
 Package: dialog-static
 Architecture: aarch64
