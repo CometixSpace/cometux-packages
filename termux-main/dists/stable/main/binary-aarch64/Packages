@@ -2843,32 +2843,32 @@ Package: libexpat-static
 Architecture: aarch64
 Installed-Size: 256
 Maintainer: @termux
-Version: 2.8.3
+Version: 2.8.4
 Homepage: https://libexpat.github.io/
-Depends: libexpat (= 2.8.3)
+Depends: libexpat (= 2.8.4)
 Description: Static libraries for libexpat
-Filename: dists/stable/main/binary-aarch64/libexpat-static_2.8.3_aarch64.deb
-Size: 59500
-MD5Sum: e0c08afa53c300b25d00efc588cbbf1f
-SHA1: 1ce367ac6fdd7cd240f5b3745d1d7abcab78cd99
-SHA256: 86e80105e43cced4b1023bb99d14068b50c913c94d7490449a4fc770efa8fffb
-SHA512: 669fec87c7086be67edf96a44bdfb0434679bd6d69ad525c135bb1127e70f1e61c476b62af471af49d2bb8f57b11f3a3ea548e77c6b0b428958fdd8e38d7a7b2
+Filename: dists/stable/main/binary-aarch64/libexpat-static_2.8.4_aarch64.deb
+Size: 59940
+MD5Sum: a56adb72b2215ab06c68f7c79f21db02
+SHA1: 7b5289245fd5d96f7c6d2b24dfd8ce9dec9eaf5a
+SHA256: 9f42681774457d503d5e97072ccf7f6ec0d8b0b7a1e0cb4a20add13c34836668
+SHA512: 9a63f813056f16be4078a857f962b9d4a0c09e19f30d8f864f639682e9f474e426250b3d5b751160ca82f0af6c037049282327f42d99373434813c26b96f83e0
 
 Package: libexpat
 Architecture: aarch64
-Installed-Size: 404
+Installed-Size: 408
 Maintainer: @termux
-Version: 2.8.3
+Version: 2.8.4
 Homepage: https://libexpat.github.io/
 Breaks: libexpat-dev
 Replaces: libexpat-dev
 Description: XML parsing C library
-Filename: dists/stable/main/binary-aarch64/libexpat_2.8.3_aarch64.deb
-Size: 96244
-MD5Sum: c8f8f3b467f26e4994467016ea76adad
-SHA1: 3d33b8fd4328f45ebe97a336599f7c7471a74a47
-SHA256: 1c5198754c839671ebc03618bb3d461e0bdf922e52fbc7fd401c319e9218c98d
-SHA512: 23a6bcc85de6989173e23997ee97651f966ae915348a1e8cd0a01df85dfbcf474a05e96bf22a6ac0f2116d964d6f9b3821f11f872b95c0c66bab83322df06b95
+Filename: dists/stable/main/binary-aarch64/libexpat_2.8.4_aarch64.deb
+Size: 97176
+MD5Sum: 660d0bbe314892e74f99474685fabdc5
+SHA1: 298044239c12a987114f0ff29ff3e142e9083eef
+SHA256: 90707dba6a18b74b5068601083460d66839dac3917dc95e76e4eaff787486593
+SHA512: bb05b61d6eb8b1ec519b36d9ebd84bc6924e3aa24837afd183c85d6d20e9c1e852380c14f6f89b443ef12e74bb4f14370e4c69fbbd946262dd75cae47cd59cc1
 
 Package: libfdisk
 Architecture: aarch64
