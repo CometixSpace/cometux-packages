@@ -3830,35 +3830,35 @@ SHA512: d802be07ccea6dea04f21b20e0e7d177da1be61058fc019acc240279ead8618bae34eb84
 
 Package: libnftnl-static
 Architecture: aarch64
-Installed-Size: 492
+Installed-Size: 500
 Maintainer: @termux
-Version: 1.3.1
+Version: 1.3.2
 Homepage: https://www.netfilter.org/projects/libnftnl/
-Depends: libnftnl (= 1.3.1)
+Depends: libnftnl (= 1.3.2)
 Description: Static libraries for libnftnl
-Filename: dists/stable/main/binary-aarch64/libnftnl-static_1.3.1_aarch64.deb
-Size: 64780
-MD5Sum: 530242ad02c1f5b6dce27991ad6a5e22
-SHA1: c32d2727b590da90d64a0c7e9e60107480678228
-SHA256: de922a4fe9489f12f08baea73557bc217abdee790fb10e2f28c9487ee3ab14ea
-SHA512: 4c4f5ae172f62af219f4d3f12714b8059b401c8694283b529bbb510af0f877b64bf3dbf67c81a7f92f70b199a5d33268c94fbf2d8643b911d8aa633ebaae7d87
+Filename: dists/stable/main/binary-aarch64/libnftnl-static_1.3.2_aarch64.deb
+Size: 65376
+MD5Sum: 87d3a4cebc1aa09930c28fbe8e14fa70
+SHA1: 867881d912c9adea958e0e7e66c2de6f4e31fd0c
+SHA256: a8288e2e17508267ad49100da3c0c4d09bc785c50926e2ae09a80f7aeb1a555b
+SHA512: 5d53c5d3e93af2c4798ff2ded6d5402dc26d12d654b2ceda5329a79161ce0e28502d4402ae37fdf704fd1ba714c51df6076e50a59469f320c274c5f2a52c2cc0
 
 Package: libnftnl
 Architecture: aarch64
-Installed-Size: 320
+Installed-Size: 324
 Maintainer: @termux
-Version: 1.3.1
+Version: 1.3.2
 Homepage: https://www.netfilter.org/projects/libnftnl/
 Breaks: libnftnl-dev
 Depends: libmnl
 Replaces: libnftnl-dev
 Description: Netfilter library providing interface to the nf_tables subsystem
-Filename: dists/stable/main/binary-aarch64/libnftnl_1.3.1_aarch64.deb
-Size: 56648
-MD5Sum: 89840dc80c10704ff0bacc3d83314465
-SHA1: fffc629126ab2d138408fe7ecb7d6d52899ef917
-SHA256: 056b70002e5a469e4653dba14932c36c2a353c7e69201a655d8ee85d06ed745d
-SHA512: 6d50d2f8ea99373f07fa60175f2cd20a96facd277b2ddec1390a15bc77d7fa036780df601a5ed653b97a1eb7ad296b8aed3afde3f49ae565ea7e2c3b0b3b1abd
+Filename: dists/stable/main/binary-aarch64/libnftnl_1.3.2_aarch64.deb
+Size: 58052
+MD5Sum: ce648f7ec304f09bec7f7278bd5eb448
+SHA1: 2081000b2a05631324208207d2493bb828dc22dd
+SHA256: 279d666537c147d75793a335444caa42082b7ea6f554cc223d7b552a79cece5a
+SHA512: 7ab650f8d65b6f13eb025098c7ed26c3a6046881ae110b2a3adff64f01a16053179b2a6f5b4b200b88fbb3699b16e2614ece28f9a6aaccab205fe8fa54a13a79
 
 Package: libnghttp2-static
 Architecture: aarch64
