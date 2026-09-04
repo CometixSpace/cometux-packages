@@ -4920,49 +4920,49 @@ Package: libxml2-python
 Architecture: aarch64
 Installed-Size: 620
 Maintainer: @termux
-Version: 2.15.3-2
+Version: 2.15.4
 Homepage: https://gitlab.gnome.org/GNOME/libxml2/-/wikis/home
-Depends: python, libxml2 (= 2.15.3-2)
+Depends: python, libxml2 (= 2.15.4)
 Description: Python bindings for libxml2
-Filename: dists/stable/main/binary-aarch64/libxml2-python_2.15.3-2_aarch64.deb
-Size: 95304
-MD5Sum: 6f8f1fe72f3f8523611c3d8f70c3969f
-SHA1: 155c43a48bf0d797c00c0ad0da998c9332e52be4
-SHA256: e54c55ed2e83d9d7896394f9513bcf66987d53b02b048177a5d2c32dc76ff195
-SHA512: 9f46b61b158534ce674dab09268fb37e006e60b07198dcb6c564c653a11c0479f6a90a0aceb17a4b1172f278febe3538f11f8a9602722be02b63298f80c953e2
+Filename: dists/stable/main/binary-aarch64/libxml2-python_2.15.4_aarch64.deb
+Size: 95680
+MD5Sum: 1afb4ba936d907b4a94a462bae066442
+SHA1: 1b74778fd2ffb5991f83588fec9549f1fae452a5
+SHA256: f01ab665fd5f211056b1b412831a65139c123203b1048a0e283acab876a87d1b
+SHA512: 3742c7b1498a17191046547b37515ac77e8b2b7b28cf2a5a5c3a36d179fc550278315b581d72efb614c67751f5b5b82f7920cf34d3cb1d79a9ada8b43ca88b79
 
 Package: libxml2-utils
 Architecture: aarch64
 Installed-Size: 136
 Maintainer: @termux
-Version: 2.15.3-2
+Version: 2.15.4
 Homepage: https://gitlab.gnome.org/GNOME/libxml2/-/wikis/home
-Depends: readline, libxml2 (= 2.15.3-2)
+Depends: readline, libxml2 (= 2.15.4)
 Provides: xmllint
 Description: XML utilities
-Filename: dists/stable/main/binary-aarch64/libxml2-utils_2.15.3-2_aarch64.deb
-Size: 34068
-MD5Sum: 85480ac0f4876d59be36f9441c88b9b7
-SHA1: 3738f14eb1f4261168f2e1c2618c9e2afd650622
-SHA256: 8ce20df6104b113d230ad204ed22e20ad8c8ae99ed064bcf880a2e648a95942c
-SHA512: 02802aece59a0e907636e9ead2be83f320a310e7804741c95281918e7247e1124104cccac92311683892d5d3d93187a61bbad7b73befd90697fed63266347710
+Filename: dists/stable/main/binary-aarch64/libxml2-utils_2.15.4_aarch64.deb
+Size: 34216
+MD5Sum: cae64addbe9d80284057d9b79830793c
+SHA1: 2e1a71a6eb3c1cdb91733e3c0e2e3b611a28fb20
+SHA256: 57f64aeeed67cc3864f0745e5d408eaefdf040ae490ebb7112124c7462adeb6a
+SHA512: 5699a20d3f68d0ed298aeb546accbe1c0498c1317c2510a6ecb1148a973c2d3f2b5d454fb149e0f986ebad4ecb3ad80453fd10f21fb05d151d6fda796d4310ff
 
 Package: libxml2
 Architecture: aarch64
-Installed-Size: 1648
+Installed-Size: 1652
 Maintainer: @termux
-Version: 2.15.3-2
+Version: 2.15.4
 Homepage: https://gitlab.gnome.org/GNOME/libxml2/-/wikis/home
 Breaks: libxml2-dev
 Depends: libandroid-glob, libiconv, libicu, zlib
 Replaces: libxml2-dev
 Description: Library for parsing XML documents
-Filename: dists/stable/main/binary-aarch64/libxml2_2.15.3-2_aarch64.deb
-Size: 442808
-MD5Sum: 554f3f95c2fed081d82af22e123f9007
-SHA1: d7465542108b26888d6a4a6354ba9bcd04dfc2ff
-SHA256: 7057b8abc5c8ad7f3b87064659bea0285fa954c04cdf8a02062367713f7a319b
-SHA512: 5339287931943714565258743c2bfc04e56ccd656f0620f8adf0fc0deab0e500f1c88aeaf3f22dedfb007f5454bb543eac283d2bc3ef862f6ed34f0061b84ebe
+Filename: dists/stable/main/binary-aarch64/libxml2_2.15.4_aarch64.deb
+Size: 442992
+MD5Sum: 18fd682c7308009cb712d83099b6c0f8
+SHA1: 08d4c4c73dacb89b4f04ce171489da3c541a9f54
+SHA256: 4c44a734f19acec04073226dd744450b1831bdf22d14913dad28afd44de4340e
+SHA512: 953bca3a9716d421afb12e5a7f0fa4848477a33994aa4207e296953ea581fd1c141604a5456a655eb9b3e59f9dfab5fb462d4d25d7f48c4d70f138e5772f14d8
 
 Package: libxrender
 Architecture: aarch64
