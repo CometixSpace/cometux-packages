@@ -6718,18 +6718,18 @@ SHA512: a212141645e9f80f6e5e19980a51a35f6812db5dbf03a4900d0ee0cb629e0fd107c8a720
 
 Package: swig
 Architecture: aarch64
-Installed-Size: 6916
+Installed-Size: 7064
 Maintainer: @termux
-Version: 4.4.1
+Version: 4.5.1
 Homepage: https://swig.org
 Depends: libc++, pcre2, zlib
 Description: Generate scripting interfaces to C/C++ code
-Filename: dists/stable/main/binary-aarch64/swig_4.4.1_aarch64.deb
-Size: 927916
-MD5Sum: 5bca196625150918ebf68731eee1dff2
-SHA1: 95dbb47c7037f92f6381e3fba5d5c47bfe34be1c
-SHA256: 7dcb09387f438d2278a0c83117378cc99dd41ea76a9eae6130c6f7f79a695984
-SHA512: 72ca791412b6b1139ffed7263db73e6065b035227aa5bb48580732097681c512f8d6e5ebf52e5d0d39722d58e54146b68c161b23772f9c6e90e9cdad453a3461
+Filename: dists/stable/main/binary-aarch64/swig_4.5.1_aarch64.deb
+Size: 950252
+MD5Sum: e37c0454f5918f783ab1ab210be7b1e8
+SHA1: d2d1b1f661172004e52d4a38444473bab20af529
+SHA256: 9163cb4484a7cb70b5d15d07b8077a352d148c00bf76ada65ae8e6c20af7a99e
+SHA512: c15aa8aa4dbf4ae44c269f254e45d4477f553c6174432028499580185ff88dc05692a6e4b936453981e4b5f3ae2a9bbb245e2fe78c51d4e2d1212762e2a2a3bd
 
 Package: tar
 Architecture: aarch64
