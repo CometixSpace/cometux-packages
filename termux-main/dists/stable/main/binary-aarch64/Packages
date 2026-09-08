@@ -6922,18 +6922,18 @@ SHA512: 0ddf664b69ea4b839595f03e25ad0519cf5eb44d279d910a26f1840a2e74c2b5be836233
 
 Package: tor
 Architecture: aarch64
-Installed-Size: 28716
+Installed-Size: 29176
 Maintainer: @termux
-Version: 0.4.9.11
+Version: 0.4.9.12
 Homepage: https://www.torproject.org
 Depends: libevent, liblzma, openssl, resolv-conf, zlib
 Description: The Onion Router anonymizing overlay network
-Filename: dists/stable/main/binary-aarch64/tor_0.4.9.11_aarch64.deb
-Size: 3319060
-MD5Sum: c693bd58ae3ba22cb1683f00f074577d
-SHA1: 86f0d0577ef6bb9f0c5073d88c494f227a6a62a3
-SHA256: b530c39dd0e923cb781495c96fe460f2db14019fd42812c092d9ca92d5e0541e
-SHA512: c7333deb96597ba5450fabbc4ca16e6d9ab6d47ad9eac39cbf159d9f73c96c2af7199eb8dedc0a0215e999cbcba4ea74932e93fd760cc903118b902e2aa8b846
+Filename: dists/stable/main/binary-aarch64/tor_0.4.9.12_aarch64.deb
+Size: 3347012
+MD5Sum: 9f8b2af0d20934233e9858b9431bed6c
+SHA1: 740e64305e61275cce23eacfef16839eae06b3b2
+SHA256: bf0232af69af6b093ab97c8ed77f8e387f740f4cbe6dc1b5ab8c2bd9739c1ba4
+SHA512: 8aa14eb89f4e233be4e9875c2ba603e2d9e9da87c39974db4344dfe161a0a4c0f3d94a4564d3c3ae6e36692c54c102ea4540bcc2b9d55ae224ba3ee77be6ed96
 
 Package: tree-sitter-c
 Architecture: aarch64
@@ -7161,9 +7161,9 @@ SHA512: 6553d11050fa7cd1fdaa0858e5868a2c2a6e807aacb41d2fb888e08744da4680a0ac1620
 
 Package: vim
 Architecture: aarch64
-Installed-Size: 35268
+Installed-Size: 35316
 Maintainer: Joshua Kahn <tom@termux.dev>
-Version: 9.2.1000
+Version: 9.2.1050
 Homepage: https://www.vim.org
 Breaks: vim-python, vim-runtime
 Depends: libiconv, libsodium, ncurses
@@ -7173,12 +7173,12 @@ Replaces: vim-python, vim-runtime
 Provides: vim-python
 Suggests: luajit, perl, python, ruby, tcl
 Description: Vi IMproved - enhanced vi editor
-Filename: dists/stable/main/binary-aarch64/vim_9.2.1000_aarch64.deb
-Size: 6796592
-MD5Sum: 302cde03474377b00e06ddf17c74ce1b
-SHA1: 6b6a0eb5775a8e255e30e0d2bbddc18affacb692
-SHA256: f0b959238340ce836ff5885750e4b7ed6903c6b5bcf2787ea5e61f940a376d17
-SHA512: 7a6c0c96e6791c00aaed32266ce755e00ae9718b3245362fbe58feca694e2990152d494e6414abb518e8d89609946d7d56b20d3448ae1ef65edd9717958a6263
+Filename: dists/stable/main/binary-aarch64/vim_9.2.1050_aarch64.deb
+Size: 6805488
+MD5Sum: e664972bec1dcf9f7fa9c26c3e236610
+SHA1: e9062772816afc228da70991dab62dc02a0def45
+SHA256: df2fadddda23a1741629795c80e3f44029dacc437fffb3045caeff2348f26335
+SHA512: ef8a666bd038ee51c023e33cfe659b9aa45f5a3f100a5895f7aa46a9236018c9508d33ee0a9dbf475358cb3e9094f756654070d5b1a846be5e5092ffdf483557
 
 Package: wget
 Architecture: aarch64
@@ -7259,15 +7259,15 @@ Package: xxd
 Architecture: aarch64
 Installed-Size: 68
 Maintainer: Joshua Kahn <tom@termux.dev>
-Version: 9.2.1000
+Version: 9.2.1050
 Homepage: https://www.vim.org
 Description: Hexdump utility from vim
-Filename: dists/stable/main/binary-aarch64/xxd_9.2.1000_aarch64.deb
-Size: 13488
-MD5Sum: 81377a928fa23c95a9acf76ed3cd0350
-SHA1: 52b17299bd209ee79f8aa57cc80e492c586e6ffb
-SHA256: 918d68f893c4ae981e0998c9dfff227ca2ecc2d4e1a20769273fbd90954816c9
-SHA512: 3bce3fd15a590d4ccdb39adc89861d5eeda4f940c6592d42649e468c06e587b96eea0b03b651f07fe773ffd6548e7f86b916c7cdb52da0eeb85a171e6cd94c37
+Filename: dists/stable/main/binary-aarch64/xxd_9.2.1050_aarch64.deb
+Size: 13496
+MD5Sum: 93dd18f288a2c40008c04dba3761a639
+SHA1: 21aa91c35a95b11dceebcb3647bac7d8d8900d5b
+SHA256: 82a2e78c8836bb47e43266f128407f55c9258464d7a3d55f1952dfb1ddc24edb
+SHA512: 2b6b379c64749dfbfa210461d698420b688d4e9288c99cb236c66314df168b44ba3cc6a7d9cb94003b4d949c69fd35eab2f615c727307c27d6bc8eb41b3c74fb
 
 Package: xxhash-static
 Architecture: aarch64

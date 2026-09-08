@@ -44146,6 +44146,7 @@ data/data/dev.cometix.cometux/files/usr/share/vim/vim92/ftplugin/autopkgtest.vim
 data/data/dev.cometix.cometux/files/usr/share/vim/vim92/ftplugin/awk.vim         vim
 data/data/dev.cometix.cometux/files/usr/share/vim/vim92/ftplugin/bash.vim        vim
 data/data/dev.cometix.cometux/files/usr/share/vim/vim92/ftplugin/basic.vim       vim
+data/data/dev.cometix.cometux/files/usr/share/vim/vim92/ftplugin/bazelrc.vim     vim
 data/data/dev.cometix.cometux/files/usr/share/vim/vim92/ftplugin/bdf.vim         vim
 data/data/dev.cometix.cometux/files/usr/share/vim/vim92/ftplugin/beancount.vim   vim
 data/data/dev.cometix.cometux/files/usr/share/vim/vim92/ftplugin/bicep-params.vim vim
@@ -44432,6 +44433,7 @@ data/data/dev.cometix.cometux/files/usr/share/vim/vim92/ftplugin/quarto.vim     
 data/data/dev.cometix.cometux/files/usr/share/vim/vim92/ftplugin/r.vim           vim
 data/data/dev.cometix.cometux/files/usr/share/vim/vim92/ftplugin/racc.vim        vim
 data/data/dev.cometix.cometux/files/usr/share/vim/vim92/ftplugin/racket.vim      vim
+data/data/dev.cometix.cometux/files/usr/share/vim/vim92/ftplugin/radvd.vim       vim
 data/data/dev.cometix.cometux/files/usr/share/vim/vim92/ftplugin/raku.vim        vim
 data/data/dev.cometix.cometux/files/usr/share/vim/vim92/ftplugin/rasi.vim        vim
 data/data/dev.cometix.cometux/files/usr/share/vim/vim92/ftplugin/readline.vim    vim
@@ -44444,6 +44446,7 @@ data/data/dev.cometix.cometux/files/usr/share/vim/vim92/ftplugin/rhelp.vim      
 data/data/dev.cometix.cometux/files/usr/share/vim/vim92/ftplugin/rmd.vim         vim
 data/data/dev.cometix.cometux/files/usr/share/vim/vim92/ftplugin/rnc.vim         vim
 data/data/dev.cometix.cometux/files/usr/share/vim/vim92/ftplugin/rnoweb.vim      vim
+data/data/dev.cometix.cometux/files/usr/share/vim/vim92/ftplugin/robot.vim       vim
 data/data/dev.cometix.cometux/files/usr/share/vim/vim92/ftplugin/roc.vim         vim
 data/data/dev.cometix.cometux/files/usr/share/vim/vim92/ftplugin/routeros.vim    vim
 data/data/dev.cometix.cometux/files/usr/share/vim/vim92/ftplugin/rpl.vim         vim
@@ -44923,6 +44926,7 @@ data/data/dev.cometix.cometux/files/usr/share/vim/vim92/syntax/b.vim            
 data/data/dev.cometix.cometux/files/usr/share/vim/vim92/syntax/baan.vim          vim
 data/data/dev.cometix.cometux/files/usr/share/vim/vim92/syntax/bash.vim          vim
 data/data/dev.cometix.cometux/files/usr/share/vim/vim92/syntax/basic.vim         vim
+data/data/dev.cometix.cometux/files/usr/share/vim/vim92/syntax/bazelrc.vim       vim
 data/data/dev.cometix.cometux/files/usr/share/vim/vim92/syntax/bc.vim            vim
 data/data/dev.cometix.cometux/files/usr/share/vim/vim92/syntax/bdf.vim           vim
 data/data/dev.cometix.cometux/files/usr/share/vim/vim92/syntax/beancount.vim     vim
@@ -45402,6 +45406,7 @@ data/data/dev.cometix.cometux/files/usr/share/vim/vim92/syntax/r.vim            
 data/data/dev.cometix.cometux/files/usr/share/vim/vim92/syntax/racc.vim          vim
 data/data/dev.cometix.cometux/files/usr/share/vim/vim92/syntax/racket.vim        vim
 data/data/dev.cometix.cometux/files/usr/share/vim/vim92/syntax/radiance.vim      vim
+data/data/dev.cometix.cometux/files/usr/share/vim/vim92/syntax/radvd.vim         vim
 data/data/dev.cometix.cometux/files/usr/share/vim/vim92/syntax/raku.vim          vim
 data/data/dev.cometix.cometux/files/usr/share/vim/vim92/syntax/raml.vim          vim
 data/data/dev.cometix.cometux/files/usr/share/vim/vim92/syntax/rapid.vim         vim
@@ -45529,6 +45534,7 @@ data/data/dev.cometix.cometux/files/usr/share/vim/vim92/syntax/strace.vim       
 data/data/dev.cometix.cometux/files/usr/share/vim/vim92/syntax/structurizr.vim   vim
 data/data/dev.cometix.cometux/files/usr/share/vim/vim92/syntax/stylus.vim        vim
 data/data/dev.cometix.cometux/files/usr/share/vim/vim92/syntax/sudoers.vim       vim
+data/data/dev.cometix.cometux/files/usr/share/vim/vim92/syntax/svelte.vim        vim
 data/data/dev.cometix.cometux/files/usr/share/vim/vim92/syntax/svg.vim           vim
 data/data/dev.cometix.cometux/files/usr/share/vim/vim92/syntax/svn.vim           vim
 data/data/dev.cometix.cometux/files/usr/share/vim/vim92/syntax/swayconfig.vim    vim
