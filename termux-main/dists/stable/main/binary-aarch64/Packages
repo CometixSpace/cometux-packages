@@ -2527,32 +2527,32 @@ SHA512: 89afcfeeaee79ad7fde774b6189c9ad0e45e559a69b87154d1861fc5e1e4c5d1dd5bf818
 
 Package: libcap-ng-static
 Architecture: aarch64
-Installed-Size: 68
+Installed-Size: 72
 Maintainer: @termux
-Version: 2:0.9.5
+Version: 2:0.9.6
 Homepage: https://people.redhat.com/sgrubb/libcap-ng/
-Depends: libcap-ng (= 2:0.9.5)
+Depends: libcap-ng (= 2:0.9.6)
 Description: Static libraries for libcap-ng
-Filename: dists/stable/main/binary-aarch64/libcap-ng-static_2:0.9.5_aarch64.deb
-Size: 9820
-MD5Sum: 9ba96ef3be040a50c52d777f1a51472e
-SHA1: 6680a1a052ebfe0f9e5e94a4de8cb543b9604da9
-SHA256: 012d2aaf23c8ac2522f4f75d06a76b40b1b443b5b755f3261fa40941ec535602
-SHA512: f48fa79274ea797bb2061da305d97901a86d2694a0f738619485750d47f29a226a12ffe087110149d3c13f51ef6f54565c43c0f13fd367a3d2c890c9fab126b7
+Filename: dists/stable/main/binary-aarch64/libcap-ng-static_2:0.9.6_aarch64.deb
+Size: 9928
+MD5Sum: ee8b48f7c30b0170b742ab1f77abb20b
+SHA1: 83f2ffb3b55bf734641ff2b1c9cd500f41d969da
+SHA256: 8c1498c55aa38770d08dc689aafd5f0d5f6580d5d2f24d00c93d09aef007c954
+SHA512: 3724cc93084c1a5ae176585d730c70e2b4f85b4084a94e2ee02c6c41f340a5b6eba7e149ff117d8b8f478ac2ede14575a0074c115b24c89fa177a364bf0acde5
 
 Package: libcap-ng
 Architecture: aarch64
-Installed-Size: 312
+Installed-Size: 308
 Maintainer: @termux
-Version: 2:0.9.5
+Version: 2:0.9.6
 Homepage: https://people.redhat.com/sgrubb/libcap-ng/
 Description: Library making programming with POSIX capabilities easier than traditional libcap
-Filename: dists/stable/main/binary-aarch64/libcap-ng_2:0.9.5_aarch64.deb
-Size: 57932
-MD5Sum: 4e59fa26259ca978af9ff9f0608bfacf
-SHA1: 87855647b615bf8759d9fc0c04c2316c1fb98d93
-SHA256: 558336827772e4d526d8c69cc7dcc3eccd18a95e04ae19621dca88ef383589a4
-SHA512: b7a51f84f09444cc88935460560ff5306bccbd2f7ff5116bc20f9ca2ab68e5a428d870b8c63b0a0bb8a2d4d171655cd0e3247552ea5cfa6138384ed7e2a590a7
+Filename: dists/stable/main/binary-aarch64/libcap-ng_2:0.9.6_aarch64.deb
+Size: 57548
+MD5Sum: 07910f468bc3d7e2556e1f23146bce42
+SHA1: 3dcc7e01a6120f13260c95d73e93f124b99b5dc9
+SHA256: 439ac393611ef2a26d68e97d8febfe4b71d1b32be9658a4f1548f3311e97fb92
+SHA512: 21dfeef7dace45932297ac6afb1e50885d42287df201e4dae0bcb438d96293a8995ec07c03a69fab02b24a1c26d5d40f7bbeaee52c1b3798741b5045dcf62d34
 
 Package: libcap-static
 Architecture: aarch64
