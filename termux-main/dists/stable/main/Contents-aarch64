@@ -19129,7 +19129,7 @@ data/data/dev.cometix.cometux/files/usr/include/lzma/vli.h                      
 data/data/dev.cometix.cometux/files/usr/include/lzma.h                           liblzma
 data/data/dev.cometix.cometux/files/usr/lib/liblzma.so                           liblzma
 data/data/dev.cometix.cometux/files/usr/lib/liblzma.so.5                         liblzma
-data/data/dev.cometix.cometux/files/usr/lib/liblzma.so.5.8.3                     liblzma
+data/data/dev.cometix.cometux/files/usr/lib/liblzma.so.5.8.4                     liblzma
 data/data/dev.cometix.cometux/files/usr/lib/pkgconfig/liblzma.pc                 liblzma
 data/data/dev.cometix.cometux/files/usr/share/doc/liblzma/COPYING                liblzma
 data/data/dev.cometix.cometux/files/usr/share/doc/liblzma/COPYING.GPLv2          liblzma

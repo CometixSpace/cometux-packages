@@ -3567,33 +3567,33 @@ Package: liblzma-static
 Architecture: aarch64
 Installed-Size: 360
 Maintainer: @termux
-Version: 5.8.3
+Version: 5.8.4
 Homepage: https://tukaani.org/xz/
-Depends: liblzma (= 5.8.3)
+Depends: liblzma (= 5.8.4)
 Description: Static libraries for liblzma
-Filename: dists/stable/main/binary-aarch64/liblzma-static_5.8.3_aarch64.deb
-Size: 89540
-MD5Sum: b410a7d83a150eee70dd5be46a165f19
-SHA1: 3273c68eda47ce669089a1816190fb01051c194e
-SHA256: 4bbcb9c86b325426416e836111395a4adcca48632da4e1bc37ffe2fc298d2d5a
-SHA512: 9799a642a258f6f2d58ed0fe41e4768795234e9d89c95c72b1217f01d264a633b69988b8e97146b500a91148cbb7468d1c0a6eb6e6b89ce4d2de45b8c9cb8695
+Filename: dists/stable/main/binary-aarch64/liblzma-static_5.8.4_aarch64.deb
+Size: 89928
+MD5Sum: 1be2e0d400726c72ecdc2fa5ed0ba17e
+SHA1: a0440832f476dd2d0415157cced8d97fb5162515
+SHA256: d3fdffbca845f09891aa2a832c376a8d3950d216be2bd23b20d99afc6957933e
+SHA512: 0d6173769a0b5dabd9cc2ec8c3484823c7b1749f8c22ca3b0bd7823d1fc9ea2b4fafe950d579f90296fd74e598b23892898a0127e92c33fb6915e75c482be320
 
 Package: liblzma
 Architecture: aarch64
-Installed-Size: 864
+Installed-Size: 872
 Maintainer: @termux
-Version: 5.8.3
+Version: 5.8.4
 Homepage: https://tukaani.org/xz/
 Breaks: liblzma-dev
 Essential: yes
 Replaces: liblzma-dev
 Description: XZ-format compression library
-Filename: dists/stable/main/binary-aarch64/liblzma_5.8.3_aarch64.deb
-Size: 193116
-MD5Sum: 4c8a4e0349f63afac49c84a8ee281b7b
-SHA1: 54043922b8ba751768d58f463d0eeacdd2e8395c
-SHA256: 46af22bf4ed4d3f93df685d05aa93f3fdae870af740f9c773f5479eec2e754a8
-SHA512: cd1d75efc01f2abab28a87ba5e0d011bb97f724ae02173c5eaf6039b68b78ba36b75a11ed440de13ffb744fc64824802e6337273ebff838ca1f235f8729d834d
+Filename: dists/stable/main/binary-aarch64/liblzma_5.8.4_aarch64.deb
+Size: 194812
+MD5Sum: a17ea626271a8a03f49e9ef88ebbef2b
+SHA1: 33e01589e6d9ef5f391123175b0cd214672cebc7
+SHA256: 514d24f2a45dac55b16ff41f4addfc6565883d7107fb85fdebe2ca6a72c5f964
+SHA512: d955934800f3d382b60a1362d5258dc38d3e7e3801142d0674c02408037734e375bc883edfbcf9054dfafc3dfce3799c6d5c9aabd8345e216bb557e008915111
 
 Package: liblzo-static
 Architecture: aarch64
@@ -7302,17 +7302,17 @@ Package: xz-utils
 Architecture: aarch64
 Installed-Size: 228
 Maintainer: @termux
-Version: 5.8.3
+Version: 5.8.4
 Homepage: https://tukaani.org/xz/
 Essential: yes
-Depends: liblzma (= 5.8.3)
+Depends: liblzma (= 5.8.4)
 Description: XZ-format compression tools
-Filename: dists/stable/main/binary-aarch64/xz-utils_5.8.3_aarch64.deb
-Size: 71248
-MD5Sum: 653224637d7afa4c73b0ae6592391626
-SHA1: 56c4a6618731bbccc4f22608a895dae1efcad65c
-SHA256: a9348a08facc6a415e9ea838ae79527125ea850f2a8ea70b104bdae94b75fdcf
-SHA512: 8c74d210ba4c5db60d87c9b52ba074f1f0b5cbe73b7fdeed1e6f999bf41fef3ddf9e5e50ab5ada83c24d25fdec5ee6ffa747c65fa5efe3476ecacd8bd76da66e
+Filename: dists/stable/main/binary-aarch64/xz-utils_5.8.4_aarch64.deb
+Size: 71288
+MD5Sum: e33ff59ec1b42e0d341235b807578b9f
+SHA1: 530c8941392f427f59006a4b9e69a9248fca83ad
+SHA256: c0c81882d971d06a5be5db3feb39c9d59b28e662857c2e0c48865dedc732d845
+SHA512: f1c4865168ee062bc2072a8210041c28e5b8dcf26421ed877139165598382f6840d4427ab0cb90b2a26a66cb775e2ae90348314db33c4986b885e33a869dace2
 
 Package: yazi
 Architecture: aarch64
