@@ -1110,19 +1110,19 @@ SHA512: aba14377e494372115b75dfc0a6dc2c7f3595a2824e48774036670a05a7fea63dc622441
 
 Package: fzf
 Architecture: aarch64
-Installed-Size: 5312
+Installed-Size: 5320
 Maintainer: @termux
-Version: 0.74.3
+Version: 0.74.4
 Homepage: https://junegunn.github.io/fzf/
 Depends: bash, findutils, ncurses-utils
 Suggests: tmux
 Description: Command-line fuzzy finder
-Filename: dists/stable/main/binary-aarch64/fzf_0.74.3_aarch64.deb
-Size: 1430492
-MD5Sum: f102f8df290dd3b04fba4ec0c7d8ee38
-SHA1: ddda7a91c4089de18a8d72f554d82b9e7bda05b1
-SHA256: a1daadb45e533b1b4a92389e35092823de1af32ed5bb19430d6e81687e50ba4c
-SHA512: 12c4e7cd4f8706b57ed9c8f5e56654b898ff70a19ae446ed3645eb408d2b384ae529a148126e9de63be52dae2d063d0235710d285fab00b9c189bc53eae89fdf
+Filename: dists/stable/main/binary-aarch64/fzf_0.74.4_aarch64.deb
+Size: 1433512
+MD5Sum: 962a422d84e1aac7638da0daee048e1e
+SHA1: 97e76317e79d1e96ca66a24bfc0ff19b785552e7
+SHA256: 3ebbb0de5d5c2a092351e031f9fb4a482a1d57560b0d9a60fe984a970eb3a1b2
+SHA512: c319c742dd8aa8012a7b029fb9dafb3a18e1aa6fa4ae85add4c1767ad8518c241ea580baafa91600c197493e6c737c68a0d9e7b0d376a8bc625b7dc9c178368a
 
 Package: g-ir-scanner
 Architecture: aarch64
