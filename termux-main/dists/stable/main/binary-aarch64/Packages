@@ -7161,9 +7161,9 @@ SHA512: 6553d11050fa7cd1fdaa0858e5868a2c2a6e807aacb41d2fb888e08744da4680a0ac1620
 
 Package: vim
 Architecture: aarch64
-Installed-Size: 35316
+Installed-Size: 35328
 Maintainer: Joshua Kahn <tom@termux.dev>
-Version: 9.2.1050
+Version: 9.2.1100
 Homepage: https://www.vim.org
 Breaks: vim-python, vim-runtime
 Depends: libiconv, libsodium, ncurses
@@ -7173,12 +7173,12 @@ Replaces: vim-python, vim-runtime
 Provides: vim-python
 Suggests: luajit, perl, python, ruby, tcl
 Description: Vi IMproved - enhanced vi editor
-Filename: dists/stable/main/binary-aarch64/vim_9.2.1050_aarch64.deb
-Size: 6805488
-MD5Sum: e664972bec1dcf9f7fa9c26c3e236610
-SHA1: e9062772816afc228da70991dab62dc02a0def45
-SHA256: df2fadddda23a1741629795c80e3f44029dacc437fffb3045caeff2348f26335
-SHA512: ef8a666bd038ee51c023e33cfe659b9aa45f5a3f100a5895f7aa46a9236018c9508d33ee0a9dbf475358cb3e9094f756654070d5b1a846be5e5092ffdf483557
+Filename: dists/stable/main/binary-aarch64/vim_9.2.1100_aarch64.deb
+Size: 6808604
+MD5Sum: 6017cb62f840e4d5a7a9c2c49655e0eb
+SHA1: 1153b0fc23ecb5c2f9ec5fdd2f14a4afb3d998b6
+SHA256: c4535f2cbcdcfcf2fc5e6d4751ff3377add77d23cade0880e23ac5be53d84127
+SHA512: be95ca7ac5a826f19b33e8937c21095148f485f0141d690395c1aa462ba26fe8b88941bae468e98dcac2db0f913d9fa76a0e6b6945df99f462d625cdccf9101c
 
 Package: wget
 Architecture: aarch64
@@ -7259,15 +7259,15 @@ Package: xxd
 Architecture: aarch64
 Installed-Size: 68
 Maintainer: Joshua Kahn <tom@termux.dev>
-Version: 9.2.1050
+Version: 9.2.1100
 Homepage: https://www.vim.org
 Description: Hexdump utility from vim
-Filename: dists/stable/main/binary-aarch64/xxd_9.2.1050_aarch64.deb
-Size: 13496
-MD5Sum: 93dd18f288a2c40008c04dba3761a639
-SHA1: 21aa91c35a95b11dceebcb3647bac7d8d8900d5b
-SHA256: 82a2e78c8836bb47e43266f128407f55c9258464d7a3d55f1952dfb1ddc24edb
-SHA512: 2b6b379c64749dfbfa210461d698420b688d4e9288c99cb236c66314df168b44ba3cc6a7d9cb94003b4d949c69fd35eab2f615c727307c27d6bc8eb41b3c74fb
+Filename: dists/stable/main/binary-aarch64/xxd_9.2.1100_aarch64.deb
+Size: 13492
+MD5Sum: da2d7ca076b8121891e405ef09a4b82a
+SHA1: d46c8b7114d450f8632c0328047103ae386e7d93
+SHA256: d0d36da1a5396789adedf511104ea47c205c3f49115df4ac934621bf5e59ec6f
+SHA512: b943f48041cca3a480ef8737c7ab3bbed747cd823d69859d05bb72c8d7c70df968126a0c0ee3c835b324d95b9ffb08d27085d0a1c76b542966ee1542999dd0d4
 
 Package: xxhash-static
 Architecture: aarch64
