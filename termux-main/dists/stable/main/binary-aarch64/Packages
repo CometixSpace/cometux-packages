@@ -7273,30 +7273,30 @@ Package: xxhash-static
 Architecture: aarch64
 Installed-Size: 52
 Maintainer: @termux
-Version: 0.8.3-1
+Version: 0.8.4
 Homepage: https://cyan4973.github.io/xxHash/
-Depends: xxhash (= 0.8.3-1)
+Depends: xxhash (= 0.8.4)
 Description: Static libraries for xxhash
-Filename: dists/stable/main/binary-aarch64/xxhash-static_0.8.3-1_aarch64.deb
-Size: 8560
-MD5Sum: 2ec3c147c7131434a09d1073988d1b85
-SHA1: 1b4c0beff5ec00a8e81a3e6ec8132f35c2e56f7e
-SHA256: a024f530f25afbf2e3f29c155154ec0f8352069b9325705ac0c40eec39a1bd48
-SHA512: 05de5f0fd5962520fc3b223b171b50629a26c053d6ceffefe4a0b4d3fffc0771d75bcf9d4ec719e1d127145755767fd16a6c33f0c3b6ff5c6e526e8bc1d84f2b
+Filename: dists/stable/main/binary-aarch64/xxhash-static_0.8.4_aarch64.deb
+Size: 8552
+MD5Sum: d1b8d995a9e26d534cc01629184774bd
+SHA1: 71d8333ba7cda6200b7803a877833404264b4633
+SHA256: b0a0f8c55ef610cbd63221a3853b3f572331edec6cd6fcfc85a33f73c2033369
+SHA512: 9af74e5d7a3f12041266be41ce7a62c0a80cfc4c5ca9155721627c73097d29d6a5617527604953ed2aff833903946d6d3733b8ce20b4e95cfcebca085b5a6cf4
 
 Package: xxhash
 Architecture: aarch64
-Installed-Size: 408
+Installed-Size: 420
 Maintainer: @termux
-Version: 0.8.3-1
+Version: 0.8.4
 Homepage: https://cyan4973.github.io/xxHash/
 Description: Extremely fast non-cryptographic hash algorithm
-Filename: dists/stable/main/binary-aarch64/xxhash_0.8.3-1_aarch64.deb
-Size: 76600
-MD5Sum: 8e6a5fe964cdfba412150a5368bcf1a7
-SHA1: fe6dfeec38c9059ba02d7ead02262c5bf843d6d1
-SHA256: 0dce5ca2507898312ccd48890a6a6f239e34eb481ec76d405b2c81fe2ee9e796
-SHA512: aa6fa6e22e9b013092519352f97ee7d758f4513dfb8a384887f394d71aae6aff5735c1ab553259ef31ca70d6fb79a3aa045e988c1fea72603a7d2d6162c4d2a7
+Filename: dists/stable/main/binary-aarch64/xxhash_0.8.4_aarch64.deb
+Size: 80112
+MD5Sum: abc8c2e954fc7dec04e156cdde1c996e
+SHA1: b3b67f4c609dcf6cfa2dbf994656c4a3b545b7f6
+SHA256: a3d0f4d51c0e7f0ed4ccfd55ae52cde82a59a56f2caa7999926f0543c9573196
+SHA512: 00a699c428987f79d345e4e97e35abea44347f9d55a48c22a9ee83836ed6dd69c564c654031dd61622453caf92b870fdb9bca79d607f0ccc291be38c916c334e
 
 Package: xz-utils
 Architecture: aarch64

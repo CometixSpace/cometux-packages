@@ -45704,7 +45704,7 @@ data/data/dev.cometix.cometux/files/usr/include/xxh3.h                          
 data/data/dev.cometix.cometux/files/usr/include/xxhash.h                         xxhash
 data/data/dev.cometix.cometux/files/usr/lib/libxxhash.so                         xxhash
 data/data/dev.cometix.cometux/files/usr/lib/libxxhash.so.0                       xxhash
-data/data/dev.cometix.cometux/files/usr/lib/libxxhash.so.0.8.3                   xxhash
+data/data/dev.cometix.cometux/files/usr/lib/libxxhash.so.0.8.4                   xxhash
 data/data/dev.cometix.cometux/files/usr/lib/pkgconfig/libxxhash.pc               xxhash
 data/data/dev.cometix.cometux/files/usr/share/doc/xxhash/copyright               xxhash
 data/data/dev.cometix.cometux/files/usr/share/doc/xxhash/copyright.1             xxhash
