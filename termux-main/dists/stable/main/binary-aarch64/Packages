@@ -2021,20 +2021,20 @@ SHA512: 9b813444a5b9e7b40ca2c914f2b90a5b79d7b4f10ca38fb44f44dbb25dd7285f352f4d14
 
 Package: less
 Architecture: aarch64
-Installed-Size: 404
+Installed-Size: 420
 Maintainer: Joshua Kahn <tom@termux.dev>
-Version: 704
+Version: 710
 Homepage: https://www.greenwoodsoftware.com/less/
 Depends: ncurses, pcre2
 Essential: yes
 Replaces: lazyread
 Description: Terminal pager program used to view the contents of a text file one screen at a time
-Filename: dists/stable/main/binary-aarch64/less_704_aarch64.deb
-Size: 138676
-MD5Sum: 3f127b0cb928a9a36227eb1cd5f76482
-SHA1: 1cc9e8b6bf130683b18dcda3f6e048970e7b788d
-SHA256: 2598e05f96ef240d620e4606f26e1f5c3e9427d97efa8de476bcbc1786476c89
-SHA512: 2c78362b59c461550d2de7ac768724027be3a8c056286a42bdd9ec5ef91813b1a82a5cf8a7398c45fe4a7924f648eaef52926856aa8e0319ad7680bc0f24ecff
+Filename: dists/stable/main/binary-aarch64/less_710_aarch64.deb
+Size: 143584
+MD5Sum: 65d586b67b144a9e86b52630bbc0ac19
+SHA1: ad37366b05d0a74737c8518a4ddec781a0b9ad61
+SHA256: 4784138943c1e1fd5cec25c45662cd835bb7eb48e0f7e973f77d8177e403317a
+SHA512: df7eb8814a1bc3fb2d7ef7505cd22f1e6969059ec224c77bfaee5afe9e80a794173125ace8b715ac70a447339785e4899a1a1e7185007dd835f2cd3cab0da822
 
 Package: libacl-static
 Architecture: aarch64

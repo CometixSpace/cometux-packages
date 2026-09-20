@@ -14057,14 +14057,13 @@ data/data/dev.cometix.cometux/files/usr/lib/libleptonica.so                     
 data/data/dev.cometix.cometux/files/usr/lib/pkgconfig/lept.pc                    leptonica
 data/data/dev.cometix.cometux/files/usr/share/doc/leptonica/leptonica-license.txt leptonica
 data/data/dev.cometix.cometux/files/usr/bin/less                                 less
-data/data/dev.cometix.cometux/files/usr/bin/lesskey                              less
 data/data/dev.cometix.cometux/files/usr/libexec/less-osc8-open                   less
 data/data/dev.cometix.cometux/files/usr/libexec/lessecho                         less
 data/data/dev.cometix.cometux/files/usr/share/doc/less/COPYING                   less
 data/data/dev.cometix.cometux/files/usr/share/doc/less/LICENSE                   less
 data/data/dev.cometix.cometux/files/usr/share/man/man1/less.1.gz                 less
 data/data/dev.cometix.cometux/files/usr/share/man/man1/lessecho.1.gz             less
-data/data/dev.cometix.cometux/files/usr/share/man/man1/lesskey.1.gz              less
+data/data/dev.cometix.cometux/files/usr/share/man/man5/lesskey.5.gz              less
 data/data/dev.cometix.cometux/files/usr/lib/libacl.a                             libacl-static
 data/data/dev.cometix.cometux/files/usr/lib/libacl.la                            libacl-static
 data/data/dev.cometix.cometux/files/usr/bin/chacl                                libacl
