@@ -166,6 +166,7 @@ resolv-conf
 ripgrep
 rsync
 ruby
+rust
 sed
 serf
 subversion
