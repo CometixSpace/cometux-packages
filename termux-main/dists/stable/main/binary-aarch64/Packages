@@ -3285,34 +3285,34 @@ SHA512: a5bebf3f41d7246be7178544f14e3cd0b9e395280975d4d747f473d1f35d98d0cd712b97
 
 Package: libexpat-static
 Architecture: aarch64
-Installed-Size: 256
+Installed-Size: 260
 Maintainer: @termux
-Version: 2.8.4
+Version: 2.8.5
 Homepage: https://libexpat.github.io/
-Depends: libexpat (= 2.8.4)
+Depends: libexpat (= 2.8.5)
 Description: Static libraries for libexpat
-Filename: dists/stable/main/binary-aarch64/libexpat-static_2.8.4_aarch64.deb
-Size: 59940
-MD5Sum: a56adb72b2215ab06c68f7c79f21db02
-SHA1: 7b5289245fd5d96f7c6d2b24dfd8ce9dec9eaf5a
-SHA256: 9f42681774457d503d5e97072ccf7f6ec0d8b0b7a1e0cb4a20add13c34836668
-SHA512: 9a63f813056f16be4078a857f962b9d4a0c09e19f30d8f864f639682e9f474e426250b3d5b751160ca82f0af6c037049282327f42d99373434813c26b96f83e0
+Filename: dists/stable/main/binary-aarch64/libexpat-static_2.8.5_aarch64.deb
+Size: 60276
+MD5Sum: 492d1fd6a1faf8e43281fec13049411e
+SHA1: e4727cdc51a6378cfdc116314ed5af71ca1c7993
+SHA256: 70855f9317ce2970e474330dd3971b61a80f11724d9ae8ecf0160e7b19a08a68
+SHA512: 703c33102024df05160a5d854bfa4cb6f54252f87857575bc86fdda5cef9895e71ed154f6848b4f1bb97ec56683b0238d6172e3a4f59ecc88670ed0ff5201ff2
 
 Package: libexpat
 Architecture: aarch64
-Installed-Size: 408
+Installed-Size: 416
 Maintainer: @termux
-Version: 2.8.4
+Version: 2.8.5
 Homepage: https://libexpat.github.io/
 Breaks: libexpat-dev
 Replaces: libexpat-dev
 Description: XML parsing C library
-Filename: dists/stable/main/binary-aarch64/libexpat_2.8.4_aarch64.deb
-Size: 97176
-MD5Sum: 660d0bbe314892e74f99474685fabdc5
-SHA1: 298044239c12a987114f0ff29ff3e142e9083eef
-SHA256: 90707dba6a18b74b5068601083460d66839dac3917dc95e76e4eaff787486593
-SHA512: bb05b61d6eb8b1ec519b36d9ebd84bc6924e3aa24837afd183c85d6d20e9c1e852380c14f6f89b443ef12e74bb4f14370e4c69fbbd946262dd75cae47cd59cc1
+Filename: dists/stable/main/binary-aarch64/libexpat_2.8.5_aarch64.deb
+Size: 98688
+MD5Sum: c3e2cb2d11349d78e8a2216414092d43
+SHA1: 1dd542a8341cd4ad553e1cda3dac61710ef7fe31
+SHA256: c7dc09425c4e3850d3d0c5ab1650a7323f7e630f0d2af8a831f3443f46385275
+SHA512: 37f374c2b1fbc7e34791121d4ae21f41e43d0348b4c69f0241eb707d50f0112da4c09736dfaa9bcf4cf5727d46520fc30adad5668a2c4dda77a9cf1603ffb988
 
 Package: libfdisk
 Architecture: aarch64
