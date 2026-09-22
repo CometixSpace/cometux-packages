@@ -6935,6 +6935,20 @@ SHA1: 740e64305e61275cce23eacfef16839eae06b3b2
 SHA256: bf0232af69af6b093ab97c8ed77f8e387f740f4cbe6dc1b5ab8c2bd9739c1ba4
 SHA512: 8aa14eb89f4e233be4e9875c2ba603e2d9e9da87c39974db4344dfe161a0a4c0f3d94a4564d3c3ae6e36692c54c102ea4540bcc2b9d55ae224ba3ee77be6ed96
 
+Package: tree-sitter-bash
+Architecture: aarch64
+Installed-Size: 1428
+Maintainer: Joshua Kahn <tom@termux.dev>
+Version: 0.25.1-1
+Homepage: https://github.com/tree-sitter/tree-sitter-bash
+Description: Bash grammar for tree-sitter
+Filename: dists/stable/main/binary-aarch64/tree-sitter-bash_0.25.1-1_aarch64.deb
+Size: 125880
+MD5Sum: 89d0ed6e4a21b235d7ae8d04582649c9
+SHA1: 8fc063c8b98207d75d5f783d897308f78a999321
+SHA256: 8afe9a1c06542caa74ef7905c0f8338ccb960aae3dbe872bfa20c2ad68e9c2ff
+SHA512: 392bcfe343106b6761facd427e7cbbbe318bf64711a05284a98f60f771740c22c9e1c1faaf452af473af8586c0da0f4ad96d8e84c8de8e91a257eea8dadb95d1
+
 Package: tree-sitter-c
 Architecture: aarch64
 Installed-Size: 716
@@ -6948,6 +6962,104 @@ MD5Sum: 86212984819023d94660545b8f8369dc
 SHA1: f485ed7c993901de61bf3c7714f48edec35526ad
 SHA256: 3f8b724b90e8f4aa35351d6c09237521af11bb73e19027ca38c49a3a3b5bb019
 SHA512: f999ebab6b4feb2dc4f21e375091c09c2dba421509ecbb714fd1061164033f99f028a6aa321bd0045d29e3e2b51a93c1bbc29c352bb90e7c84695792dae37f81
+
+Package: tree-sitter-css
+Architecture: aarch64
+Installed-Size: 220
+Maintainer: Joshua Kahn <tom@termux.dev>
+Version: 0.25.0-1
+Homepage: https://github.com/tree-sitter/tree-sitter-css
+Description: CSS grammar for tree-sitter
+Filename: dists/stable/main/binary-aarch64/tree-sitter-css_0.25.0-1_aarch64.deb
+Size: 18960
+MD5Sum: a27640e16331ec6a5ce6c4eb4afa4a08
+SHA1: c1d17d86d7173db39d84753e277f028cb3696f11
+SHA256: ed1f64e1a9693b96400a23d969117ba6e9bf66cd54f0313742eecb58d12d5673
+SHA512: 5adc130a9c78e598133a398166ff9e6210966b9ef40950971993135902d1a1cf0b427c0b791026f235be3bb7c0edec4bf04cdf129ce5dc321619a92b0162d360
+
+Package: tree-sitter-go
+Architecture: aarch64
+Installed-Size: 308
+Maintainer: Joshua Kahn <tom@termux.dev>
+Version: 0.25.0-1
+Homepage: https://github.com/tree-sitter/tree-sitter-go
+Description: Golang grammar for tree-sitter
+Filename: dists/stable/main/binary-aarch64/tree-sitter-go_0.25.0-1_aarch64.deb
+Size: 29888
+MD5Sum: 8f7e10ecaf46c742d2969856b0a89f3d
+SHA1: c93f9127c82c7d05194f8fd50d9c4568936d191b
+SHA256: f01b14708b67099fffca9c972997b81b448d3c7917b2a41e72e0caa634f37781
+SHA512: f93c98aaa12a789e79c298f0c713763113340ccf5763af5e2887cbcb887bdf0b2f10982bb942903630ce93a551e6e15bc273711938080d44657cd12ba02ed9be
+
+Package: tree-sitter-html
+Architecture: aarch64
+Installed-Size: 112
+Maintainer: Joshua Kahn <tom@termux.dev>
+Version: 0.23.2-1
+Homepage: https://github.com/tree-sitter/tree-sitter-html
+Description: HTML grammar for tree-sitter
+Filename: dists/stable/main/binary-aarch64/tree-sitter-html_0.23.2-1_aarch64.deb
+Size: 9580
+MD5Sum: 24fc39fe9b70f2a9ced32ae60edddee3
+SHA1: ed517c3b3c86b414f4977f7b4db9d494812d01c3
+SHA256: 70e9b461ac5aca85f54ec83f354ae2397dd6dd12310a475272534374efbd26fe
+SHA512: 645c2a0a81ebdc1a7d68a7b925c2f6cd31ccbd9932635c16ce2e93ed5555673a577c101de3c09dd8995e723d388e16278578cb77c2888a043b515faacd684305
+
+Package: tree-sitter-java
+Architecture: aarch64
+Installed-Size: 500
+Maintainer: Joshua Kahn <tom@termux.dev>
+Version: 0.23.5-1
+Homepage: https://github.com/tree-sitter/tree-sitter-java
+Description: Java grammar for tree-sitter
+Filename: dists/stable/main/binary-aarch64/tree-sitter-java_0.23.5-1_aarch64.deb
+Size: 37308
+MD5Sum: 8e485ba937d7a4405cc3c8045dd3a10a
+SHA1: 78e102896dabcb0ee1bceb9f97921c0ebc8a8b43
+SHA256: e323cbb676502af4ad2a89c2fe00d7c1aea6dd71261d3e44bbb4f80a2f83185f
+SHA512: 6cad963a94c291971330fa14738d296387cbbefe5871af03001f55037bda6ddf54dbe77f792c8db2458c4089d1b0b96f9ba01abdb42ee50665b553883a0533ab
+
+Package: tree-sitter-javascript
+Architecture: aarch64
+Installed-Size: 512
+Maintainer: Joshua Kahn <tom@termux.dev>
+Version: 0.25.0-1
+Homepage: https://github.com/tree-sitter/tree-sitter-javascript
+Description: JavaScript grammar for tree-sitter
+Filename: dists/stable/main/binary-aarch64/tree-sitter-javascript_0.25.0-1_aarch64.deb
+Size: 40056
+MD5Sum: 003a16eb04b4b6e73042192f123527d6
+SHA1: 061bd5cfd0458956f71a5d3e8ad57c46d8c72126
+SHA256: d9d85e4dc89341e2b6407c3906f5b05fc81b502f70530a0fe8bbe904e7e8459c
+SHA512: 6c0c945a3c556b7668da01258683e2b18c82204446e6cd11e5ec24a0ecbf5d8a68bfcc9eae9c10329c90d2eaec511b19b7f43888db0ff04ebf57f3304d85f8d7
+
+Package: tree-sitter-json
+Architecture: aarch64
+Installed-Size: 96
+Maintainer: Joshua Kahn <tom@termux.dev>
+Version: 0.24.8-1
+Homepage: https://github.com/tree-sitter/tree-sitter-json
+Description: JSON grammar for tree-sitter
+Filename: dists/stable/main/binary-aarch64/tree-sitter-json_0.24.8-1_aarch64.deb
+Size: 4856
+MD5Sum: 5060399b36bec23bcdd955599fa794ea
+SHA1: d30724ff659a0df54b97df0217b5bfeb74570210
+SHA256: e33f69b8bb7e117bfbcb268c71732da02c311d6bce1ccc4d67c59a9c8ffe6b07
+SHA512: cc7ed127d8595b9a1edbf7407a3483ce7b1c90556e450c2e8b159cba4a574244003c35e88ba78daae2a046b3e446c32113bb45acbf0759ad68b81c9b9c340fa5
+
+Package: tree-sitter-latex
+Architecture: aarch64
+Installed-Size: 3624
+Maintainer: Joshua Kahn <tom@termux.dev>
+Version: 0.6.0-1
+Homepage: https://github.com/latex-lsp/tree-sitter-latex
+Description: LaTeX grammar for tree-sitter
+Filename: dists/stable/main/binary-aarch64/tree-sitter-latex_0.6.0-1_aarch64.deb
+Size: 95472
+MD5Sum: 81f4c51d284d2f28c4c49439f98914e5
+SHA1: e7a567092a6c4505bbcc1a30b0080a33a12a1767
+SHA256: 8f4ffda7f736b91a306671fdb233e5fb9a19dbd5f5ab080377aca0c797631c8e
+SHA512: f60e4cedbad9ce0787ffe279ae5e9118438d27bfe25aeda7a54b8a358ce113c36f8aa74c0c60add409ae68582ab725905dd811f202759aab1be84e596238c671
 
 Package: tree-sitter-lua
 Architecture: aarch64
@@ -6977,6 +7089,20 @@ SHA1: 972dc2792af7185fad25a8d088a3e2cbf7887994
 SHA256: dda09eb7c6f2d9fea25f960778fa5b50a30be6adf779fc0b60eb94f3dd7d1d19
 SHA512: 9b5831037458e2f407a0bf66d326942508518e898d455fea55ba15f083b409e9d82f7c4d82f871047642623216071ef91b8ac200c5c933952cc6538a344d36ba
 
+Package: tree-sitter-python
+Architecture: aarch64
+Installed-Size: 544
+Maintainer: Joshua Kahn <tom@termux.dev>
+Version: 0.25.0-1
+Homepage: https://github.com/tree-sitter/tree-sitter-python
+Description: Python grammar for tree-sitter
+Filename: dists/stable/main/binary-aarch64/tree-sitter-python_0.25.0-1_aarch64.deb
+Size: 49404
+MD5Sum: a923abc9f4ca2fc8b6549584a080de5d
+SHA1: 789ac65d0d298c36f8b01dea1b8e966598784d64
+SHA256: 7c0d190b7db4cb0032ef7ba61fc1329dd321178d8b1c3b85bf5c293588abe046
+SHA512: e13ee2d0628978253f5012acb48d96271f3a813f76bd429f7fda03fa973f0fffe16a56ea577ecb7f5e51d3a4d8fbfe5664155a45f93b80f17806b237faf52296
+
 Package: tree-sitter-query
 Architecture: aarch64
 Installed-Size: 112
@@ -6990,6 +7116,62 @@ MD5Sum: 5ef344eab9549e0d4c50fde67c4158b5
 SHA1: fb5ac7e87206e1932c671cbd6bd6797802fc1239
 SHA256: 717d36c05beb8f944b5174a5efbacd5cfe3a812a5c80fca8086d00eda09f2249
 SHA512: cf6edff52ea6bba13a637222c3c105492b50b0fee76d4401b8705f9d01bb882fe96e46f9cb43bc63d9e946775e7169242ac4553eaec21f91f3506aa37bf688c6
+
+Package: tree-sitter-regex
+Architecture: aarch64
+Installed-Size: 112
+Maintainer: Joshua Kahn <tom@termux.dev>
+Version: 0.25.0-1
+Homepage: https://github.com/tree-sitter/tree-sitter-regex
+Description: RegEx grammar for tree-sitter
+Filename: dists/stable/main/binary-aarch64/tree-sitter-regex_0.25.0-1_aarch64.deb
+Size: 7764
+MD5Sum: 22b50f968cfe5a543357a2518fe79567
+SHA1: f44f80b834a784f270f584484c62f58264f3dce9
+SHA256: fa7478e7a44f8f7a867d94f06d2266c8fadb0041231fb6bbb0113f8d0ba05c25
+SHA512: f4fe4f13d2b72d8535680c63f005f4d9828f27ee4042df8f677eaf454f3d972c83df1df609a008e053b4a988c49870aaa82a4bd700f867bf0d6b4ac856d028d6
+
+Package: tree-sitter-rust
+Architecture: aarch64
+Installed-Size: 1184
+Maintainer: Joshua Kahn <tom@termux.dev>
+Version: 0.24.2-1
+Homepage: https://github.com/tree-sitter/tree-sitter-rust
+Description: Rust grammar for tree-sitter
+Filename: dists/stable/main/binary-aarch64/tree-sitter-rust_0.24.2-1_aarch64.deb
+Size: 77248
+MD5Sum: 22701dfc75759a33b1f98cdb7cdd1922
+SHA1: 5f3856d728e9407f25024d1b8a80651d4249dd7e
+SHA256: 663f0896fd96c98009180eb72a44e702f4712ad533f75c3ee8fd38a90a654a3d
+SHA512: cebcfee25fe6ea27179a5d4c1847a5be9a7729bb688be76684c0db0e88266f52f296e9a29d7cbab91593996af09706adab112ac3712e51878f3180238aecb6e3
+
+Package: tree-sitter-sql
+Architecture: aarch64
+Installed-Size: 2512
+Maintainer: Joshua Kahn <tom@termux.dev>
+Version: 0.3.11-1
+Homepage: https://github.com/derekstride/tree-sitter-sql
+Description: SQL grammar for tree-sitter
+Filename: dists/stable/main/binary-aarch64/tree-sitter-sql_0.3.11-1_aarch64.deb
+Size: 212140
+MD5Sum: 07b9eda038d865116388a5d1491c047b
+SHA1: dad5c4fa4735b1f8aecaf217fbaad55be3435f49
+SHA256: 3f11c0cf08bc7d89b322cc6db19b067685587810716e6af47f46e5a5e98d77a8
+SHA512: 252ee972f2ec836f0f2c1bad162be6ec4595987683141a2dd9adf477e26b9ae3712f0edcb17f332cf98115092e6d452564a5518dcaa640bf100502b7915451b2
+
+Package: tree-sitter-toml
+Architecture: aarch64
+Installed-Size: 112
+Maintainer: Joshua Kahn <tom@termux.dev>
+Version: 0.7.0-1
+Homepage: https://github.com/tree-sitter-grammars/tree-sitter-toml
+Description: TOML grammar for tree-sitter
+Filename: dists/stable/main/binary-aarch64/tree-sitter-toml_0.7.0-1_aarch64.deb
+Size: 9584
+MD5Sum: 64c876cf951da35f6d5ba3367c684ba2
+SHA1: 8cade0bd2df0bd8380409d8f62aa1861b642dcd7
+SHA256: 3244eaad4918574dafb0f34ab94444c1bfb62c06a60a674128f3f7cee847fe7a
+SHA512: bd55da0d3b3f5ee5e9033af97a9ea31d1684224d6b5c33ebc9e296ba2c26d9f338089445d48fc47ddf1578cb71bacf3ab8ec9cb07d328941ee57c6d318285f52
 
 Package: tree-sitter-vim
 Architecture: aarch64
@@ -7018,6 +7200,34 @@ MD5Sum: 355893c62610d9c188239d775d0b5381
 SHA1: f0ff7399a6e9c9d3f05ebc3f2f9d00fcdf1ff49f
 SHA256: 81e75f5224a714406eaf8b316fcaba64e81a1621a62315444e2bc4371070f622
 SHA512: b983229ab69e12225aa2e43ff2d90d5390656d613447d12b572ee12ff32acb8064bb37030ee1772b9ac7c2ad4ebb23c424c87c1280fa86164d3cd4b68f12daf1
+
+Package: tree-sitter-xml
+Architecture: aarch64
+Installed-Size: 140
+Maintainer: Joshua Kahn <tom@termux.dev>
+Version: 0.7.0-1
+Homepage: https://github.com/tree-sitter-grammars/tree-sitter-xml
+Description: XML grammar for tree-sitter
+Filename: dists/stable/main/binary-aarch64/tree-sitter-xml_0.7.0-1_aarch64.deb
+Size: 15916
+MD5Sum: a825f35441f5a0f79afb81284669ea08
+SHA1: 544e3a040caaf4f434d52cd65a8d9c62811bf33a
+SHA256: 1a74a2e47c08998bf4844333a3f9d0f9c03804124e2943f6cf8aa0086267d1ca
+SHA512: 5b1d42e2fe25e8f90df26ab42bc6bbcd20d435c77fc9b7722c8b1e3afe556329edc35553e32992066b587830dae473e6705a567255af6aaa1eb87a9b3e69a847
+
+Package: tree-sitter-yaml
+Architecture: aarch64
+Installed-Size: 276
+Maintainer: Joshua Kahn <tom@termux.dev>
+Version: 0.7.2-1
+Homepage: https://github.com/tree-sitter-grammars/tree-sitter-yaml
+Description: YAML grammar for tree-sitter
+Filename: dists/stable/main/binary-aarch64/tree-sitter-yaml_0.7.2-1_aarch64.deb
+Size: 28680
+MD5Sum: c87f9ac09045fe2dbecdc7dc37e51416
+SHA1: df0b450a0f231ab0a08f4806dd2a629c22ae65b1
+SHA256: 7a32e532236ab0c4c967a83dc7533aba0174bd58e4d479489b43ef60e3e90e4f
+SHA512: 92405fca1e7567c1b67a6ff0ccf90d3351e77b1bbe21a0e72b08b429155b356547f46b472def2a422b3eb90487af1e9a0ed3470d9a98f2b536407123e734de9c
 
 Package: tree-sitter
 Architecture: aarch64
