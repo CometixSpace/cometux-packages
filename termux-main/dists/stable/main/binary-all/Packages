@@ -73,6 +73,21 @@ SHA1: a47eaa888ffbfbbd2f67f892a5f19ea8c6df1ecf
 SHA256: 2a71ec4abe8355503e7b6b7ac279608eef1d8ced83ca74f3c5bfde1bd61b40c0
 SHA512: d5898cde95dcbbb5afe6721a170b647ad0c567bc8681a4790f912b877da30b58c2c7a98933280f000748945c9eac0ba3960eda6b1d773831649fe06db98baf3e
 
+Package: boost-headers
+Architecture: all
+Installed-Size: 192708
+Maintainer: @termux
+Version: 1:1.91.0
+Homepage: https://boost.org
+Depends: boost (= 1:1.91.0)
+Description: Boost header files
+Filename: dists/stable/main/binary-all/boost-headers_1:1.91.0_all.deb
+Size: 11041852
+MD5Sum: f3c9e4002900cac65ca81fe2f8bc47bc
+SHA1: 5e2f20b8d234ea82d6eb866f07c90f523a5a12a5
+SHA256: ed57522939168dd7c8fa69559e7ce56fc77725a6128d19a3d434982b6cf6c93a
+SHA512: 887a51e8a1409a2585def57c6d9166a0efda2f990651856ece4e399531083e3e66bc5c050f02f455ef256d7e870af7967c9dc6166675ee1a0b8236403b4c9391
+
 Package: ca-certificates-java
 Architecture: all
 Installed-Size: 180
@@ -193,6 +208,22 @@ SHA1: 30383fc7f313169668a96fd3651f359e0029d0ba
 SHA256: 7f9a03d8cee3f2c7af60465efcf4e77f240c8e9f45443d2287f0c83101db8066
 SHA512: f96d8ac03b07ee129dde856aa5373092e508a3afccfadc6532d0018c1c00f097504fc4b5cc840405771bd2eee8cd4d053ae1c2a3e8d89e51b9bdd831475d4453
 
+Package: libglvnd-dev
+Architecture: all
+Installed-Size: 2316
+Maintainer: @termux
+Version: 1.7.0-1
+Homepage: https://gitlab.freedesktop.org/glvnd/libglvnd
+Breaks: mesa (<< 22.3.3-2), mesa-dev (<< 22.3.3-2), ndk-sysroot (<< 25b-3)
+Replaces: mesa (<< 22.3.3-2), mesa-dev (<< 22.3.3-2), ndk-sysroot (<< 25b-3)
+Description: GLVND's OpenGL headers
+Filename: dists/stable/main/binary-all/libglvnd-dev_1.7.0-1_all.deb
+Size: 150352
+MD5Sum: 9e9bad50a5c7f2ae86b8b13f691f3891
+SHA1: 24705cc72dd56548ced4998d3d9e62413ce308f5
+SHA256: 8f2f8bfcdc019ecd8bf0bd92ee081a6c5a382b21e3223c80de13cf0e2ae7d9ce
+SHA512: c80e93755e82d9c7ecb9d5f3bb73fdfca90012260abe3fcfcd7a5285a6b0c9c296f0796f2b4411c29afef034e8b2780b4869b98dcf0c28523c42246242ee3152
+
 Package: npm
 Architecture: all
 Installed-Size: 18228
@@ -208,6 +239,20 @@ MD5Sum: deaa0660ef3a0dfbd42e06cb087fbd52
 SHA1: 0b02fcc4640d3bbdd7634f884afce7f52270f680
 SHA256: 658852938bc58dbf298a900ba842fc7f9bfa9740b0af56c2cee90f3f3dbcd907
 SHA512: 8e9c4539f29a949fbeef85e118b78978e348d47ac49abdd1e2c732275521505f3c197576d83dcbe073b7e4ae0b885bc045affe05502b699a2016bc03eaccd791
+
+Package: opencl-headers
+Architecture: all
+Installed-Size: 532
+Maintainer: @termux
+Version: 2026.05.29
+Homepage: https://github.com/KhronosGroup/OpenCL-Headers
+Description: Khronos OpenCL-Headers
+Filename: dists/stable/main/binary-all/opencl-headers_2026.05.29_all.deb
+Size: 43788
+MD5Sum: b3acad8c4d792e5d928406bde3715d07
+SHA1: 5061fcf34f2a8fb21c7b7fd963efd2c11527fe2a
+SHA256: 1ed0018edf7a12006a5eb0595c6e7802a62e0013e3bd85b2d27392a0ea81903e
+SHA512: 90b75e078d7d1c7bbdb1616e41e8b84dbdea0bbf2d18e435ad18cce31714e25615e4637439e6588c8bd7d7669c536dfbd5cd99a90c6526f36ea4652c5bc324f7
 
 Package: python-ensurepip-wheels
 Architecture: all
@@ -275,6 +320,20 @@ MD5Sum: 3dd1d38101630ec2203fc7bde8c49092
 SHA1: 27e5ff79836584d0e5e1e64163415ad61f366da6
 SHA256: 2d239a210b7a4dce449f2b9c45370e7026b549f41b851537dc30594699a8d24a
 SHA512: b9947e6d355b2d8e494634b1c6dfb0832eba0d02d452bf8747a7956f5fdda671d2934a6ab01ce47b821eb8bd3c46738490435fc79d919884d5abf0d199cf683e
+
+Package: spirv-headers
+Architecture: all
+Installed-Size: 3796
+Maintainer: @termux
+Version: 1.4.350.1
+Homepage: https://github.com/KhronosGroup/SPIRV-Headers
+Description: SPIR-V Headers
+Filename: dists/stable/main/binary-all/spirv-headers_1.4.350.1_all.deb
+Size: 163184
+MD5Sum: 6bb119c6efae5b27648cfae8b12c2d26
+SHA1: db138c1df0bd490163827981b1d5fb46e65a42a1
+SHA256: b4d32d46ec488582c872321afaacff32bc643d9961682c801072ea7c7e36dd39
+SHA512: b4ea02abb7b6e926994c6d83a9f100b1bf15f202cb76f0f9e1295af57804080896719a53da0846ac5fb7fbc32c2b53a4b0458cf3164fa70a96d5228d7bdb48a7
 
 Package: sudo
 Architecture: all
@@ -381,6 +440,50 @@ MD5Sum: b5781be4fd09fd14c09cd7f8d3fc4a1b
 SHA1: 7817af7c4c8f15471fc2e7d8bf0149abe4617e2b
 SHA256: 56c9f0e2942d9df98ee7e66ef314227138b2c0d4318e4aa9646b41df0314b45a
 SHA512: 2984ec49478e63c2a7b35775f2cf27c2826c94d88070f316cf3c757ca3d6ec1b51d0b56c0adcb2a75a9859d8b70f5410af98aec3e6f8758d0cd421fb5358ea11
+
+Package: update-info-dir
+Architecture: all
+Installed-Size: 48
+Maintainer: @termux
+Version: 7.3
+Homepage: https://www.gnu.org/software/texinfo/
+Depends: texinfo (= 7.3)
+Description: Update or create index file from all installed info files in directory
+Filename: dists/stable/main/binary-all/update-info-dir_7.3_all.deb
+Size: 2480
+MD5Sum: 093809a2f5c4250f6b45e28ba8b3a09a
+SHA1: cb9641890b7e13a39eeec88a2eade35f8a88f66a
+SHA256: 8b735f29af2df25864e949c188b80495356611444024703ec3573101786db05f
+SHA512: 9dd510f53f6371a629a6614a032d2fb3f5149ee02e50e5dadb3ecb8cfee3eea79cb2401caed673b8cf49bae147403b6498b5e1dbd9f9cd325eeb3f70fa0a1e3f
+
+Package: vulkan-headers
+Architecture: all
+Installed-Size: 40860
+Maintainer: @termux
+Version: 1.4.357
+Homepage: https://github.com/KhronosGroup/Vulkan-Headers
+Description: Vulkan Header files and API registry
+Filename: dists/stable/main/binary-all/vulkan-headers_1.4.357_all.deb
+Size: 1904704
+MD5Sum: 1cd215501a008071d16c135a4f3418c7
+SHA1: 2bbbed856fa0d3475aeef32db4580a9c8454e56a
+SHA256: 9fb0f172eafeb0a1b9f1d771e1c34e6a6bfde836c592d66e5e39141070a11346
+SHA512: 5f835d8339eb48c817129c097c20e94cf73ff4aa504cbc11c9039b675f3fb49a030c6d1772ecbea711082509310ec35ea89c299011fd2d320bccb4e98c5e6f68
+
+Package: vulkan-icd
+Architecture: all
+Installed-Size: 4
+Maintainer: @termux
+Version: 0.1
+Homepage: https://github.com/termux/termux-packages
+Depends: mesa-vulkan-icd-swrast | mesa-vulkan-icd-freedreno | swiftshader
+Description: A metapackage that provides Vulkan ICDs
+Filename: dists/stable/main/binary-all/vulkan-icd_0.1_all.deb
+Size: 736
+MD5Sum: 28cc67f8a6d1af4ca0dc4a9dd677c8c0
+SHA1: bf2be00abfeb03090f40dfb485fc8783dd144b67
+SHA256: a401762eb0ddcc42487cd09ec763786126661034775966db22971b53129d1995
+SHA512: 7baf75b556dea4e2ffcf8ae9fb2e32a1573d3060af4b59c95e613ae73802bf69f8be9ef15148938fa9a06a16e17d29ad2e55f9f02d6964943c97503fa6b128a1
 
 Package: xcb-proto
 Architecture: all
