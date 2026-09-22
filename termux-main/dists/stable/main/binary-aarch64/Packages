@@ -1616,6 +1616,37 @@ SHA1: 10c579dbecaa2b962520836476088ef406e5427e
 SHA256: 47edcb71de779ead94faf42323f9a0dd6d9996b0fcfb69097d41d266d50d6aac
 SHA512: 67b74944a92806f89d565cc5ce0c593518edeadda5389e82e1068aee1e6e54b113c15b0db1bc9eb5a19f487a79a06ccb747f67df1472df814f4f89d90d4b99b5
 
+Package: golang-doc
+Architecture: aarch64
+Installed-Size: 472
+Maintainer: @termux
+Version: 3:1.26.5
+Homepage: https://go.dev/
+Depends: golang (= 3:1.26.5)
+Description: Go programming language - documentation
+Filename: dists/stable/main/binary-aarch64/golang-doc_3:1.26.5_aarch64.deb
+Size: 93696
+MD5Sum: ffd7636db8d0525ccfdacd233f219d12
+SHA1: 3013846d6d71fdb7b6845d67d0744ad6dab7e8a3
+SHA256: 5289bcfce458f2fe2375bfb08c6cec62b825e6bf66487adb4f53bf1b9d837c79
+SHA512: 0adffd2d677c8e5d40b6d876e94e75804b7a98bcc50ab872e5eb0756b0dcac1fa70b9725bbb5a143dcbf677c3679a3ed665db59195a974dd6a4c732d19393146
+
+Package: golang
+Architecture: aarch64
+Installed-Size: 213544
+Maintainer: @termux
+Version: 3:1.26.5
+Homepage: https://go.dev/
+Depends: clang
+Recommends: resolv-conf
+Description: Go programming language compiler
+Filename: dists/stable/main/binary-aarch64/golang_3:1.26.5_aarch64.deb
+Size: 35418712
+MD5Sum: a65e6667a7acced56e835fef9dd40406
+SHA1: 729373de6194db21380fd4af1929310e759822cc
+SHA256: e59a6caf8290aeab8c045f9a0921fbcc02ddd60ac0842c1ee8130e1823b2cca7
+SHA512: 8a9433086961d2b8c50325a023d532d0ed48d143d4d91b8a02792218fab245bbd1891708c1a02f904deda43359346f75fe66424013ca3ffd6b87371951afc6ed
+
 Package: gperf
 Architecture: aarch64
 Installed-Size: 384
