@@ -226,19 +226,19 @@ SHA512: c80e93755e82d9c7ecb9d5f3bb73fdfca90012260abe3fcfcd7a5285a6b0c9c296f0796f
 
 Package: npm
 Architecture: all
-Installed-Size: 18228
+Installed-Size: 18236
 Maintainer: Yaksh Bariya <thunder-coding@termux.dev>
-Version: 11.19.1
+Version: 11.20.0
 Homepage: https://docs.npmjs.com/cli/
 Depends: nodejs | nodejs-lts
 Conflicts: nodejs (<= 25.3.0), nodejs-lts (<= 24.13.0)
 Description: The package manager for JavaScript
-Filename: dists/stable/main/binary-all/npm_11.19.1_all.deb
-Size: 2032704
-MD5Sum: deaa0660ef3a0dfbd42e06cb087fbd52
-SHA1: 0b02fcc4640d3bbdd7634f884afce7f52270f680
-SHA256: 658852938bc58dbf298a900ba842fc7f9bfa9740b0af56c2cee90f3f3dbcd907
-SHA512: 8e9c4539f29a949fbeef85e118b78978e348d47ac49abdd1e2c732275521505f3c197576d83dcbe073b7e4ae0b885bc045affe05502b699a2016bc03eaccd791
+Filename: dists/stable/main/binary-all/npm_11.20.0_all.deb
+Size: 2033696
+MD5Sum: 0ea4db6f90b2cc71ac46d05e4c822142
+SHA1: 8f9d07a7a1ffa6d2396b9bd195c4eb150de239d8
+SHA256: be62fe48e9b57579703ef016504e5c723861ae68ce606b9c93deafb621731b9f
+SHA512: cd7d907bb02d5b008832dd3aab293efedf49f958b0652fdad10a1d5b457d98683e6441d8fc0cbc15f603bbb9116ff271a574b08275046d70fc6774d0cee5a39c
 
 Package: opencl-headers
 Architecture: all
